@@ -14,7 +14,7 @@ router.get('/visit/:userId', function (req, res, next) {
     let userId = req.params.userId;
     res.json({'userId':userId})
 });
-router.get('/vectory/:id', function (req, res, next) {
+router.get('/vectory/:userId(\d+)', function (req, res, next) {
     let param = req.params;
     res.json(param)
 })

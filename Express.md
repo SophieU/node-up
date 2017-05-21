@@ -130,10 +130,6 @@ Route path: /users/:userId/books/:bookId
 Request URL: http://localhost:3000/users/34/books/8989
 req.params: { "userId": "34", "bookId": "8989" }
 
-// 3、params的扩展使用，()匹配限定为数字
-Route path: /user/:userId(\d+)
-Request URL: http://localhost:3000/user/42
-req.params: {"userId": "42"}
 ```
 
 #### 路由回调
