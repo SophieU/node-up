@@ -1,0 +1,102 @@
+.filter-form{
+  label{
+    font-weight: normal;
+  }
+  .form-group{
+    margin:5px 10px;
+  }
+}
+.main-content{
+  .table-wrapper{
+    overflow-x: scroll;
+  }
+  .table-header{
+    margin-bottom: 10px;
+  }
+  .table{
+    th{
+      white-space: nowrap;
+    }
+    td{
+      white-space: nowrap;
+      font-size: 12px;
+    }
+    .btn-link{
+      font-size: 12px;
+      padding:0;
+      &:last-child{
+        &:after{
+          content: '';
+        }
+      }
+      &:after{
+        content: '|';
+        display: inline-block;
+        margin:0 3px;
+      }
+    }
+  }
+}
+#dispatchOrder{
+  .modal-body{
+    &>p{
+      text-align: center;
+    }
+    .flexbox{
+      display: flex;
+      justify-content: space-between;
+      color: #999;
+      line-height: 1.5em;
+    }
+
+    .worker-lists{
+      li{
+
+        padding-left: 30px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: flex-start;
+        h5{
+          margin-bottom: 10px;
+        }
+        input{margin-top: 0;}
+        &>div{
+          margin-left: 15px;
+        }
+      }
+    }
+  } 
+}
+#secondModal{
+  .control-label{
+    line-height: 32px;
+    font-weight: normal;
+  }
+}
+//欠费记录弹窗
+#arrearageModal{
+  .modal-header>h4{
+    font-size: 16px;
+  }
+  .tpl-import{
+    p{
+      margin-bottom: 10px;
+    }
+    input[type="file"]{
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .ml-15 {
+      margin-left: 15px;
+    }
+  }
+  .import-history{
+    border-top: 1px solid #efefef;
+    margin-top: 20px;
+    padding-top: 10px;
+    .title{
+      color: #555;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+<!--统计查看-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>一生约-后台管理界面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/statistics/complain.css" />
+    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.7.0/css/font-awesome.css" />
+    <!--日期控件-->
+    <link rel="stylesheet" href="../../css/commoncss/bootstrap-datetimepicker.min.css" />
+</head>
+
+<body>
+<!--头部信息开始-->
+<div id="header">
+    <img class="logo" src="../../images/img/logo03.png"/>
+    <ul class="head-nav">
+        <li class="active">统计查看</li>
+        <li><a href="../staffManagement/personManagement.html">小区管理</a></li>
+        <li><a href="../staffManagement/personManagement.html">物业app管理</a></li>
+        <li><a href="../staffManagement/personManagement.html">员工管理</a></li>
+        <li><a href="../resourceManagement/proprietor.html">资源管理</a></li>
+        <li><a href="../report/oneLv.html">报事报修</a></li>
+        <li>收费管理</li>
+        <li>财务结算</li>
+        <li>系统管理</li>
+    </ul>
+    <div class="user">
+        <img src="../../images/ico/icon-down.png"/>
+        <p>Hello，Tom</p>
+    </div>
+</div>
+<!--头部信息结束-->
+<!--内容部分开始-->
+<div id="main">
+    <!-- 左侧导航开始 -->
+    <div class="main-nav">
+        <ul>
+            <li class="active">
+                <div class="flag"></div>
+                <a href="##">审批管理 </a>
+                <ol class="sub-nav">
+                    <li class="active-sub"><a href="##">假期管理</a></li>
+                    <li><a href="##">余额管理</a></li>
+                    <li><a href="##">数据管理</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="main-info clearfix">
+        <!-- 目录导航开始 -->
+        <div class="info-title">
+            <ul>
+                <li>物业app管理</li>
+                <li>></li>
+                <li>审批管理</li>
+                <li>></li>
+                <li>假期管理</li>
+            </ul>
+            <p>帮助</p>
+        </div>
+        <!-- 目录导航结束-->
+        <!-- 主要内容开始 -->
+
+        <div class="statis message-list clearfix">
+            <div class="table-content">
+                <div class="table-header pull-right">
+                    <button class="btn btn-default " data-toggle="modal" data-target="#holidayModal"> <i class="fa fa-plus"></i> 添加假期</button>
+                    <a href="balance-manage.html" class="btn btn-default "> 查看员工假期余额</a>
+                </div>
+                <table class="table">
+                    <thead class="bg-head">
+                    <tr>
+                        <th>假期名称</th>
+                        <th>请假单件</th>
+                        <th>计算请假时长方式</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>年假</td>
+                        <td>按小时请假</td>
+                        <td>按工作日计算</td>
+                        <td>
+                            <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#holidayModal">编辑</button>
+                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#alert">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>事假</td>
+                        <td>按小时请假</td>
+                        <td>按工作日计算</td>
+                        <td>
+                            <button class="btn btn-default btn-sm">编辑</button>
+                            <button class="btn btn-danger btn-sm">删除</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <!--编辑/添加假期-->
+        <div class="modal fade" id="holidayModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" ><span >&times;</span></button>
+                        <h3>添加假期</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form form-horizontal">
+                            <div class="form-group">
+                                <label class="col-md-3">假期名称：</label>
+                                <div class="input-group  col-md-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3">最小请假单位：</label>
+                                <div class="input-group col-md-6">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">按天请假</option>
+                                        <option value="">按小时请假</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3">计算请假时长方式:</label>
+                                <div class="input-group col-md-6">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">按工作日计算请假时长</option>
+                                        <option value="">按自然日计算请假时长</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3">有效期规则：</label>
+                                <div class="select-inline col-md-5">
+                                    <select class="form-control">
+                                        <option value="">按入职日期起</option>
+                                        <option value="">按入职日期起12个月</option>
+                                    </select>
+                                    <!--允许延长有效期-->
+                                    <!--<span class="text-grey">按入职日期起12个月</span>-->
+                                </div>
+                                <div class=" col-md-3">
+                                    <label class="check-label ">
+                                        <input type="checkbox">
+                                        允许延长有效期
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3">每人发放天数：</label>
+                                <div class="input-group  col-md-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                    </div>
+
+                    </form>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--删除提醒-->
+        <div class="modal fade" id="alert">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <h4>提醒</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p><i style="font-size: 18px;color: #f00;" class="fa fa-exclamation-circle"></i> 数据删除后将不可恢复，是否确定删除？</p>
+                       <!-- 不能删除的提醒（与上状态，二选一 07-23） -->
+                        <p><i style="font-size: 18px;color: #f00;" class="fa fa-exclamation-circle"></i>当前假期还有进行中的流程，不能删除！</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button class="btn btn-primary">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 左侧导航结束 -->
+    <!-- 主要内容结束 -->
+
+</div>
+<!--内容部分结束-->
+</body>
+<!-- jq -->
+<script src="../../js/lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<!--日期控件-->
+<script src="../../js/lib/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+<!--i18n.js-->
+<script src="../../js/lib/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/lib/date.js" type="text/javascript" charset="utf-8"></script>
+<!-- 操作 -->
+<script type="text/javascript " charset="utf-8 ">
+
+
+</script>
+
+</html>

@@ -1,0 +1,367 @@
+.table-form{
+  border:1px solid #ddd;
+  width:80%;
+  max-width: 900px;
+  margin:0 auto;
+  td{ 
+    padding:10px;
+    border:1px solid #ddd;
+  }
+  .table-control{
+    height:30px;
+    line-height: 30px;
+    padding:4px 10px;
+    box-sizing: border-box;
+    border:1px solid #ddd;
+    border-radius: 4px;
+  }
+  .check-label{
+    margin-bottom: 0;
+    margin-right: 10px;
+    input{
+      vertical-align: middle;
+    }
+  }
+}
+
+
+.edit-standard{
+  .table-form{
+    &>tr>td:first-child{
+      width:140px;
+    }
+  }
+  .main-footer{
+    padding:20px;
+    margin-bottom: 20px;
+  }
+  .button-groups{
+    margin-bottom: 15px;
+  }
+  .table-input{
+    border:1px solid #ddd;
+    border-collapse: collapse;
+    td{
+      padding:8px;
+      border:1px solid #ddd;
+    }
+    th{
+      padding:8px;
+      border: 1px solid #ddd;
+      background: #efefef;
+      font-size: 13px;
+      text-align: center;
+    }
+    .check-col{
+      width:30px;
+      text-align: center;
+    }
+    .input-item{
+      width:100px;
+      height:30px;
+      border:1px solid #ddd;
+      border-radius: 4px;
+      padding:0 8px;
+      line-height: 30px;
+    }
+  }
+  .inline-input{
+    display: inline-block;
+    margin:0 10px;
+    input{
+      height:30px;
+      line-height:30px;
+      border:1px solid #ddd;
+      border-radius:4px;
+      width:50px;
+      padding:0 10px;
+    }
+  }
+}
+
+.calc-page{
+  max-width: 900px;
+  .must{
+    color: #f00;
+  }
+  .calc-header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    .calc-type{
+      width: 138px;
+      border-right: 1px solid #ddd;
+      box-sizing: border-box;
+      height:30px;
+      line-height: 30px;
+      text-align: center;
+    }
+    .text-grey{
+      color: #999;
+      width: 138px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      box-sizing: border-box;
+      border-right: 1px solid #ddd;
+    }
+  }
+  .calc-result{
+    flex: 1;
+    height: 30px;
+    padding: 0 20px;
+    line-height:30px;
+  }
+  .calc-panel{
+    display: flex;
+    height: 450px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    .calc-one,.calc-two{
+      width:138px;
+      box-sizing: border-box;
+      padding-top: 10px;
+      overflow-y:auto;
+      text-align: center;
+      border-right: 1px solid #ddd;
+      h4{
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+      ul{
+        height:90%;
+      }
+      li{
+        padding:5px;
+        user-select: none;
+        cursor: pointer;
+        &:active{
+          background: #efefef;
+        }
+      }
+    }
+  }
+  .calc-box{
+    height:100%;
+    flex:1;
+
+    .calc-box-header{
+      padding:10px;
+      text-align: right;
+    }
+    .calc-btns{
+      display: flex;
+      .btn-2{
+        padding:0 58px;
+      }
+      .layui-btn{
+        &:active{
+          background: #efefef;
+        }
+      }
+      .left,.right{
+        flex:1;
+        &>div{
+          padding:4px;
+          display: flex;
+          //justify-content: space-around;
+        }
+      }
+    }
+    .right{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .layui-btn{
+        width:70px;
+      }
+    }
+  }
+  .calc-box-inner{
+    border-top: 1px solid #ddd;
+    padding:15px;
+    box-sizing: border-box;
+    h5{
+      font-weight: normal;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .layui-btn{
+      border-radius: 4px;
+      font-size: 16px;
+      margin:0 15px;
+    }
+  }
+  .calc-footer{
+    text-align: right;
+    padding:15px 20px;
+    border-top:1px solid #ddd;
+    border-top: none;
+  }
+  .calc-info{
+    margin-top: 15px;
+    textarea{
+      width:100%;
+      resize:none;
+      padding:10px;
+      border-radius: 10px;
+      border-color:#ddd;
+      box-sizing: border-box;
+      height:100px;
+    }
+  }
+}
+#billModal{
+  
+  .input-connect{
+    line-height: 32px;
+    float: left;
+  }
+  .inline-input{
+    width:80px;
+    height:32px;
+    border:1px solid #ddd;
+    margin:0 8px;
+    border-radius: 4px;
+    padding-left: 8px;
+  }
+}
+.estate-fee{
+  .history{
+    padding: 15px;
+    color: #666;
+    li{
+      text-indent: 2em;
+    }
+  }
+  .table-form{
+    margin:20px;
+  }
+  .table-form-title{
+    margin:0 20px;
+    font-size: 16px;
+    color:#999;
+    &:first-child{
+      margin-top: 20px;
+    }
+  }
+  .layui-tab-content{
+    padding-bottom: 30px;
+  }
+  input[type="number"]{
+    width: 80px;
+    margin-right: 15px;
+  }
+}
+#receivModal{
+  .check-label{
+    font-weight: normal;
+    font-size: 15px;
+  }
+}
+.table-header{
+  margin-bottom: 15px;
+}
+//退费管理
+#return-fee{
+  .form-inline .layui-form-label{
+    width: 100px;
+  }
+  .layui-card-header{
+    background: #efefef;
+  }
+  .table-form{
+    margin:0;
+    td{
+      text-align: center;
+    }
+  }
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-content{
+  text-indent: 2em;
+}
+.btn-groups .btn{
+  margin: 0 10px;
+}
+.charge-order{
+  font-size: 16px;
+  .charge-order-title{
+    font-size: 18px;
+    text-align: center;
+    margin:15px 0;
+    font-weight: bold;
+  }
+  p{
+    line-height: 2em;
+  }
+  .text-left>span{
+    margin-right: 20px;
+  }
+  table{
+    border:1px solid #ddd;
+    border-collapse: collapse;
+    width:100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    th,td{
+      border:1px solid #ddd;
+      padding:8px 15px;
+      text-align: center;
+    }
+    td{
+      min-height:25px;
+    }
+  }
+}
+.lawyer-letter{
+  padding:20px;
+  font-size: 15px;
+  .title{
+    font-size: 18px;
+    text-align: center;
+    margin:15px 0;
+    font-weight: bold;
+  }
+  p{
+    line-height: 2em;
+  }
+}
+#containerLawyer,#containerMsg,#containerOrder,#containerApp{
+  width:800px;
+}
+
+.table-header{
+  button:last-child{
+    margin-right: 20px;
+  }
+}
+//应收查询 
+.due-recive{
+  position: relative;
+  .miss-search{
+
+    position: absolute;
+    top: 70px;
+    left:110%;
+    right: 11px;
+    bottom: 0;
+    z-index: 999;
+    background: #fff;
+    transition:all .3s linear;
+    &.active{
+      left: 11px;
+    }
+    .grey-text{
+      padding: 10px 20px;
+    }
+    .table-content{
+      padding: 10px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@media screen and (max-width:1200px ) {
+    #header .logo{
+        width: 180px;
+    }
+    #header .head-nav li{
+        padding: 0 10px;
+    }
+    #main{
+        padding-left: 180px;
+    }
+    #main .main-nav{
+        width: 180px;
+    }
+
+}

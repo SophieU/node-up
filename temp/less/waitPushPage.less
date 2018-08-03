@@ -1,0 +1,365 @@
+input.error { border: 1px solid red;};
+label.error {
+  padding-left: 10px;
+  padding-bottom: 2px;
+  color: #EA5200;
+  display: block;
+};
+
+.main-info{
+     height: 100%;
+     margin-left: 20rem;
+     padding: 60px 40px 0px;
+     overflow-y:scroll;
+     .info-title{
+         font-size: 14px;
+         color: #858fa1;
+     }
+     .search-box{
+         background-color: #fff;
+         margin: 12px 0 0;
+         text-align: center;
+         width: 100%;
+         padding: 10px;
+         .table{
+             margin: 0;
+             tr{
+                 td{
+                     border-top: 0;
+                     vertical-align: middle;
+                     padding: 8px 0;
+                     input{
+                         height: 30px;
+                         width: 180px;
+                         padding-left: 5px;
+                     }
+                     select{
+                         height: 30px;
+                         width: 180px;
+                     }
+                     .timeBox{
+                         height: 30px;
+                         .form_date_day {
+                             padding: 0;
+                             input{
+                                 height: 30px;
+                             }
+                         }
+                     }
+                 }
+                 td.td1{
+                     width: 100px;
+                 }
+                 td.td2{
+                     width: 180px;
+                     text-align: left;
+                 }
+                 td.td3{
+                     text-align: left;
+                 }
+                  td.td4{
+                     width: 360px;
+                     text-align: left;
+                 }
+             }
+         }
+          .searchBtn{
+             height: 36px;
+             width: 72px;
+             background-color: #55acee;
+             color: #fff;
+             border: 0;
+             border-radius: 3px;
+             margin-left: 20px;
+         }
+     }
+     .treeBox{
+         float: left;
+         width: 18%;
+         height: 700px;
+         background-color: #fff;
+         margin-top: 30px;
+         margin-bottom: 100px;
+         overflow-x:auto;
+         .treename{
+             font-size: 16px;
+             font-weight: 700;
+             text-align: center;
+             margin-top: 10px;
+             margin-bottom: 10px;
+         }
+     }
+     .message-list{
+         float: left;
+         width: 80%;
+         background-color: #fff;
+         margin-top: 30px;
+         margin-bottom: 100px;
+         margin-left: 2%;
+         padding: 10px 10px 30px 10px;
+         .issueAnddelete{
+             height:70px ;
+             line-height: 70px;
+             ul{
+                 li{
+                     float: right;
+                     margin-right: 30px;
+                     .btn{
+                         width: 114px;
+                         height: 33px;
+                         color: #fff;
+                         background-color: #55acee;
+                         border: 0;
+                     }
+                 }
+             }
+         }
+         .table{
+             border: 1px solid #ededed;
+              thead{
+                 tr{
+                     td{
+                         height: 50px;
+                         text-align: center;
+                         vertical-align: middle;
+                         color: #939393;
+                     }
+                 }
+             }
+             tbody{
+                 tr{
+                     td{
+                         height: 40px;
+                         text-align: center;
+                         a{
+                             text-decoration: none;
+                         }
+                         a.client-manage,a.create-bill,a.check-in{
+                             color: #d8d8d8;
+                         }
+                         a.change{
+                             color: #55acee;
+                         }
+                         a.del{
+                             color: #e34e42;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+}
+
+#house-notice-modal{
+     .modal-dialog{
+         margin-top: 15%;
+         .modal-content{
+             .modal-body{
+                 .content-top{
+                     .left{
+                         width: 50%;
+                         .table{
+                             tr{
+                                 td{
+                                     height: 30px;
+                                     line-height: 30px;
+                                     border-top: 0;
+                                     .house,.house-num,.house-area{
+                                         height: 30px;
+                                         width: 60%;
+                                         span{
+                                             margin-left: 10px;
+                                         }
+                                     } 
+                                     .house-area{
+                                         width: 50%;
+                                     }
+                                 }
+                             }
+                         }
+                     }
+                     .right{
+                         width: 50%;
+                         height: 140px;
+                         .right-top{
+                             height: 30px;
+                             line-height: 30px;
+                             margin-top: 5px;
+                             span{
+                                 margin-left: 5px;
+                             }
+                             span.impt{
+                                 margin-right: 20px;
+                             }
+                             input.house-num{
+                                 width: 30px;
+                                 height: 30px;
+                                 text-align: center;
+                             }
+                         }
+                         .right-bot{
+                             margin-top: 65px;
+                             height: 30px;
+                             line-height: 30px;
+                             span{
+                                 margin-left: 5px;
+                             }
+                             span.impt{
+                                 margin-right: 20px;
+                             }
+                             input.house-num{
+                                 width: 120px;
+                                 height: 30px;
+                                 padding-left: 5px;
+                             }
+                         }
+                     }
+                 }
+                 #houseName,#buildNumber,#buildName,#elementNumber{
+                     width: 80%;
+                     height: 30px;
+                 }
+             }
+             
+         }
+         .modal-header{
+             .modal-title{
+                 text-align: center;
+             }
+         }
+         .modal-footer{
+             text-align: center;
+         }
+     }
+
+ }
+ #set-modal{
+     .modal-dialog{
+         margin-top: 15%;
+         .modal-header{
+             .modal-title{
+                 text-align: center;
+             }
+         }
+         .modal-footer{
+             text-align: center;
+         }
+         .modal-body{
+             .table-two{
+                 text-align: center;
+             }
+             .table{
+                 tr{
+                     td{
+                         height: 30px;
+                         line-height: 30px;
+                         input{
+                             height: 30px;
+                         }
+                         border-top:0 ;
+                         a{
+                             text-decoration: none;
+                             color: blue;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+#del-modal{
+    .modal-dialog{
+         margin-top: 15%;
+         .modal-header{
+             .modal-title{
+                 text-align: center;
+             }
+         }
+         .modal-footer{
+             text-align: center;
+         }
+     }
+}
+ #charge-modal{
+     .modal-dialog{
+         margin-top: 15%;
+         .modal-header{
+             .modal-title{
+                 text-align: center;
+             }
+         }
+         .modal-footer{
+             text-align: center;
+         }
+         .modal-body{
+             .table{
+                 tr{
+                     td{
+                         height: 30px;
+                         line-height: 30px;
+                         input{
+                             height: 30px;
+                         }
+                         select{
+                             height: 30px; 
+                             width: 100px;
+                         }
+                         border-top:0 ;
+                         a{
+                             text-decoration: none;
+                             color: blue;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+ 
+ #add-modal,#create-modal{
+      .modal-dialog{
+          margin-top: 15%;
+         .modal-title, .modal-footer{
+         text-align: center;
+         }
+        .table{
+             tr{
+                 td{
+                     border-top:0 ;
+                     height: 30px;
+                     line-height: 30px;
+                     input{
+                         height: 30px;
+                         width: 60%;
+                     }
+                     select{
+                         height: 30px; 
+                         width: 100px;
+                     }
+                     border-top:0 ;
+                     a{
+                         text-decoration: none;
+                         color: blue;
+                     }
+                 }
+             }
+         }
+      }
+ }
+ 
+.importance:after{
+    content: "*";
+    font-size: 18px;
+    color: red;
+    display:inline-block; 
+    vertical-align:middle;
+}
+
+
+.readonlyInput{
+    background-color: #FFF;
+    color: #333;
+    border: 0;
+    text-align: center;
+}
+

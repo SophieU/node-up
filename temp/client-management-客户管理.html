@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>一生约-后台管理界面</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--bootstrap样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/bootstrap.min.css" />
+		<!--重置样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/reset.css" />
+		<!--单独内容样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../css/client-management.css" />
+		<!--左侧导航和顶部导航样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css" />
+		<!--验证插件样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../font-awesome-4.7.0/css/font-awesome.css" />
+		<!--z-tree插件样式↓↓↓-->
+		<link href="../../zTree_v3/css/metroStyle/metroStyle.css" rel="stylesheet" type="text/css" />
+		<!--日期控件-->
+		<link rel="stylesheet" href="../../css/commoncss/bootstrap-datetimepicker.min.css" />
+		
+	</head>
+
+	<body>
+		<!--头部信息开始-->
+		<div id="header">
+			<!--logo↓↓↓↓↓-->
+			<a class="logo" href="###"><img src="../../images/img/logo.png" alt=""></a>
+			<!--用户信息↓↓↓↓↓-->
+			<dl class="userInfo ">
+				<dt class="userBase">
+	                <span class="userName">橙子科技</span>
+	                <i><img class="arrow" src="../../images/ico/arrow-down.png"/></i>
+	            </dt>
+				<dd class="setting">
+					<ul>
+						<li>
+							<a href="###"><i class="setImg"></i><span>设置</span></a>
+						</li>
+						<li>
+							<a href="###"><i class="setImg"></i><span>消息</span></a>
+						</li>
+						<li>
+							<a href="###"><i class="setImg"></i><span>退出</span></a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			<!--导航↓↓↓↓↓-->
+			<div class="userNav">
+				<ul>
+					<li>
+						<a href="###">帮助中心</a>
+					</li>
+					<li>
+						<a href="###">用户反馈</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部信息结束-->
+		<!--内容部分开始-->
+		<div id="main">
+			<!--左边导航开始-->
+			<div class="main-nav">
+				<ul class="items">
+					<li class="item">
+						<a class="item-title" href="index.html">
+							<i class="beforeImg beforeImg0"></i>
+							首页
+						</a>
+					</li>
+					<li class="item">
+						<a class="item-title" href="###">
+							<i class="beforeImg beforeImg1"></i>小区管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="houseNotice.html">小区公告</a></li>
+							<li class="subItem"><a href="commonPhone.html">常用电话</a></li>
+							<li class="subItem"><a href="roundServePage.html" style="border: 0;">周边服务</a></li>
+						</ol>
+					</li>
+					<li class="item open">
+						<a class="item-title" href="###">
+							<i class="beforeImg  beforeImg2"></i>资源管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="building.html">楼宇管理</a></li>
+							<li class="subItem"><a class="active" href="client-management.html">客户管理</a></li>
+							<li class="subItem"><a href="building-management.html" style="border: 0;">房屋管理</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg3"></i>报事报修<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="repairsPage.html" style="border: 0;">报事清单</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg4"></i>收费管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="waitPushPage.html">待推送账单</a></li>
+							<li class="subItem"><a href="waitPaymentPage.html">待收费账单</a></li>
+							<li class="subItem"><a href="chargeClassPage.html">收费科目</a></li>
+							<li class="subItem"><a href="PaymentEcordsPage.html" style="border: 0;">历史缴费</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg5"></i>财务结算<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="financialSettlement.html" style="border: 0;">财务结算</a></li>
+						</ol>
+					</li>
+					
+				</ul>
+			</div>
+			<!--左边导航结束-->
+			<!--右侧内部信息↓↓↓↓↓-->
+			<div class="main-info">
+				<p class="info-title">检索</p>
+				<!--搜索盒子-->
+				<div class="search-box row">
+					<form action="###" method="post" id="searchForm">
+						<table class="table">
+							<tr>
+								<td class="td1"><span>客户姓名</span></td>
+								<td class="td2"><input type="text" id="client-name" name="clientName" placeholder="输入公告标题" /></td>
+								<td class="td1"><span>迁入时间</span></td>
+								<td class="td4">
+									<div class="timeBox">
+						                <div class="input-group date form_date_day col-md-5" data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+						                    <input class="form-control" size="16" type="text" value="" readonly style="width: 130px;">
+						                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+						                </div>
+						           	</div>
+									<span>—</span>
+									<div class="timeBox">
+						                <div class="input-group date form_date_day col-md-5" data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+						                    <input class="form-control" size="16" type="text" value="" readonly style="width: 130px;">
+						                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+						                </div>
+						           	</div>
+								</td>
+								<td class="td3"><button class="searchBtn">搜索</button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<!--搜索盒子结束-->
+				<!--目录树开始-->
+				<div class="treeBox">
+					<p class="treename">力宝大厦</p>
+					<ul id="treeDemo" class="ztree"></ul>
+					<div id="rMenu">
+						<ul>
+							<li id="m_add" onclick="addTreeNode();">增加节点</li>
+							<li id="m_del" onclick="removeTreeNode();">删除节点</li>
+							<li id="m_check" onclick="checkTreeNode(true);">Check节点</li>
+							<li id="m_unCheck" onclick="checkTreeNode(false);">unCheck节点</li>
+							<li id="m_reset" onclick="resetTree();">恢复zTree</li>
+						</ul>
+					</div>
+				</div>
+				<!--目录树结束-->
+				<!--信息列表开始-->
+				<div class="message-list">
+					<div class="issueAnddelete">
+						<ul>
+							<li><button class="btn" data-toggle="modal" data-target="#Alldel-phone-Modal">客户批量导入</button></li>
+							<li><button class="btn" data-toggle="modal" data-target="#house-notice-modal">客户迁入</button></li>
+						</ul>
+					</div>
+					<table class="table" id="msgTabel-list">
+						<form action="###" method="post">
+							<thead>
+								<tr>
+									<td>
+										<a href="javascript:void(0)" class="mycheckbox">
+										</a>
+									</td>
+									<td><span data-toggle="modal" data-target="#view-modal">客户姓名</span></td>
+									<td>是否业主</td>
+									<td>联系电话</td>
+									<td>迁入时间</td>
+									<td>是否绑定APP</td>
+									<td>操作</td>
+								</tr>
+							</thead>
+							<tbody class="msg-tbody">
+								<tr>
+									<td>
+										<a href="javascript:void(0)" class="mycheckbox">
+										</a>
+									</td>
+									<td>阿东</td>
+									<td>是</td>
+									<td>13980000000</td>
+									<td>2019-10-18</td>
+									<td>是</td>
+									<td>
+										<a class="client-manage" href="###">编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0)" class="mycheckbox">
+										</a>
+									</td>
+									<td>阿东</td>
+									<td>是</td>
+									<td>13980000000</td>
+									<td>2019-10-18</td>
+									<td>否</td>
+									<td>
+										<a class="client-manage" href="###">编辑</a>
+										&nbsp;
+										<a class="del" href="###">删除</a>
+									</td>
+								</tr>
+							</tbody>
+						</form>
+					</table>
+					<!--分页开始-->
+					<div id="SeparatePage" class="clearfix">
+						<ul>
+							<li class="fist"><a href="###">上一页</a></li>
+							<li class="active"><a href="###">1</a></li>
+							<li><a href="###">2</a></li>
+							<li><a href="###">3</a></li>
+							<li><a href="###">4</a></li>
+							<li><a href="###">5</a></li>
+							<li class="next"><a href="###">下一页</a></li>
+							<li class="li-text"><span>跳转到</span></li>
+							<li class="li-number"><input type="text" maxlength="3"/></li>
+							<li class="skip"><a href="###">跳转</a></li>
+						</ul>
+						<br />
+						<ul>
+							<li class="li-text"><span>每页</span></li>
+							<li class="showSelect">
+								<select name="showMsg">
+									<option value="0">10条</option>
+									<option value="1">20条</option>
+									<option value="2">30条</option>
+									<option value="3">40条</option>
+								</select>
+							</li>
+							<li class="amount"><span>共501页</span></li>
+						</ul>
+					</div>
+					<!--分页结束-->
+				</div>
+
+				<!--信息列表结束-->
+			</div>
+			<!--内容部分结束-->
+			<!--客户迁入模态框开始-->
+			<div class="modal fade bs-example-modal-lg" id="house-notice-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<form action="###" method="post" id="publishFrom">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title">
+									客户迁入
+								</h4>
+							</div>
+							<div class="modal-body">
+								<div class="content-top">
+									<table class="table">
+										<tr>
+											<td><span>小区</span></td>
+											<td><input name="houseName" type="text" value="力宝大厦" readonly="readonly" style="background-color:#ebebeb;" /></td>
+											<td><span>房屋:</span></td>
+											<td><input type="text" name="buildNumber" readonly="readonly" style="background-color:#ebebeb;" /></td>
+										</tr>
+										<tr>
+											<td><span class="importance">客户姓名</span></td>
+											<td><input name="clientNameTrue" type="text" value="阿东" /><a href="###" class="mycheckbox"></a>是否业主</td>
+											<td><span>性别</span></td>
+											<td>
+												<select name="sex" class="sex">
+													<option value="0">男</option>
+													<option value="1">女</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td><span class="importance">联系电话</span></td>
+											<td><input name="mobile" type="text" value="13708000000" /></td>
+											<td><span class="importance">迁入日期:</span></td>
+											<td>
+									           	<input class="form-control form_date_day dateInput" size="16" type="text" value="" readonly  data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd"/>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<p>备注</p>
+								<textarea name="mark" rows="10" cols="121" style="resize:none;" maxlength="250"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary publishFrom" >
+									发布
+								</button>
+								<button type="button" class="btn btn-default closeBtn" data-dismiss="modal">关闭</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</form>
+				</div>
+				<!-- /.modal -->
+			</div>
+			<!-- /.modal -->
+			<!--客户迁入模态框结束-->
+			<!--批量导入模态框开始-->
+			<div class="modal fade bs-example-modal-sm" id="Alldel-phone-Modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">是否全部删除全部信息</h4>
+						</div>
+						<div class="modal-body">
+							<table class="table">
+								<tr>
+									<td>小区</td>
+									<td><input type="text" value="力宝大厦" readonly="readonly" class="readonlyTD" /></td>
+								</tr>
+								<tr>
+									<td>客户</td>
+									<td>
+										<a href="###">上传附件</a>
+									</td>
+								</tr>
+								<tr>
+									<td>下载模板</td>
+									<td>
+										<a href="###">客户批量导入模板.xls</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+							<button type="button" class="btn btn-default">取消</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--批量导入模态框结束-->
+			<!--单删模态框开始-->
+			<div class="modal fade bs-example-modal-sm" id="del-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">是否确认删除本条信息</h4>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">狠心删除</button>
+							<button type="button" class="btn btn-default">再考虑一下</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--单删模态框结束-->
+			<!--编辑模态框开始-->
+			<div class="modal fade" id="set-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<form action="###" method="post" id="editFrom">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title">
+									客户信息管理
+								</h4>
+							</div>
+							<div class="modal-body">
+								<table class="table">
+									<tr>
+										<td><span>客户姓名</span></td>
+										<td><input name="clientName" type="text"></td>
+										<td><span>联系电话</span></td>
+										<td><input name="mobile" type="text"></td>
+									</tr>
+									<tr>
+										<td><span>迁入时间</span></td>
+										<td><input name="checkDay" type="text" class="checkDay"></td>
+										<td><span>绑定状态</span></td>
+										<td>
+											<select name="clientState">
+												<option value="0">已绑定</option>
+												<option value="1">未绑定</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><span>是否业主</span></td>
+										<td>
+											<select name="clientState">
+												<option value="0">是</option>
+												<option value="1">不是</option>
+											</select>
+										</td>
+									</tr>
+								</table>
+								<p>备注</p>
+								<textarea name="mark " rows="10 " cols="76 " style="resize:none; "></textarea>
+							</div>
+							<div class="modal-footer ">
+								<button type="submit " class="btn btn-primary ">
+									发布
+								</button>
+								<button type="button " class="btn btn-default " data-dismiss="modal ">关闭</button>
+							</div>
+						</div> <!--modal-content-->
+					</form>
+				</div> <!--modal -->
+			</div><!--编辑模态框结束-->
+			<!--编辑模态框结束-->
+			<!--新模态框-->
+			<div class="modal fade bs-example-modal-lg" id="view-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			    	 <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</body>
+	<!--引入jquery-->
+	<script src="../../js/lib/jquery-2.1.0.js "></script>
+	<!--引入bootstrap.js-->
+	<script src="../../js/lib/bootstrap.min.js " charset="utf-8 "></script>
+	<!--引入building页面的js来复用-->
+	<script src="../../js/building.js " type="text/javascript " charset="utf-8 "></script>
+	
+	<!--引入ztree-->
+	<script src="../../zTree_v3/js/jquery.ztree.core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../zTree_v3/js/jquery.ztree.excheck.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../zTree_v3/js/jquery.ztree.exedit.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/my-ztree.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	<!--引入开关插件-->
+	<script src="../../js/lib/bootstrap-switch.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--引入验证插件-->
+	<script src="../../js/lib/jquery.validate.min.js " type="text/javascript " charset="UTF-8"></script>
+	<!--<script src="../js/lib/login-verify.js" type="text/javascript " charset="utf-8 "></script>-->
+	<script src="../../js/lib/customValidate.js " type="text/javascript " charset="utf-8 "></script>
+	<script src="../../js/test.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--日期控件-->
+	<script src="../../js/lib/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--i18n.js-->
+	<script src="../../js/lib/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/date.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="../../js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript " charset="utf-8 ">
+		
+		//创建一个提醒框
+		commonPrompt("aaaaa")
+		
+	
+		$(".publishFrom").on('click',function(){
+			
+			if (wy.validateForm('#publishFrom')) {
+				alert("验证成功")
+				$("#house-notice-modal").modal("hide")
+			} else{
+				alert("验证失败")
+			}
+			
+		})
+		
+	
+	</script>
+</html>

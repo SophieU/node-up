@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小区公告</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="../../css/base/base.css" />
+		<link rel="stylesheet" href="../../css/index.css">
+	</head>
+
+	<body>
+	<!--顶部菜单-->
+	<script src="../menu-top.js"></script>
+	<!--顶部菜单-->
+		<!--内容部分开始-->
+		<div id="main">
+			<!--左边导航开始-->
+			<div class="main-nav">
+				<script src="../menu-left.js"></script>
+			</div>
+			<!--左边导航结束-->
+			<!--右侧内部信息↓↓↓↓↓-->
+			<div class="main-info">
+				<!--搜索盒子-->
+				<div class="filter-box row">
+					<form action="###" method="post" class="layui-form" id="searchForm">
+						<table class="table">
+							<tr>
+								<td class="td1"><span class="layui-form-label">公告标题</span></td>
+								<td class="td2">
+									<div class="layui-input-inline">
+										<input type="text" class="layui-input" id="notice-title" name="publishTitle" placeholder="输入公告标题" />
+									</div>
+								</td>
+								<td class="td1"><span class="layui-form-label">公告类型</span></td>
+								<td class="td2">
+									<div class="layui-input-inline">
+										<select name="publishType">
+											<option value="">-请选择-</option>
+											<option value="0">-123-</option>
+											<option value="1">-456-</option>
+											<option value="2">-789-</option>
+										</select>
+									</div>
+								</td>
+								<td class="td1"><span class="layui-form-label">发布时间</span></td>
+								<td class="td4">
+									<div class="layui-input-inline">
+										<input type="text" class="layui-input dateTimeInput" id="publishTime">
+									</div>
+								</td>
+								<td class="td3">
+									<div class="layui-input-inline">
+										<button type="submit" class="layui-btn layui-btn-normal" style="margin-left:15px;">搜索</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<!--搜索盒子结束-->
+				<!--信息列表开始-->
+
+				<div class="message-list">
+					<div class="clearfix">
+						<div class="pull-right">
+							<button class="layui-btn layui-btn-normal" data-toggle="modal" data-target="#house-notice-modal">发布</button>
+							<button class="layui-btn layui-btn-danger delAll" >删除</button>
+						</div>
+					</div>
+					<table class="layui-table layui-form" id="msgTabel-list">
+						<thead>
+							<tr>
+								<th width="30">
+									<input type="checkbox" lay-skin="primary">
+								</th>
+								<th>公告标题</th>
+								<th>公告范围</th>
+								<th>发布时间</th>
+								<th>状态</th>
+								<th width="80">操作</th>
+							</tr>
+						</thead>
+						<tbody class="msg-tbody">
+							<tr>
+								<td><input type="checkbox" lay-skin="primary"></td>
+								<td>公告标题</td>
+								<td>全小区</td>
+								<td>3/16&nbsp;15:00</td>
+								<td>3/16&nbsp;15:00</td>
+								<td>
+									<button class="btn-text btn-text-primary" >编辑</button>
+									<button class="btn-text btn-text-danger dealOne" >删除</button>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" lay-skin="primary"></td>
+								<td>公告标题</td>
+								<td>全小区</td>
+								<td>3/16&nbsp;15:00</td>
+								<td>3/16&nbsp;15:00</td>
+								<td>
+									<button class="btn-text btn-text-primary">编辑</button>
+									<button  class="btn-text btn-text-danger dealOne">删除</button>
+								</td>
+							</tr>
+
+							</tbody>
+					</table>
+					<!--分页开始-->
+					<div class="pagination-wrapper clearfix">
+						<div id="pagination"></div>
+					</div>
+					<!--分页结束-->
+				</div>
+			
+				<!--信息列表结束-->
+			</div>
+			<!--内容部分结束-->
+			<!--发布模态框开始-->
+			<div class="modal fade hide" id="house-notice-modal" >
+				<div class="modal-dialog modal-lg">
+					<form method="post" action="##" class="layui-form" id="publishFrom">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">
+									发布公告信息
+								</h4>
+							</div>
+							<div class="modal-body">
+								<div class="layui-form-item">
+									<label class="layui-form-label">设置：</label>
+									<div class="layui-input-block">
+										<input type="checkbox" name="setting" lay-skin="primary" title="置顶此公告" checked="">
+										<input type="checkbox" name="setting[read]" lay-skin="primary" title="推送消息给安装此APP的客户">
+									</div>
+									<div class="layui-form-mid layui-word-aux">(非小区紧急公告请慎重使用此功能，以免骚扰小区客户)</div>
+
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">公告内容：</label>
+									<div class="layui-input-block">
+										<textarea class="layui-textarea" name="markTrue" rows="10" cols="120" ></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="layui-btn layui-btn-normal">发布</button>
+								<button type="button" class="layui-btn layui-btn-primary" data-dismiss="modal">关闭</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</form>
+				</div>
+			</div><!-- /.modal -->
+			<!--发布模态框结束-->
+		</div>
+	</body>
+	<script src="../../libs/jquery/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../libs/layui/layui.all.js"></script>
+	<script src="../../js/global.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+        layui.use(['laypage','layer'],function(){
+            var laypage = layui.laypage;
+            laypage.render({
+                elem:"pagination",
+                count:50,
+                theme: '#1E9FFF',
+                layout:['count','prev','page','next','skip','limit'],
+                jump:function(obj){
+                    // console.log(obj)
+                }
+            })
+        });
+        var layer = layui.layer;
+        $('.delAll').on('click',function(){
+            layer.confirm('是否确认删除信息',{
+                icon:3,title:"提醒",
+				btn:['狠心删除','再考虑一下'],
+			},function(index){
+                console.log('狠心删除回调')
+                layer.close(index)
+			},function(index){
+                layer.close(index)
+                console.log('再考虑一下回调')
+			})
+		});
+        $('.dealOne').on('click',function(){
+            layer.confirm('是否确认删除信息',{
+                icon:3,title:"提醒",
+                btn:['狠心删除','再考虑一下'],
+            },function(index){
+                console.log('狠心删除回调')
+                layer.close(index)
+            },function(index){
+                layer.close(index)
+                console.log('再考虑一下回调')
+            })
+		})
+	</script>
+</html>

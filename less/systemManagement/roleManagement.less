@@ -1,0 +1,119 @@
+
+
+.main-info{
+    height: 100%;
+    margin-left: 20rem;
+    overflow-y:auto;
+    padding-bottom: 100px;
+    .info-title{
+        height: 55px;
+        background-color: #fff;
+        padding: 0px 40px;
+        ul{
+            li{
+                float: left;
+                line-height: 55px;
+                margin-right: 10px;
+                font-size: 14px;
+                color: #8199AB;
+            }
+        }
+        p{
+            float: right;
+            font-size: 15px;
+            color: #00BAFA;
+            cursor: pointer;
+            line-height: 55px;
+        }
+    }
+    .message-list{
+        width: 98%;
+        margin: 20px 1% 0px; 
+        background-color: #fff;
+        padding: 0;
+        .tables{
+            width: 100%;
+            background-color: #fff;
+            float: left;
+            .title{
+                height: 40px;
+                background-color: #FAFCFD;
+                p{
+                    line-height: 40px;
+                    margin-left: 20px;
+                    font-size: 15px;
+                    color: #4A4A4A;
+                }
+            }
+            .btnBox{
+                height: 60px;
+                width: 100%;
+                button{
+                    float: right;
+                    height: 35px;
+                    width: 10%;
+                    font-size: 14px;
+                    margin-top: 12.5px;
+                    margin-right: 10px;
+                    border: none;
+                    color: #fff;
+                    opacity: 10;
+                    font-weight: normal;
+                    background-color: #008EFA;
+                }
+                button.add{
+                    background-color: #008EFA;
+                }
+                button.close{
+                    
+                    background-color: #EC971F;
+                }
+            }
+            .table{
+                width: 98%;
+                margin-left: 1%;
+                border: 1px solid #ededed;
+                thead{
+                    tr{
+                        td{
+                            height: 50px;
+                            text-align: center;
+                            vertical-align: middle;
+                            color: #939393;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            height: 40px;
+                            text-align: center;
+                            a{
+                                text-decoration: none;
+                            }
+                            a.client-manage,a.create-bill,a.check-in{
+                                color: #55acee;
+                            }
+                            a.del{
+                                color: #e34e42;
+                            }
+                        }
+                    }
+                }
+            }
+            .goBack{
+                background-color: #008EFA;
+                color: #fff;
+                margin-left: 90%;
+            }
+        }
+    }
+    
+}
+
+.must:after{
+    content: "*";
+    color: red;
+    margin-left: 5px;
+ }
+

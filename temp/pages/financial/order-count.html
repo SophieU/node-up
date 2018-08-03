@@ -1,0 +1,243 @@
+<!--统计查看-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>一生约-后台管理界面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css" />
+    <link rel="stylesheet" href="../../zTree_v3/css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="../../css/commoncss/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="../../js/lib/layui/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../../css/moneyManage/moneyMange.css" />
+</head>
+
+<body>
+<!--头部信息开始-->
+<div id="header">
+    <img class="logo" src="../../images/img/logo03.png"/>
+    <ul class="head-nav">
+        <li>统计查看</li>
+        <li><a href="../staffManagement/personManagement.html">小区管理</a></li>
+        <li><a href="../staffManagement/personManagement.html">物业app管理</a></li>
+        <li><a href="../staffManagement/personManagement.html">员工管理</a></li>
+        <li><a href="../resourceManagement/proprietor.html">资源管理</a></li>
+        <li><a href="../report/oneLv.html">报事报修</a></li>
+        <li ><a href="../moneyManage/pay-setting.html"></a></li>
+        <li class="active"><a href="../financial/fianan-account.html">财务结算</a></li>
+        <li>系统管理</li>
+    </ul>
+    <div class="user">
+        <img src="../../images/ico/icon-down.png"/>
+        <p>Hello，Tom</p>
+    </div>
+</div>
+<!--头部信息结束-->
+<!--内容部分开始-->
+<div id="main">
+    <!-- 左侧导航开始 -->
+    <div class="main-nav">
+        <ul>
+            <li>
+                <div class="flag"></div>
+                <a href="./fianan-account.html">财务对账 </a>
+            </li>
+            <li  >
+                <div class="flag"></div>
+                <a href="./table-search.html">报表查询</a>
+            </li>
+            <li class="active" >
+                <div class="flag"></div>
+                <a href="./order-count.html">票据统计</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="main-info">
+        <!-- 目录导航开始 -->
+        <div class="info-title">
+            <ul>
+                <li>财务管理</li>
+                <li>></li>
+                <li>票据统计</li>
+            </ul>
+            <p>帮助</p>
+        </div>
+        <!-- 目录导航结束-->
+        <!-- 主要内容开始 -->
+        <div class="filter-box">
+            <form action="" class="form-inline filter-form">
+                <div class="form-group">
+                    <label  class="control-label">选择小区：</label>
+                    <select class="form-control" >
+                        <option value="">力宝大厦</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label  class="control-label">资源名称：</label>
+                    <input type="text" class="form-control w100">
+                    <button type="button" data-toggle="modal" data-target="#treeModal" class="btn btn-link">选择资源</button>
+                </div>
+                <div class="form-group">
+                    <label  class="control-label">状态：</label>
+                    <select class="form-control" >
+                        <option value="">已缴费</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label  class="control-label">计费科目：</label>
+                    <select class="form-control">
+                        <option value="电梯住宅物管费">电梯住宅物管费</option>
+                        <option value="生活垃圾处理费（住宅用房周期性）">生活垃圾处理费（住宅用房周期性）</option>
+                        <option value="临停车费">临停车费</option>
+                        <option value="门禁卡服务费">门禁卡服务费</option>
+                        <option value="装修管理费（住宅）">装修管理费（住宅）</option>
+                        <option value="维修服务费">维修服务费</option>
+                        <option value="其他服务费">其他服务费</option>
+                        <option value="装修垃圾清运费（住宅）">装修垃圾清运费（住宅）</option>
+                        <option value="装修许可证押金">装修许可证押金</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label  class="control-label">收费员：</label>
+                    <input type="text" class="form-control  w100">
+                </div>
+                <div class="form-group">
+                    <label  class="control-label">支付方式：</label>
+                    <select class="form-control">
+                        <option value="全部">全部</option>
+                        <option value="支付宝">支付宝</option>
+                        <option value="微信">微信</option>
+                        <option value="pos机">pos机</option>
+                        <option value="现金">现金</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label  class="control-label">计费时间：</label>
+                    <div class="input-group">
+                        <input type="text" readonly class="form-control  w100 form-date-date">
+                    </div>
+                    <span>至</span>
+                    <div class="input-group">
+                        <input type="text" readonly class="form-control w100 form-date-date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="control-label">票据号码：</label>
+                    <input type="text" class="form-control  ">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success">搜索</button>
+                    <button type="reset" class="btn btn-default" >重置</button>
+                </div>
+            </form>
+        </div>
+        <!-- 主要内容开始 -->
+
+        <div class="statis message-list ">
+            <div class="table-content">
+                <div class="table-header clearfix">
+                    <div class="btn-groups pull-right">
+                        <button class="btn btn-default" > 导出</button>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead class="bg-head">
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>小区名称</th>
+                            <th>资源名称</th>
+                            <th>计费科目</th>
+                            <th>业主手机号</th>
+                            <th>业主姓名</th>
+                            <th>应收金额</th>
+                            <th>状态</th>
+                            <th>收费员</th>
+                            <th>计费周期</th>
+                            <th>开票状态</th>
+                            <th>票据号码</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>力宝大厦</td>
+                            <td>1栋1单元101</td>
+                            <td>电梯住宅物业费</td>
+                            <td>13712347124</td>
+                            <td>李小小</td>
+                            <td>202.12</td>
+                            <td>已缴费</td>
+                            <td>李小</td>
+                            <td>2018-03 至 2018-04</td>
+                            <td>未开票</td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <!--分页开始-->
+                <div id="SeparatePage" class="clearfix">
+                    <ul>
+                        <li class="fist"><a href="###">上一页</a></li>
+                        <li class="active"><a href="###">1</a></li>
+                        <li><a href="###">2</a></li>
+                        <li><a href="###">3</a></li>
+                        <li><a href="###">4</a></li>
+                        <li><a href="###">5</a></li>
+                        <li class="next"><a href="###">下一页</a></li>
+                        <li class="li-text"><span>跳转到</span></li>
+                        <li class="li-number"><input type="text" maxlength="3"/></li>
+                        <li class="skip"><a href="###">跳转</a></li>
+                    </ul>
+                    <br />
+                    <ul>
+                        <li class="li-text"><span>每页</span></li>
+                        <li class="showSelect">
+                            <select name="showMsg">
+                                <option value="0">10条</option>
+                                <option value="1">20条</option>
+                                <option value="2">30条</option>
+                                <option value="3">40条</option>
+                            </select>
+                        </li>
+                        <li class="amount"><span>共501页</span></li>
+                    </ul>
+                </div>
+                <!--分布结束-->
+            </div>
+
+        </div>
+
+
+        <!-- 主要内容结束 -->
+    </div>
+</div>
+<!--内容部分结束-->
+</body>
+<!-- jq -->
+<script src="../../js/lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/lib/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/lib/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../zTree_v3/js/jquery.ztree.all.min.js"></script>
+<script src="../../js/lib/layui/layui/layui.all.js"></script>
+<script src="../../js/lib/date.js" type="text/javascript" charset="utf-8"></script>
+<!-- 操作 -->
+
+
+</html>

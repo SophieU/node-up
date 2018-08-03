@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>一生约-后台管理界面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--bootstrap样式↓↓↓-->
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/bootstrap.min.css" />
+    <!--重置样式↓↓↓-->
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/reset.css" />
+    <!--单独内容样式↓↓↓-->
+    <link rel="stylesheet" type="text/css" href="../../css/PaymentEcordsPage.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/stuff-manage.css" />
+    <!--左侧导航和顶部导航样式↓↓↓-->
+    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css" />
+    <!--验证插件样式↓↓↓-->
+    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.7.0/css/font-awesome.css" />
+    <!--z-tree插件样式↓↓↓-->
+    <link href="../../zTree_v3/css/metroStyle/metroStyle.css" rel="stylesheet" type="text/css" />
+    <!--日期控件-->
+    <link rel="stylesheet" href="../../css/commoncss/bootstrap-datetimepicker.min.css" />
+</head>
+
+<body>
+<!--头部信息开始-->
+<div id="header">
+    <!--logo↓↓↓↓↓-->
+    <a class="logo" href="###"><img src="../../images/img/logo.png" alt=""></a>
+    <!--用户信息↓↓↓↓↓-->
+    <dl class="userInfo ">
+        <dt class="userBase">
+            <span class="userName">橙子科技</span>
+            <i><img class="arrow" src="../../images/ico/arrow-down.png"/></i>
+        </dt>
+        <dd class="setting">
+            <ul>
+                <li>
+                    <a href="###"><i class="setImg"></i><span>设置</span></a>
+                </li>
+                <li>
+                    <a href="###"><i class="setImg"></i><span>消息</span></a>
+                </li>
+                <li>
+                    <a href="###"><i class="setImg"></i><span>退出</span></a>
+                </li>
+            </ul>
+        </dd>
+    </dl>
+    <!--导航↓↓↓↓↓-->
+    <div class="userNav">
+        <ul>
+            <li><a href="###">帮助中心</a></li>
+            <li><a href="###">用户反馈</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部信息结束-->
+<!--内容部分开始-->
+<div id="main">
+    <!--左边导航开始-->
+    <div class="main-nav">
+        <ul class="items">
+            <li class="item">
+                <a class="item-title" href="../index/index.html">
+                    <i class="beforeImg beforeImg0"></i>
+                    首页
+                </a>
+            </li>
+            <li class="item">
+                <a class="item-title" href="###">
+                    <i class="beforeImg beforeImg1"></i>小区管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+                </a>
+                <ol class="subItems">
+                    <li class="subItem"><a href="../index/houseNotice.html">小区公告</a></li>
+                    <li class="subItem"><a href="../index/commonPhone.html">常用电话</a></li>
+                    <li class="subItem"><a href="../index/roundServePage.html" style="border: 0;">周边服务</a></li>
+                </ol>
+            </li>
+            <!--人员管理，物业1.2-->
+            <li class="item open">
+                <a class="item-title " href="###">
+                    <i class="beforeImg beforeImg1"></i>员工管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+                </a>
+                <ol class="subItems">
+                    <li class="subItem"><a href="../index/person-manage.html">人员管理</a></li>
+                    <li class="subItem"><a href="attend-manage.html">考勤管理</a></li>
+                    <li class="subItem"><a  class="active"  href="../index/check-manage.html">审批管理</a></li>
+                    <li class="subItem"><a  href="../index/im-manage.html">群聊管理</a></li>
+                </ol>
+            </li>
+            <!--人员管理，物业1.2-->
+            <li class="item">
+                <a class="item-title" href="###">
+                    <i class="beforeImg  beforeImg2"></i>资源管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+                </a>
+                <ol class="subItems">
+                    <li class="subItem"><a href="../index/building.html">楼宇管理</a></li>
+                    <li class="subItem"><a href="../index/client-management.html">客户管理</a></li>
+                    <li class="subItem"><a href="../index/building-management.html" style="border: 0;">房屋管理</a></li>
+                </ol>
+            </li>
+            <!--人员管理，物业1.2-->
+            <li class="item">
+                <a  class="item-title" href="###">
+                    <i class="beforeImg beforeImg3"></i>报事报修<img class="arrow" src="../../images/ico/arrow-down.png"/>
+                </a>
+                <ol class="subItems">
+                    <li class="subItem"><a href="../index/repairsPage.html" style="border: 0;">报事清单</a></li>
+                </ol>
+            </li>
+            <li class="item ">
+                <a  class="item-title" href="###">
+                    <i class="beforeImg beforeImg4"></i>收费管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+                </a>
+                <ol class="subItems">
+                    <li class="subItem"><a href="../index/waitPushPage.html">待推送账单</a></li>
+                    <li class="subItem"><a href="../index/waitPaymentPage.html">待收费账单</a></li>
+                    <li class="subItem"><a href="../index/chargeClassPage.html">收费科目</a></li>
+                    <li class="subItem"><a href="../index/PaymentEcordsPage.html" style="border: 0;">历史缴费</a></li>
+                </ol>
+            </li>
+            <li class="item">
+                <a  class="item-title" href="###">
+                    <i class="beforeImg beforeImg5"></i>财务结算<img class="arrow" src="../../images/ico/arrow-down.png"/>
+                </a>
+                <ol class="subItems">
+                    <li class="subItem"><a href="../index/financialSettlement.html" style="border: 0;">财务结算</a></li>
+                </ol>
+            </li>
+
+        </ul>
+    </div>
+    <!--左边导航结束-->
+    <!--右侧内部信息↓↓↓↓↓-->
+    <div class="main-info add-check">
+        <div class="page-nav">
+            <a href="../index/check-manage.html" class="btn btn-link">审批管理></a>
+            <span >编辑审批流程</span>
+        </div>
+        <div class="check-panel">
+            <form class="form-horizontal check-form" action="">
+
+                <div class="form-group">
+                    <label class="control-label col-sm-3">审批流程 <i class="must">*</i></label>
+                    <div class="col-sm-12">
+                        <label  class="text-grey control-label col-sm-3">默认审批人</label>
+                        <div class="col-sm-9" >
+                            <div class="flow-box clearfix" data-origin="default">
+                                <div class="flowTag">
+                                    <span>直接主管</span>
+                                    <span class="close"></span>
+                                </div>
+                                <div class="flowTag ">
+                                    <span>直接主管</span>
+                                    <span class="close"></span>
+                                </div>
+                                <div class="flowTag ">
+                                    <span>直接主管</span>
+                                    <span class="close"></span>
+                                </div>
+                                <div class="flowAdd">
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ckPerson">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3">分条件审批  </label>
+                    <div class="col-sm-9">
+                        <button class="btn btn-default" type="button" data-target="#ruleModal" data-toggle="modal">添加</button>
+                    </div>
+                </div>
+                <ul class="rule-block">
+                    <li class="rule-item">
+                        <span class="col-sm-3 ruIndex">优先级1</span>
+                        <div class="col-sm-9 rule-contentpanel">
+                            <div class="panel panel-default">
+                                <div class="panel-heading clearfix">
+                                    <h5 class="pull-left title">如果请假类型属于：年假 天数 大于 2</h5>
+                                    <div class="pull-right">
+                                        <a href="##" class="btn btn-link">编辑</a>
+                                        <a href="##" class="btn btn-link">删除</a>
+                                        <a class="btn btn-link moveBtn" title="拖动调整优先级"><i class="fa fa-arrows"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="control-label text-grey col-sm-2">审批人</label>
+                                        <div class="col-sm-10">
+                                            <div class="flow-box clearfix" data-origin="rule">
+                                                <div class="flowTag">
+                                                    <span>直接主管</span>
+                                                    <span class="close"></span>
+                                                </div>
+                                                <div class="flowTag ">
+                                                    <span>直接主管</span>
+                                                    <span class="close"></span>
+                                                </div>
+                                                <div class="flowTag ">
+                                                    <span>直接主管</span>
+                                                    <span class="close"></span>
+                                                </div>
+                                                <div class="flowAdd">
+                                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ckPerson">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rule-item">
+                        <span class="col-sm-3 ruIndex">优先级2</span>
+                        <div class="col-sm-9 rule-contentpanel">
+                            <div class="panel panel-default">
+                                <div class="panel-heading clearfix">
+                                    <h5 class="pull-left title">如果请假类型属于：年假 天数 大于 2</h5>
+                                    <div class="pull-right">
+                                        <a href="##" class="btn btn-link">编辑</a>
+                                        <a href="##" class="btn btn-link">删除</a>
+                                        <a class="btn btn-link moveBtn" title="拖动调整优先级"><i class="fa fa-arrows"></i></a>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="control-label text-grey col-sm-2">审批人</label>
+                                        <div class="col-sm-10">
+                                            <div class="flow-box clearfix" data-origin="rule">
+                                                <div class="flowTag">
+                                                    <span>直接主管</span>
+                                                    <span class="close"></span>
+                                                </div>
+                                                <div class="flowTag ">
+                                                    <span>直接主管</span>
+                                                    <span class="close"></span>
+                                                </div>
+                                                <div class="flowTag ">
+                                                    <span>直接主管</span>
+                                                    <span class="close"></span>
+                                                </div>
+                                                <div class="flowAdd">
+                                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ckPerson">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="form-group">
+                    <label class="control-label col-sm-3">更多设置  </label>
+                    <div class="col-sm-12">
+                        <label class="control-label col-sm-3 text-grey">审批人去重</label>
+                        <div class="col-sm-6 ">
+                            <select class="form-control">
+                                <option value="">不启用</option>
+                                <option value="">同一审批人仅在连续出现时，自动去重</option>
+                                <option value="">同一审批人多次出现时，自动去重</option>
+                                <option value="">同一审批人多次出现时，仅保留第一个</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group btn-groups">
+                    <button class="btn btn-default">取消</button>
+                    <button class="btn btn-info">保存</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<!--内容部分结束-->
+<!--人员选择弹层-->
+<div class="modal fade" id="ckPerson">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">添加审批人员</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="" class="control-label col-sm-3">审批人类型</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline pType">
+                                    <input type="radio" value="controller" checked name="role"> 主管指定一级
+                                </label>
+                                <label class="radio-inline pType">
+                                    <input type="radio" value="member" name="role" > 指定成员
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group chIndex">
+                            <label for="" class="control-label col-sm-3">指定某一级主管：</label>
+                            <div class="col-sm-9">
+                                <span class="col-sm-2 control-label">发起人的</span>
+                                <div class="input-group col-sm-6">
+                                    <select class="form-control ">
+                                        <option value="">直接主管</option>
+                                        <option value="">第二级主管</option>
+                                        <option value="">第三级主管</option>
+                                        <option value="">第四级主管</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group pTree">
+                            <label for="" class="control-label col-sm-3">指定成员：</label>
+                            <div class="col-sm-9">
+                                <ul id="stuTree" class="ztree"></ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary addPerson">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--条件弹窗-->
+<div class="modal fade" id="ruleModal">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">设置条件</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form">
+                    <form class="form-horizontal" action="">
+                        <h5>当审批人满足以下条件时：</h5>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3 text-grey">发起人  </label>
+                            <div class="col-sm-6">
+                                <a href="##" class="btn btn-link">修改</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3 text-grey">请假类型</label>
+                            <div class="col-sm-9">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"> 年假
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"> 事假
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"> 病假
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"> 调休
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"> 婚假
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"> 产假
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"> 丧假
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3 text-grey">时长（天）  </label>
+                            <div class="col-sm-4">
+                                <select id="" class="form-control">
+                                    <option value="##">小于</option>
+                                    <option value="##">大于</option>
+                                    <option value="##">小于等于</option>
+                                    <option value="##">大于等于</option>
+                                    <option value="##">等于</option>
+                                    <option value="##">介于两者之间</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="number"  class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">对应审批人</label>
+                            <div class="col-sm-9">
+                                <button class="btn btn-info" type="button" data-toggle="modal" data-target="#ckPerson">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="button-groups">
+                    <button class="btn btn-danger">取消</button>
+                    <button class="btn btn-info">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--引入jquery-->
+<script src="../../js/lib/jquery-2.1.0.js"></script>
+<!--引入bootstrap.js-->
+<script src="../../js/lib/bootstrap.min.js" charset="utf-8"></script>
+<!--引入building页面的js来复用-->
+<script src="../../js/building.js" type="text/javascript" charset="utf-8"></script>
+
+<!--引入ztree-->
+<script src="../../zTree_v3/js/jquery.ztree.core.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../zTree_v3/js/jquery.ztree.excheck.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../zTree_v3/js/jquery.ztree.exedit.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/lib/my-ztree.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="../../js/lib/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/lib/from-verify.js " type="text/javascript " charset="utf-8 "></script>
+
+<!--日期控件-->
+<!--<script src="../js/lib/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>-->
+<!--i18n.js-->
+<!--<script src="../js/lib/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="../../js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+
+<!--新js引入-->
+<script src="../../js/DragSort.js"></script>
+<script type="text/javascript " charset="utf-8 ">
+    $('#ckPerson ').on('click','.pType input',function(e){
+        var val = $(this).val()
+        switch (val){
+            case 'controller':
+                $('.chIndex').show();
+                $('.pTree').hide();
+                break;
+            case 'member':
+                $('.chIndex').hide();
+                $('.pTree').show();
+
+        }
+    })
+    $('#ckPerson').on('show.bs.modal',function(e){
+        var target = e.relatedTarget,
+            index = $(target).closest('.rule-item').index();
+            ta = $(target).closest('.flow-box').data('origin');
+         if(ta=='default'){
+             $('#ckPerson').data('ta',ta);
+         }else if(ta=='rule'){
+             $('#ckPerson').data('ta',index);
+         }
+
+    })
+//    选择审批人确认
+    $('.addPerson').on('click',function(){
+        $('#ckPerson').modal('hide');
+        var html = '<div class="flowTag">\
+                    <span>直接主管</span>\
+                    <span class="close"></span>\
+                    </div>';
+        var ta = $('#ckPerson').data('ta');
+        if(ta=='default'){
+            $('.flow-box').each(function(index,item){
+                if($(item).data('origin')==ta){
+                    $(item).find('.flowAdd').before(html)
+                }
+            })
+        }else{
+            $('.rule-block').find('.rule-item').eq(ta).find('.flow-box .flowAdd').before(html)
+        }
+
+    });
+//    拖拽
+    $('.rule-block').dragsort({
+        dragSelector:'.moveBtn',
+        dragBetween:true,
+        placeHolderTemplate: "<li class='placeHolder'></li>",
+        dragEnd:function(){
+            checkIndex()
+        }
+    })
+    function checkIndex(){
+        $('.rule-block').find('.rule-item').each(function(index,item){
+            $(item).find('.ruIndex').text('优先级'+(index+1))
+        })
+    }
+//    删除审批人
+    $('.flow-box').on('click','.flowTag .close',function(){
+        $(this).closest('.flowTag').remove()
+    })
+</script>
+</html>

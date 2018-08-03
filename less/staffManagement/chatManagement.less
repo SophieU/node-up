@@ -1,0 +1,661 @@
+
+.main-info{
+  height: 100%;
+  margin-left: 20rem;
+  overflow-y:auto;
+  padding-bottom: 100px;
+  .info-title{
+        height: 55px;
+        background-color: #fff;
+        padding: 0px 40px;
+        ul{
+            li{
+                float: left;
+                line-height: 55px;
+                margin-right: 10px;
+                font-size: 14px;
+                color: #8199AB;
+            }
+        }
+        p{
+            float: right;
+            font-size: 15px;
+            color: #00BAFA;
+            cursor: pointer;
+            line-height: 55px;
+        }
+    }
+
+    .search-box{
+        height: 114px;
+        width: 98%;
+        margin: 20px 1% 0px;
+        background-color: #fff;
+        .title{
+            height: 40px;
+            background-color: #FAFCFD;
+            p{
+                line-height: 40px;
+                margin-left: 20px;
+                font-size: 15px;
+                color: #4A4A4A;
+            }
+        }
+        .filtr{
+            height: 74px;
+            p{
+                float: left;
+                line-height: 74px;
+                margin-left: 50px;
+            }
+            select{
+                float: left;
+                width: 14%;
+                height: 35px;
+                margin-top: 20px;
+                background: #FAFAFA;
+                border: 1px solid #D2D2D2;
+                border-radius: 2px;
+                margin-left: 10px;
+            }
+            input{
+                float: left;
+                width: 14%;
+                height: 35px;
+                margin-top: 20px;
+                background: #FAFAFA;
+                border: 1px solid #D2D2D2;
+                border-radius: 2px;
+                margin-left: 10px;
+            }
+            .btn{
+                width: 8%;
+                height: 35px;
+                margin-left: 10px;
+                margin-top: 19.5px;
+                font-size: 14px;
+            }
+            .search-btn{
+                background-image: linear-gradient(-238deg, #2BC3F0 0%, #53A0FD 100%);
+                color: #fff;
+            }
+            .reset-btn{
+                background-color: #fff;
+                border: 1px solid #51A3FD;
+                color: #51A3FD;
+            }
+        }
+        
+    }
+    .treeBox{
+      width: 20%;
+      height: 600px;
+      margin-top: 20px;
+      margin-left: 1%;
+      background-color: #fff;
+      float: left;
+      .title{
+          height: 40px;
+          background-color: #FAFCFD;
+          p{
+              line-height: 40px;
+              margin-left: 20px;
+              font-size: 15px;
+              color: #4A4A4A;
+          }
+      }
+  }
+  .message-list{
+      width: 77%;
+      margin-top: 20px;
+      margin-left: 1%;
+      background-color: #fff;
+      padding: 0;
+      float: left;
+      .title{
+          height: 40px;
+          background-color: #FAFCFD;
+          p{
+              line-height: 40px;
+              margin-left: 20px;
+              font-size: 15px;
+              color: #4A4A4A;
+          }
+      }
+      .btnBox{
+          height: 60px;
+          width: 100%;
+          button{
+              float: right;
+              height: 35px;
+              width: 10%;
+              font-size: 14px;
+              margin-top: 12.5px;
+              margin-right: 10px;
+              border: none;
+              color: #fff;
+              opacity: 10;
+              font-weight: normal;
+          }
+          button.add{
+              background-color: #008EFA;
+          }
+          button.close{
+              
+              background-color: #EC971F;
+          }
+      }
+  }
+}
+
+
+
+//群聊管理
+.im-manage{
+    #delBtn{
+     background: #EC971F;
+    }
+    .checkbox{
+        margin:0;
+    }
+    .controlIcon{
+        font-size: 20px;
+        color: #039DFF;
+        margin:0 5px;
+        display: inline-block;
+        position: relative;
+        &:hover{
+            color: #0C4B74;
+        }
+        &.open{
+            .controlMenu{
+                display: block;
+            }
+        }
+        .controlMenu{
+            position:absolute;
+            left:0;
+            top:100%;
+            width:150px;
+            font-size: 12px;
+            background: #fff;
+            border:1px solid #ddd;
+            border-radius: 6px;
+            color: #000;
+            display: none;
+            &:before{
+                content: "";
+                display: block;
+                width:0;
+                height:0;
+                position: absolute;
+                left:7px;
+                top:-16px;
+                border:8px solid transparent;
+                border-bottom: 8px solid #fff;
+                z-index:2;
+            }
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                left:5px;
+                top:-20px;
+                border:10px solid transparent;
+                border-bottom: 10px solid #ddd;
+                z-index:1;
+            }
+            li{
+                height:30px;
+                line-height: 30px;
+                text-align: center;
+                overflow: hidden;
+                &:hover{
+                    background: #039DFF;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    th,td{
+        text-align: center;
+        border-bottom: none!important;
+        vertical-align: middle;
+        user-select: none;
+    }
+    //  创建群组
+    .addGroup{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .groupBtn{
+        height:30px;
+        border-radius: 4px;
+        background: #55ACEE;
+        border:1px solid #55ACEE;
+        padding:0 10px;
+        color: #fff;
+        display: inline-block;
+        &:hover{
+            background: #039DFF;
+        }
+    }
+}
+i.must{
+    color: #f00;
+  }
+  .text-grey{
+    color: #888;
+  }
+  .tag{
+    display: inline-block;
+    padding:0 15px;
+    height:34px;
+    line-height: 34px;
+    text-align: center;
+    background: #fff;
+    border:1px solid #eee;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+    &.active{
+      background: #55ACEE;
+      color: #fff;
+    }
+  }
+  
+  //考勤
+  .attend-manage{
+    background: #fff;
+    padding:25px;
+   .tab-pane{
+     padding:15px;
+   }
+    .btn-primary{
+      background: #039DFF;
+      border-color: #039DFF;
+    }
+    .button-block{
+      margin-bottom: 20px;
+    }
+    .table{
+      border:1px solid #ddd;
+      th{
+        background: #F5F5F5;
+      }
+      th,td{
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
+  }
+#createModal{
+    textarea{
+      resize: none;
+    }
+  }
+  //审批管理
+  #ruleModal{
+    .btn-link{
+      padding:0;
+      padding-top: 7px;
+    }
+    z-index:1041;
+    .btn{
+      outline:none;
+    }
+    .form-group{
+      margin-bottom:8px ;
+    }
+  }
+  #ckPerson{
+    .chIndex{
+      span.control-label{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+      }
+    }
+    .pTree{display: none;}
+  
+  }
+  .flowTag{
+    display: inline-block;
+    padding:0 15px;
+    height:32px;
+    line-height: 32px;
+    text-align: center;
+    background: #fff;
+    border:1px solid #ddd;
+    color: #666;
+    user-select: none;
+    vertical-align: top;
+    &.stable{
+      background: #ddd;
+      color: #555;
+    }
+  }
+  .check-manage{
+    .check-panel{
+      background: #fff;
+  
+    }
+    .btn-groups{
+      padding:15px 30px;
+      button{
+        margin:0 4px;
+      }
+    }
+    .tableBox{
+      padding:30px;
+      &>h4{
+        margin-bottom: 15px;
+      }
+    }
+    .table{
+      border:1px solid #ddd;
+      border-collapse: collapse;
+      th,td{
+        border-bottom: 0;
+        text-align: center;
+        vertical-align: middle;
+        input[type=checkbox]{
+          width:18px;
+          height:18px;
+        }
+        .btn-link .fa{
+          font-size: 18px;
+          color: #039DFF;
+        }
+      }
+      tr{
+        broder-bottom:1px solid #ddd;
+      }
+    }
+  }
+  .add-check{
+    .btn-link{
+      color: #0099FD;
+      padding:0;
+    }
+    .page-nav{
+      margin-top:20px;
+      margin-bottom: 20px;
+    }
+    .check-form{
+      background: #fff;
+      padding:30px 15px ;
+    }
+    .flowAdd{
+      display: inline-block;
+      margin:0 10px;
+      button{
+        padding:5px 12px;
+      }
+    }
+    .flowTag{
+      margin-right: 40px;
+      position: relative;
+      padding:0 20px;
+      margin-bottom: 10px;
+      .close{
+        //display: block;
+        position: absolute;
+        top:2px;
+        right:2px;
+        width:12px;
+        height:12px;
+        background: url('../images/ico/close.png') no-repeat center center;
+        background-size:100% 100%;
+        display: none;
+      }
+      &:hover{
+        .close{
+          display: block;
+        }
+      }
+      &:after{
+        content: "";
+        display: block;
+        width:30px;
+        height:32px;
+        position: absolute;
+        margin-left: 8px;
+        left:100%;
+        top:0;
+        background: url("../images/ico/arrow-right-grey.png") no-repeat center center;
+        background-size: 100%;
+      }
+    }
+    .form-group{
+      &>.control-label{
+        font-size: 16px;
+      }
+    }
+    .btn-groups{
+      text-align: center;
+      margin-top: 30px;
+      button{
+        margin:10px;
+      }
+    }
+    .rule-block{
+      .rule-item{
+        min-height:132px;
+      }
+      .placeHolder{
+        background: rgba(255, 184, 34, 0.3);
+        border: 1px dashed #FFB822;
+      }
+      .ruIndex{
+        text-align: right;
+        color: #666;
+      }
+      .panel-heading{
+        .title{
+          line-height:22px ;
+        }
+      }
+      .moveBtn{
+        color: #000;
+        &:hover{
+          color: #0099FD;
+        }
+        &:before{
+          content: "|";
+          display: inline-block;
+          margin-right: 6px;
+          color: #000;
+        }
+      }
+    }
+  }
+  //班次
+  .add-arrange{
+    .datetimepicker{
+      thead{
+        opacity: 0;
+      }
+    }
+    .form-horizontal{
+      padding:20px 50px;
+      background: #fff;
+    }
+    .control-label{
+      text-align: left;
+    }
+    .margin10{
+      margin:10px 0;
+    }
+    .chooseTag{
+      display: inline-block;
+      height:34px;
+      border-radius: 4px;
+      background: #fff;
+      border:1px solid #ddd;
+      line-height: 34px;
+      padding:0 15px;
+      color: #fff;
+      &.active{
+        background: #039DFF;
+        border-color: #039DFF;
+      }
+    }
+    .workFre{
+      font-size: 15px;
+      .title{
+        line-height: 34px;
+      }
+      input{
+        height:34px;
+        width:160px;
+        border-radius: 4px;
+        border:1px solid #ddd;
+        padding:0 8px;
+      }
+      .row{
+        margin-bottom: 10px;
+      }
+    }
+    .checkgroup{
+      padding-left: 30px;
+      input[type='checkbox']{
+        display: inline-block;
+        width:18px;
+        height:18px;
+        vertical-align: middle;
+      }
+      input[type='number']{
+        height:34px;
+        border-radius: 4px;
+        width:100px;
+        border:1px solid #ddd;
+        padding:0 8px;
+      }
+      .info{
+        display: inline-block;
+        padding:0 12px;
+        line-height: 34px;
+      }
+    }
+  }
+  //考勤组新增
+  .add-attend{
+    .btn{
+      outline:none;
+    }
+    .control-label{
+      text-align: right;
+      padding-left: 50px;
+      box-sizing: border-box;
+  
+    }
+    label.control-label{
+      //max-width:178px;
+    }
+    .table{
+      border:1px solid #ccc;
+      margin-top: 15px;
+      td,th{
+        text-align: center;
+        vertical-align: middle;
+      }
+      th{
+        background: #F5F5F5;
+        border-bottom: 0;
+      }
+      input[type=checkbox]{
+        width:18px;
+        height:18px;
+      }
+    }
+    div.control-label{
+      padding-top: 7px;
+      padding-left: 15px;
+    }
+    .changeArr{
+      margin-left: 30px;
+    }
+    .secTitle{
+      display: inline-block;
+      padding-top: 7px;
+      padding-left: 0;
+      float: left;
+    }
+    .addTitle{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .leftText{text-align: left;}
+  
+  
+  }
+  .modal-backdrop{
+    z-index:1;
+  }
+  #mapModal{
+    z-index:2;
+    .mapWrapper{
+      width:100%;
+      height:500px;
+      #mapContainer{
+        width:100%;
+        height:100%;
+      }
+      #tip{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        overflow: hidden;
+        line-height: 20px;
+        input[type="text"] {
+          background-color: #efefef;
+          color: #333;
+          border: 1px solid silver;
+          box-shadow: 3px 4px 3px 0px silver;
+  
+          //border-radius: 5px;
+          height: 25px;
+          //border: 0;
+          padding-left: 5px;
+          width: 280px;
+          border-radius: 3px;
+          outline: none;
+        }
+  
+      }
+    }
+    .modal-footer{
+      input{
+        border:1px solid #ddd;
+        border-radius: 4px;
+        height:30px;
+        padding:0 10px;
+        &:last-child{
+          width:280px;
+        }
+      }
+    }
+  }
+  .modal-table{
+    border:1px solid #ddd;
+    th{
+      background: #f5f5f5;
+      text-align: center;
+      vertical-align: middle;
+    }
+    td{
+      text-align: center;
+      vertical-align: middle;
+    }
+    input[type=radio]{
+      width:18px;
+      height:18px;
+    }
+  }
+
+  .must:after{
+    content: "*";
+    color: red;
+    margin-left: 5px;
+ }

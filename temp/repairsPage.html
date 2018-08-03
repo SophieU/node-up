@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>一生约-后台管理界面</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/repairePage.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css" />
+		<link rel="stylesheet" href="../../font-awesome-4.7.0/css/font-awesome.min.css" />
+		<!--日期控件-->
+		<link rel="stylesheet" href="../../css/commoncss/bootstrap-datetimepicker.min.css" />
+	</head>
+
+	<body>
+		<!--头部信息开始-->
+		<div id="header">
+			<!--logo↓↓↓↓↓-->
+			<a class="logo" href="###"><img src="../../images/img/logo.png" alt=""></a>
+			<!--用户信息↓↓↓↓↓-->
+			<dl class="userInfo ">
+				<dt class="userBase">
+	                <span class="userName">橙子科技</span>
+	                <i><img class="arrow" src="../../images/ico/arrow-down.png"/></i>
+	            </dt>
+				<dd class="setting">
+					<ul>
+						<li>
+							<a href="###"><i class="setImg"></i><span>设置</span></a>
+						</li>
+						<li>
+							<a href="###"><i class="setImg"></i><span>消息</span></a>
+						</li>
+						<li>
+							<a href="###"><i class="setImg"></i><span>退出</span></a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			<!--导航↓↓↓↓↓-->
+			<div class="userNav">
+				<ul>
+					<li><a href="###">帮助中心</a></li>
+					<li><a href="###">用户反馈</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--头部信息结束-->
+		<!--内容部分开始-->
+		<div id="main">
+			<!--左边导航开始-->
+			<div class="main-nav">
+				<ul class="items">
+					<li class="item">
+						<a class="item-title" href="index.html">
+							<i class="beforeImg beforeImg0"></i>
+							首页
+						</a>
+					</li>
+					<li class="item">
+						<a class="item-title" href="###">
+							<i class="beforeImg beforeImg1"></i>小区管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="houseNotice.html">小区公告</a></li>
+							<li class="subItem"><a href="commonPhone.html">常用电话</a></li>
+							<li class="subItem"><a href="roundServePage.html" style="border: 0;">周边服务</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a class="item-title" href="###">
+							<i class="beforeImg  beforeImg2"></i>资源管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="building.html">楼宇管理</a></li>
+							<li class="subItem"><a href="client-management.html">客户管理</a></li>
+							<li class="subItem"><a href="building-management.html" style="border: 0;">房屋管理</a></li>
+						</ol>
+					</li>
+					<li class="item open">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg3"></i>报事报修<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a class="active" href="repairsPage.html" style="border: 0;">报事清单</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg4"></i>收费管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="waitPushPage.html">待推送账单</a></li>
+							<li class="subItem"><a href="waitPaymentPage.html">待收费账单</a></li>
+							<li class="subItem"><a href="chargeClassPage.html">收费科目</a></li>
+							<li class="subItem"><a href="PaymentEcordsPage.html" style="border: 0;">历史缴费</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg5"></i>财务结算<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="financialSettlement.html" style="border: 0;">财务结算</a></li>
+						</ol>
+					</li>
+					
+				</ul>
+			</div>
+			<!--左边导航结束-->
+			<!--右侧内部信息↓↓↓↓↓-->
+			<div class="main-info">
+				<p class="info-title">检索</p>
+				<!--搜索盒子-->
+				<form action="###" method="post" id="searchForm">
+					<div class="search-box">
+						<table class="table">
+							<tr>
+								<td><span>报单编号</span></td>
+								<td>
+									<input type="text" class="serch-top" name="repNumber" placeholder="12345678"/>
+								</td>
+								<td><span>房屋</span></td>
+								<td>
+									<input type="text" class="serch-top" name="houseNumber"  placeholder="输入房屋"/>
+								</td>
+								<td><span>联系电话</span></td>
+								<td>
+									<input type="text" class="serch-top" name="mobile"  placeholder="输入联系电话"/>
+								</td>
+							</tr>
+							<tr>
+								<td><span>联系电话</span></td>
+								<td>
+									<select name="repState">
+										<option value="">-请选择-</option>
+										<option value="0">全部</option>
+										<option value="1">待受理</option>
+										<option value="2">待派工</option>
+										<option value="3">待处理中</option>
+									</select>
+								</td>
+								<td><span>类型</span></td>
+								<td>
+									<select name="repType">
+										<option value="">-请选择-</option>
+										<option value="0">全部</option>
+										<option value="1">水管破裂</option>
+										<option value="2">水管破裂</option>
+										<option value="3">水管破裂</option>
+									</select>
+								</td>
+								<td><span>预约时间</span></td>
+								<td>
+									<div class="timeBox">
+						                <div class="input-group date form_date_day col-md-5" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+						                    <input name="makeAppTrue" class="form-control " size="16" type="text" value="" readonly style="width: 130px;">
+						                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+						                </div>
+						           	</div>
+									<span>—</span>
+									<div class="timeBox">
+						                <div class="input-group date form_date_day col-md-5" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+						                    <input name="makeAppTrue2" class="form-control " size="16" type="text" value="" readonly style="width: 130px;">
+						                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+						                </div>
+						           	</div>
+								</td>
+								<td><button class="btn btn-primary">搜索</button></td>
+							</tr>
+						</table>
+					</div>
+				</form>
+				<!--搜索盒子结束-->
+				<!--信息列表开始-->
+				<div class="message-list">
+					<div class="issueAnddelete">
+						<ul>
+							<li><button class="btn" data-toggle="modal" data-target="#publish-phone-modal">新增报事</button></li>
+						</ul>
+					</div>
+					<table class="table" id="msgTabel-list">
+						<form action="###" method="post">
+							<thead>
+								<tr>
+						 			<td><a href="javascript:void(0)" class="mycheckbox">
+										</a></td>
+						 			<td>报单编号</td>
+						 			<td>报单时间</td>
+						 			<td>房屋</td>
+						 			<td>类型</td>
+						 			<td>联系人</td>
+						 			<td>预约时间</td>
+						 			<td>状态</td>
+						 			<td>操作</td>
+						 		</tr>
+							</thead>
+							<tbody class="msg-tbody">
+								<tr>
+						 			<td><a href="javascript:void(0)" class="mycheckbox">
+										</a></td>
+						 			<td>24508014000</td>
+						 			<td>3/16&nbsp;15:00</td>
+						 			<td>1-1-201</td>
+						 			<td>水-水管破裂</td>
+						 			<td>王师傅-13708010000</td>
+						 			<td>3/16&nbsp;11:00-15:00</td>
+						 			<td>待受理</td>
+						 			<td>
+						 				<div class="acceptance" href="###">
+						 					<a class="acceptance-a" href="###" data-toggle="modal" data-target="#acceptance-modal">受理</a>
+						 					<i class="fa fa-angle-down acceptance-i" aria-hidden="true"></i>
+						 				</div>
+						 				<div class="reject" href="###">
+						 					<ul>
+						 						<li><a class="reject-a down-a" href="###" data-toggle="modal" data-target="#reject-modal">驳回</a></li>
+						 					</ul>
+						 				</div>
+						 			</td>
+						 		</tr>
+						 		<tr>
+						 			<td><a href="javascript:void(0)" class="mycheckbox">
+										</a></td>
+						 			<td>24508014000</td>
+						 			<td>3/16&nbsp;15:00</td>
+						 			<td>1-1-201</td>
+						 			<td>水-水管破裂</td>
+						 			<td>王师傅-13708010000</td>
+						 			<td>3/16&nbsp;11:00-15:00</td>
+						 			<td>待派工</td>
+						 			<td>
+						 				<div class="acceptance" href="###">
+						 					<a class="acceptance-a" href="###" data-toggle="modal" data-target="#dispatch-modal">派工</a>
+						 					<i class="fa fa-angle-down acceptance-i" aria-hidden="true"></i>
+						 				</div>
+						 				<div class="reject" href="###">
+						 					<ul>
+						 						<li><a class="reject-a CheckPlan-a" href="###">查看进度</a></li>
+						 					</ul>
+						 				</div>
+						 				<!--查看进度弹框！！！-->
+							 				<div class="CheckPlan">
+							 					<table class="table tabtitle">
+							 						<tr>
+							 							<td>报事进度</td>
+							 						</tr>
+							 						<tr>
+							 							<td>报事单处理工时：17小时30分</td>
+							 						</tr>
+							 					</table>
+							 					<table class="table tabinfo">
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td class="">用户提交订单用户提交订单用户提交订单用户提交订单用户提交订单用户提交订单用户提交订单用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" style="color: red;" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦
+							 							用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 					</table>
+							 				</div>
+							 				<!--查看进度弹框！！！-->
+						 			</td>
+						 		</tr>
+						 		<tr>
+						 			<td><a href="javascript:void(0)" class="mycheckbox">
+										</a></td>
+						 			<td>24508014000</td>
+						 			<td>3/16&nbsp;15:00</td>
+						 			<td>1-1-201</td>
+						 			<td>水-水管破裂</td>
+						 			<td>王师傅-13708010000</td>
+						 			<td>3/16&nbsp;11:00-15:00</td>
+						 			<td>待处理</td>
+						 			<td>
+						 				<div class="acceptance" href="###">
+						 					<a class="acceptance-a" href="###" data-toggle="modal" data-target="#toStart-modal">开始处理</a>
+						 					<i class="fa fa-angle-down acceptance-i" aria-hidden="true"></i>
+						 				</div>
+						 				<div class="reject" href="###">
+						 					<ul>
+						 						<li><a class="reject-a CheckPlan-a" href="###">查看进度</a></li>
+						 					</ul>
+						 					<!--查看进度弹框！！！-->
+							 				<div class="CheckPlan">
+							 					<table class="table tabtitle">
+							 						<tr>
+							 							<td>报事进度</td>
+							 						</tr>
+							 						<tr>
+							 							<td>报事单处理工时：17小时30分</td>
+							 						</tr>
+							 					</table>
+							 					<table class="table tabinfo">
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" style="color: red;" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 					</table>
+							 				</div>
+							 				<!--查看进度弹框！！！-->
+						 				</div>
+						 			</td>
+						 		</tr>
+						 		<tr>
+						 			<td><a href="javascript:void(0)" class="mycheckbox">
+										</a></td>
+						 			<td>24508014000</td>
+						 			<td>3/16&nbsp;15:00</td>
+						 			<td>1-1-201</td>
+						 			<td>水-水管破裂</td>
+						 			<td>王师傅-13708010000</td>
+						 			<td>3/16&nbsp;11:00-15:00</td>
+						 			<td>处理中</td>
+						 			<td>
+						 				<div class="acceptance" href="###">
+						 					<a class="acceptance-a" href="###"  data-toggle="modal" data-target="#accomplish-modal">处理完毕</a>
+						 					<i class="fa fa-angle-down acceptance-i" aria-hidden="true"></i>
+						 				</div>
+						 				<div class="reject" href="###">
+						 					<ul>
+						 						<li><a class="reject-a CheckPlan-a" href="###">查看进度</a></li>
+						 					</ul>
+						 					<!--查看进度弹框！！！-->
+							 				<div class="CheckPlan">
+							 					<table class="table tabtitle">
+							 						<tr>
+							 							<td>报事进度</td>
+							 						</tr>
+							 						<tr>
+							 							<td>报事单处理工时：17小时30分</td>
+							 						</tr>
+							 					</table>
+							 					<table class="table tabinfo">
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" style="color: red;" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 					</table>
+							 				</div>
+							 				<!--查看进度弹框！！！-->
+						 				</div>
+						 			</td>
+						 		</tr>
+						 		<tr>
+						 			<td><a href="javascript:void(0)" class="mycheckbox">
+										</a></td>
+						 			<td>24508014000</td>
+						 			<td>3/16&nbsp;15:00</td>
+						 			<td>1-1-201</td>
+						 			<td>水-水管破裂</td>
+						 			<td>王师傅-13708010000</td>
+						 			<td>3/16&nbsp;11:00-15:00</td>
+						 			<td>待评价</td>
+						 			<td>
+						 				<div class="acceptance" href="###">
+						 					<a class="acceptance-a CheckPlan-a" href="###">查看进度</a>
+						 					<i class="fa fa-angle-down acceptance-i" aria-hidden="true"></i>
+						 				</div>
+						 				<!--查看进度弹框！！！-->
+						 				<div class="CheckPlan">
+						 					<table class="table tabtitle">
+						 						<tr>
+						 							<td>报事进度</td>
+						 						</tr>
+						 						<tr>
+						 							<td>报事单处理工时：17小时30分</td>
+						 						</tr>
+						 					</table>
+						 					<table class="table tabinfo">
+						 						<tr>
+						 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+						 							<td>2017-12-31</td>
+						 							<td>12:31:21</td>
+						 							<td>用户提交订单</td>
+						 						</tr>
+						 						<tr>
+						 							<td></td>
+						 							<td></td>
+						 							<td>12:31:21</td>
+						 							<td>用户提交订单啦啦啦啦</td>
+						 						</tr>
+						 						<tr>
+						 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+						 							<td>2017-12-31</td>
+						 							<td>12:31:21</td>
+						 							<td>用户提交订单</td>
+						 						</tr>
+						 						<tr>
+						 							<td></td>
+						 							<td></td>
+						 							<td>12:31:21</td>
+						 							<td>用户提交订单啦啦啦啦</td>
+						 						</tr>
+						 						<tr>
+						 							<td><i class="fa fa-circle" style="color: red;" aria-hidden="true"></i></td>
+						 							<td>2017-12-31</td>
+						 							<td>12:31:21</td>
+						 							<td>用户提交订单</td>
+						 						</tr>
+						 						<tr>
+						 							<td></td>
+						 							<td></td>
+						 							<td>12:31:21</td>
+						 							<td>用户提交订单啦啦啦啦</td>
+						 						</tr>
+						 					</table>
+						 				</div>
+						 				<!--查看进度弹框！！！-->
+						 			</td>
+						 		</tr>
+						 		<tr>
+						 			<td><a href="javascript:void(0)" class="mycheckbox">
+										</a></td>
+						 			<td>24508014000</td>
+						 			<td>3/16&nbsp;15:00</td>
+						 			<td>1-1-201</td>
+						 			<td>水-水管破裂</td>
+						 			<td>王师傅-13708010000</td>
+						 			<td>3/16&nbsp;11:00-15:00</td>
+						 			<td>已完成</td>
+						 			<td>
+						 				<div class="acceptance" href="###">
+						 					<a class="acceptance-a" href="###" data-toggle="modal" data-target="#del-phone-modal">删除</a>
+						 					<i class="fa fa-angle-down acceptance-i" aria-hidden="true"></i>
+						 				</div>
+						 				<div class="reject" href="###">
+						 					<ul>
+						 						<li><a class="reject-a CheckPlan-a" href="###">查看进度</a></li>
+						 					</ul>
+						 					<!--查看进度弹框！！！-->
+							 				<div class="CheckPlan">
+							 					<table class="table tabtitle">
+							 						<tr>
+							 							<td>报事进度</td>
+							 						</tr>
+							 						<tr>
+							 							<td>报事单处理工时：17小时30分</td>
+							 						</tr>
+							 					</table>
+							 					<table class="table tabinfo">
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" style="color: red;" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 					</table>
+							 				</div>
+							 				<!--查看进度弹框！！！-->
+						 				</div>
+						 				
+						 			</td>
+						 		</tr>
+						 		<tr>
+						 			<td><a href="javascript:void(0)" class="mycheckbox">
+										</a></td>
+						 			<td>24508014000</td>
+						 			<td>3/16&nbsp;15:00</td>
+						 			<td>1-1-201</td>
+						 			<td>水-水管破裂</td>
+						 			<td>王师傅-13708010000</td>
+						 			<td>3/16&nbsp;11:00-15:00</td>
+						 			<td>已作废</td>
+						 			<td>
+						 				<div class="acceptance" href="###">
+						 					<a class="acceptance-a" href="###" data-toggle="modal" data-target="#del-phone-modal">删除</a>
+						 					<i class="fa fa-angle-down acceptance-i" aria-hidden="true"></i>
+						 				</div>
+						 				<div class="reject" href="###">
+						 					<ul>
+						 						<li><a class="reject-a CheckPlan-a" href="###">查看进度</a></li>
+						 					</ul>
+						 					<!--查看进度弹框！！！-->
+							 				<div class="CheckPlan">
+							 					<table class="table tabtitle">
+							 						<tr>
+							 							<td>报事进度</td>
+							 						</tr>
+							 						<tr>
+							 							<td>报事单处理工时：17小时30分</td>
+							 						</tr>
+							 					</table>
+							 					<table class="table tabinfo">
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 						<tr>
+							 							<td><i class="fa fa-circle" style="color: red;" aria-hidden="true"></i></td>
+							 							<td>2017-12-31</td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单</td>
+							 						</tr>
+							 						<tr>
+							 							<td></td>
+							 							<td></td>
+							 							<td>12:31:21</td>
+							 							<td>用户提交订单啦啦啦啦</td>
+							 						</tr>
+							 					</table>
+							 				</div>
+							 				<!--查看进度弹框！！！-->
+						 				</div>
+						 			</td>
+						 		</tr>
+						 	</tbody>
+						</form>	
+					</table>
+					<!--分页开始-->
+					<div id="SeparatePage" class="clearfix">
+						<ul>
+							<li class="fist"><a href="###">上一页</a></li>
+							<li class="active"><a href="###">1</a></li>
+							<li><a href="###">2</a></li>
+							<li><a href="###">3</a></li>
+							<li><a href="###">4</a></li>
+							<li><a href="###">5</a></li>
+							<li class="next"><a href="###">下一页</a></li>
+							<li class="li-text"><span>跳转到</span></li>
+							<li class="li-number"><input type="text" maxlength="3"/></li>
+							<li class="skip"><a href="###">跳转</a></li>
+						</ul>
+						<br />
+						<ul>
+							<li class="li-text"><span>每页</span></li>
+							<li class="showSelect">
+								<select name="showMsg">
+									<option value="0">10条</option>
+									<option value="1">20条</option>
+									<option value="2">30条</option>
+									<option value="3">40条</option>
+								</select>
+							</li>
+							<li class="amount"><span>共501页</span></li>
+						</ul>
+					</div>
+					<!--分页结束-->
+				</div>
+			
+				<!--信息列表结束-->
+			</div>
+			<!--内容部分结束-->
+			<!--新增报事模态框开始-->
+			<div class="modal fade bs-example-modal-lg" id="publish-phone-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<form method="post" action="###" id="publishFrom">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title">
+									新增报单
+								</h4>
+							</div>
+							<div class="modal-body">
+								<table class="table">
+									<tr>
+										<td><span class="importance">房屋</span></td>
+										<td>
+											<select name="buildNumberTrue" class="house">
+												<option value="">-请选择-</option>
+												<option value="0">1栋</option>
+												<option value="1">2栋</option>
+												<option value="2">3栋</option>
+											</select>
+											<select name="elementNumber" class="house">
+												<option value="">-请选择-</option>
+												<option value="0">1单元</option>
+												<option value="1">2单元</option>
+												<option value="2">3单元</option>
+											</select>
+											<select name="houseNumberTrue"  class="house">
+												<option value="">-请选择-</option>
+												<option value="0">1号</option>
+												<option value="1">2号</option>
+												<option value="2">3号</option>
+											</select>
+										</td>
+										<td>
+											<span class="importance">类型</span>
+										</td>
+										<td>
+											<select class="typeSeelect" name="repTypeTrue">
+												<option value="">-选择-</option>
+												<option value="0">2号</option>
+												<option value="2">3号</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><span class="importance">预约时间</span></td>
+										<td>
+						                    <input name="makeAppTrue" class="form-control form_date_day changeInput datepicker" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+										<td><span class="importance">联系电话 </span></td>
+										<td><input name="tel" class="changeInput" type="text"/></td>
+									</tr>
+									<tr>
+										<td><span class="importance">受理人</span></td>
+										<td><input name="transactor" class="changeInput" type="text"/></td>
+										<td><span class="importance">受理时间</span></td>
+										<td>
+											 <input name="transTime" class="form-control form_date_day changeInput datepicker" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label>
+												<a href="javascript:void(0)" class="mycheckbox" style="display: inline-block;"></a>
+												<span>派工</span>
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td><span class="importance">派工时间</span></td>
+										<td>
+											<input name="dispatchTime" class="form-control form_date_day changeInput datepicker dateInput" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+										<td><span>维修费用</span></td>
+										<td><input name="dispatchPrice" class="changeInput" type="text"/></td>
+									</tr>
+									<tr>
+										<td><span class="importance">维修人员</span></td>
+										<td>
+											<input name="dispatchMan" class="changeInput" type="text"/>
+											<label>
+												<a href="javascript:void(0)" class="mycheckbox" style="display: inline-block;"></a>
+												<span>短信通知</span>
+											</label>
+										</td>
+										<td><span class="importance">手机号码</span></td>
+										<td><input name="mobileTrue" class="changeInput" type="text"/></td>
+									</tr>
+								</table>
+								<p>备注</p>
+								<textarea name="mark" rows="10" cols="114" style="resize:none;"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary">
+									发布
+								</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</form>
+				</div><!-- /.modal -->
+			</div>
+			<!--新增报事模态框结束-->
+			<!--处理模态框开始-->
+			<div class="modal fade" id="set-phone-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<form method="post" action="###" id="solveModal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title">
+									编辑报单
+								</h4>
+							</div>
+							<div class="modal-body">
+								<table class="table">
+									<tr>
+										<td><span class="importance">房屋</span></td>
+										<td>
+											<select name="buildNumberTrue" class="house">
+												<option value="">-请选择-</option>
+												<option value="0">1栋</option>
+												<option value="1">2栋</option>
+												<option value="2">3栋</option>
+											</select>
+											<select name="elementNumber" class="house">
+												<option value="">-请选择-</option>
+												<option value="0">1单元</option>
+												<option value="1">2单元</option>
+												<option value="2">3单元</option>
+											</select>
+											<select name="houseNumberTrue"  class="house">
+												<option value="">-请选择-</option>
+												<option value="0">1号</option>
+												<option value="1">2号</option>
+												<option value="2">3号</option>
+											</select>
+										</td>
+										<td>
+											<span class="importance">类型</span>
+										</td>
+										<td>
+											<select name="repTypeTrue">
+												<option value="">-选择-</option>
+												<option value="0">2号</option>
+												<option value="2">3号</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><span class="importance">预约时间</span></td>
+										<td>
+											<input name="makeAppTrue" class="form-control form_date_day changeInput datepicker" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+										<td><span class="importance">联系电话 </span></td>
+										<td><input name="tel" class="changeInput" type="text"/></td>
+									</tr>
+									<tr>
+										<td><span class="importance">受理人</span></td>
+										<td><input name="transactor" class="changeInput" type="text"/></td>
+										<td><span class="importance">受理时间</span></td>
+										<td>
+											 <input name="transTime" class="form-control form_date_day changeInput datepicker" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label>
+												<a href="javascript:void(0)" class="mycheckbox" style="display: inline-block;"></a>
+												<span>派工</span>
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td><span class="importance">派工时间</span></td>
+										<td>
+											 <input name="dispatchTime" class="form-control form_date_day changeInput datepicker dateInput"  size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+										<td><span>维修费用</span></td>
+										<td><input name="dispatchPrice" class="changeInput" type="text"/></td>
+									</tr>
+									<tr>
+										<td><span class="importance">维修人员</span></td>
+										<td>
+											<input name="dispatchMan" class="changeInput" type="text"/>
+											<label>
+												<a href="javascript:void(0)" class="mycheckbox" style="display: inline-block;"></a>
+												<span>短信通知</span>
+											</label>
+										</td>
+										<td><span class="importance">手机号码</span></td>
+										<td><input name="mobileTrue" class="changeInput" type="text"/></td>
+									</tr>
+								</table>
+								<p>备注</p>
+								<textarea name="mark" rows="10" cols="114" style="resize:none;"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary">
+									发布
+								</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</form>
+				</div><!-- /.modal -->
+			</div>
+			<!--处理模态框结束-->
+			<!--单删模态框开始-->
+			<div class="modal fade bs-example-modal-sm" id="del-phone-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			   <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">是否确认删除本条信息</h4>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-danger" data-dismiss="modal">狠心删除</button>
+			        <button type="button" class="btn btn-default">再考虑一下</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--单删模态框结束-->
+			<!--受理模态框开始-->
+			<div class="modal fade bs-example-modal-lg" id="acceptance-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<form action="###" method="post" id="acceptModal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title">
+									受理报单
+								</h4>
+							</div>
+							<div class="modal-body">
+								<table class="table">
+									<tr>
+										<td>
+											<span >报单编号</span>
+										</td>
+										<td>
+											<input name="repNumber" class="changeInput readonlyInput" readonly="readonly" type="text"/>
+										</td>
+										<td>
+											<span>报事时间</span>
+										</td>
+										<td>
+											<input name="repTime" class="changeInput datepicker readonlyInput" readonly="readonly" type="text" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>&emsp;&emsp;房屋</span>
+										</td>
+										<td>
+											<input name="houseNumber" class="changeInput readonlyInput" type="text" readonly="readonly"  value="1栋1单元1号" />
+										</td>
+										<td>
+											<span>&emsp;&emsp;类型</span>
+										</td>
+										<td>
+											<input name="repType" class="changeInput readonlyInput" type="text" readonly="readonly" value="水-水管破裂" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>预约时间</span>
+										</td>
+										<td>
+											<input name="makeApp" class="changeInput datepicker readonlyInput" readonly="readonly" type="text" />
+										</td>
+										<td>
+											<span>联系电话</span>
+										</td>
+										<td>
+											<input name="mobile" class="changeInput readonlyInput" readonly="readonly"  type="text" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="importance">&emsp;受理人</span>
+										</td>
+										<td>
+											<input name="transactor" class="changeInput" type="text" value="默认当前用户"/>
+										</td>
+										<td>
+											<span class="importance">&emsp;受理时间</span>
+										</td>
+										<td>
+											<input name="importance" class="form-control form_date_day changeInput datepicker" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="javascript:void(0)" class="mycheckbox" style="display: inline-block;"></a>
+											<span>派工</span>
+										</td>
+									</tr>
+								</table>
+								<table class="table">
+									<tr>
+										<td>
+											<span class="importance">派工时间</span>
+										</td>
+										<td>
+											<input name="dispatchTime" class="form-control form_date_day changeInput datepicker dateInput" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+										<td>
+											<span>维修费用</span>
+										</td>
+										<td>
+											<input name="dispatchPrice" class="changeInput" type="text"/>
+											<span>元</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="importance">维修人员</span>
+										</td>
+										<td>
+											<input name="dispatchMan" class="changeInput" type="text" />
+											<input type="checkbox" />
+											<span>短信通知</span>
+										</td>
+										<td>
+											<span class="importance">手机号码</span>
+										</td>
+										<td>
+											<input name="mobileTrue" class="changeInput" type="text"/>
+										</td>
+									</tr>
+								</table>
+								<p>备注</p>
+								<textarea name="mark" rows="10" cols="114" style="resize:none;"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary">
+									发布
+								</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</form>
+				</div><!-- /.modal -->
+			</div>
+			<!--受理模态框结束-->
+			<!--驳回模态框开始-->
+			<div class="modal fade bs-example-modal-lg" id="reject-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+							<h4 class="modal-title">
+								报单驳回/作废
+							</h4>
+						</div>
+						<div class="modal-body">
+							<table class="table">
+								<tr>
+									<td>
+										<span >报事清单</span>
+									</td>
+									<td>
+										<input class="changeInput" type="text" value="1703026" />
+									</td>
+									<td>
+										<span>报事清单</span>
+									</td>
+									<td>
+										<input class="changeInput" type="text" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span>&emsp;&emsp;房屋</span>
+									</td>
+									<td>
+										<input class="changeInput" type="text" value="1栋1单元1号" />
+									</td>
+									<td>
+										<span>&emsp;&emsp;类型</span>
+									</td>
+									<td>
+										<input class="changeInput" type="text" value="水-水管破裂" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span>预约时间</span>
+									</td>
+									<td>
+										<div class="timeBox">
+							                <div class="input-group date form_date_day col-md-5" data-date="" data-date-format="yyyy-mm" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+							                    <input class="form-control" size="16" type="text" value="" readonly style="width: 130px;">
+							                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							                </div>
+							           	</div>
+									</td>
+									<td>
+										<span>联系电话</span>
+									</td>
+									<td>
+										<input class="changeInput" type="text" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="importance">&emsp;受理人</span>
+									</td>
+									<td>
+										<input class="changeInput" type="text" value="默认当前用户"/>
+									</td>
+									<td>
+										<span class="importance datepicker">受理时间</span>
+									</td>
+									<td>
+										<input class="changeInput" type="text" />
+									</td>
+								</tr>
+							</table>
+							<p>驳回/废除理由</p>
+							<textarea name="mark" rows="10" cols="114" style="resize:none;"></textarea>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">
+								发布
+							</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal -->
+			</div>
+			<!--驳回模态框开始-->
+			<!--派工模态框开始-->
+			<div class="modal fade bs-example-modal-lg" id="dispatch-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<form method="post" action="###" id="dispatchForm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title">
+									派工
+								</h4>
+							</div>
+							<div class="modal-body">
+								<table class="table">
+									<tr>
+										<td>
+											<span class="importance">派工时间</span>
+										</td>
+										<td>
+											<input name="dispatchTime" class="form-control form_date_day changeInput datepicker dateInput" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+										<td>
+											<span>维修费用</span>
+										</td>
+										<td>
+											<input name="dispatchPrice" class="changeInput" type="text"/>
+											<span>元</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="importance">维修人员</span>
+										</td>
+										<td>
+											<input name="dispatchMan" class="changeInput" type="text" />
+											<a href="javascript:void(0)" class="mycheckbox" style="display: inline-block;"></a>
+											<span>短信通知</span>
+										</td>
+										<td>
+											<span class="importance">手机号码</span>
+										</td>
+										<td>
+											<input name="mobileTrue" class="changeInput" type="text"/>
+										</td>
+									</tr>
+								</table>
+								<p>备注</p>
+								<textarea name="mark" rows="4" cols="114" style="resize:none;"></textarea>
+								<table class="table">
+									<tr>
+										<td>
+											<span >报事清单</span>
+										</td>
+										<td>
+											<input  class="changeInput readonlyInput" type="text" value="1703026" readonly="readonly" />
+										</td>
+										<td>
+											<span>报事日期</span>
+										</td>
+										<td>
+											<input  class="changeInput readonlyInput" type="text" readonly="readonly" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>&emsp;&emsp;房屋</span>
+										</td>
+										<td>
+											<input  class="changeInput readonlyInput" type="text" value="1栋1单元1号"  readonly="readonly" />
+										</td>
+										<td>
+											<span>&emsp;&emsp;类型</span>
+										</td>
+										<td>
+											<input  class="changeInput readonlyInput" type="text" value="水-水管破裂"  readonly="readonly" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>预约时间</span>
+										</td>
+										<td>
+											<input  class="changeInput datepicker readonlyInput" type="text"  readonly="readonly" />
+										</td>
+										<td>
+											<span>联系电话</span>
+										</td>
+										<td>
+											<input  class="changeInput readonlyInput" type="text"  readonly="readonly" />
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>&emsp;受理人</span>
+										</td>
+										<td>
+											<input class="changeInput readonlyInput" type="text" value="默认当前用户" readonly="readonly" />
+										</td>
+										<td>
+											<span>受理时间</span>
+										</td>
+										<td>
+											<input class="changeInput datepicker readonlyInput" type="text"  readonly="readonly" />
+										</td>
+									</tr>
+								</table>
+								<p>备注</p>
+								<textarea class="readonlyInput" name="mark" rows="4" cols="114" style="resize:none;"  readonly="readonly" ></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary">
+									发布
+								</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</form>
+				</div><!-- /.modal -->
+			</div>
+			<!--派工结束-->
+			<!--维修完成模态框开始-->
+			<div class="modal fade bs-example-modal-lg" id="accomplish-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<form method="post" action="###" id="handleOver">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title">维修完毕</h4>
+							</div>
+							<div class="modal-body">
+								<table class="table">
+									<tr>
+										<td>
+											<span class="importance">维修人员</span>
+										</td>
+										<td>
+											<input  class="changeInput" name="dispatchMan" type="text" />
+										</td>
+										<td>
+											<span class="importance">维修类型</span>
+										</td>
+										<td>
+											<input class="changeInput" name="dispatchType" type="text"/>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="importance">完工时间</span>
+										</td>
+										<td>
+											<input name="overTime" class="form-control form_date_day changeInput datepicker" size="16" type="text" value="" readonly "data-date="" data-date-format="yyyy-mm-dd hh：ii：ss" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+										</td>
+										<td>
+											<span>维修费用</span>
+										</td>
+										<td>
+											<input class="changeInput" name="dispatchPrice" type="text"/>
+											<span>元</span>
+										</td>
+									</tr>
+								</table>
+								<p>备注</p>
+								<textarea name="mark" rows="4" cols="114" style="resize:none;"></textarea>
+								<p>派单信息</p>
+								<table class="table">
+									<tr>
+										<td>
+											<span >派工时间</span>
+										</td>
+										<td>
+											<input class="changeInput datepicker readonlyInput dateInput" type="text" value="1703026" readonly="readonly" />
+										</td>
+										<td>
+											<span>派工人员</span>
+										</td>
+										<td>
+											<input  class="changeInput readonlyInput" type="text" readonly="readonly" value="阿东"/>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>维修人员</span>
+										</td>
+										<td>
+											<input class="changeInput readonlyInput" type="text" value="阿东"  readonly="readonly" />
+											<a href="###" class="mycheckbox" style="display: inline-block;"></a>
+											<span>短信通知</span>
+										</td>
+										<td>
+											<span>手机号码</span>
+										</td>
+										<td>
+											<input class="changeInput readonlyInput" type="text" value="13708000000"  readonly="readonly" />
+										</td>
+									</tr>
+								</table>
+								<p>备注</p>
+								<textarea name="mark" class="readonlyInput" rows="4" cols="114" style="resize:none;"  readonly="readonly" ></textarea>
+								<p>报单信息</p>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary">
+									发布
+								</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</form>
+				</div><!-- /.modal -->
+			</div>
+			<!--维修完成模态框开始-->
+			<!--开始处理模态框开始-->
+			<div class="modal fade bs-example-modal-sm" id="toStart-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			   <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">您正在执行开始处理操作，确认开始处理？</h4>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-dismiss="modal">确认开始</button>
+			        <button type="button" class="btn btn-default">取消</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--开始处理模态框结束-->
+	</body>
+	<script src="../../js/lib/jquery-2.1.0.js"></script>
+	<script src="../../js/lib/bootstrap.min.js" charset="utf-8"></script>
+	<!--本页js-->
+	<script src="../../js/repairePage.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--日期控件-->
+	<script src="../../js/lib/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--i18n.js-->
+	<script src="../../js/lib/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/date.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="../../js/lib/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/from-verify.js " type="text/javascript " charset="utf-8 "></script>
+	<script src="../../js/lib/customValidate.js " type="text/javascript " charset="utf-8 "></script>
+	<script type="text/javascript " charset="utf-8 ">
+		
+		wy.validateForm('#publishFrom');
+		wy.validateForm('#acceptModal');
+		wy.validateForm('#searchForm');
+		wy.validateForm('#dispatchForm');
+		wy.validateForm('#solveModal');
+		wy.validateForm('#handleOver');
+		
+
+	</script>
+</html>

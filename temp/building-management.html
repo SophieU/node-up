@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>一生约-后台管理界面</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--bootstrap样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/bootstrap.min.css" />
+		<!--重置样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/reset.css" />
+		<!--单独内容样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../css/building-management.css" />
+		<!--左侧导航和顶部导航样式↓↓↓-->
+		<link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css" />
+		<!--ztree插件样式↓↓↓-->
+		<link href="../../zTree_v3/css/metroStyle/metroStyle.css" rel="stylesheet" type="text/css" />
+		
+		<link rel="stylesheet" type="text/css" href="../../font-awesome-4.7.0/css/font-awesome.css"/>
+	</head>
+
+	<body>
+		<!--头部信息开始-->
+		<div id="header">
+			<!--logo↓↓↓↓↓-->
+			<a class="logo" href="###"><img src="../../images/img/logo.png" alt=""></a>
+			<!--用户信息↓↓↓↓↓-->
+			<dl class="userInfo ">
+				<dt class="userBase">
+	                <span class="userName">橙子科技</span>
+	                <i><img class="arrow" src="../../images/ico/arrow-down.png"/></i>
+	            </dt>
+				<dd class="setting">
+					<ul>
+						<li>
+							<a href="###"><i class="setImg"></i><span>设置</span></a>
+						</li>
+						<li>
+							<a href="###"><i class="setImg"></i><span>消息</span></a>
+						</li>
+						<li>
+							<a href="###"><i class="setImg"></i><span>退出</span></a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			<!--导航↓↓↓↓↓-->
+			<div class="userNav">
+				<ul>
+					<li><a href="###">帮助中心</a></li>
+					<li><a href="###">用户反馈</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--头部信息结束-->
+		<!--内容部分开始-->
+		<div id="main">
+			<!--左边导航开始-->
+			<div class="main-nav">
+				<ul class="items">
+					<li class="item">
+						<a class="item-title" href="index.html">
+							<i class="beforeImg beforeImg0"></i>
+							首页
+						</a>
+					</li>
+					<li class="item">
+						<a class="item-title" href="###">
+							<i class="beforeImg beforeImg1"></i>小区管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="houseNotice.html">小区公告</a></li>
+							<li class="subItem"><a href="commonPhone.html">常用电话</a></li>
+							<li class="subItem"><a href="roundServePage.html" style="border: 0;">周边服务</a></li>
+						</ol>
+					</li>
+					<li class="item open">
+						<a class="item-title" href="###">
+							<i class="beforeImg  beforeImg2"></i>资源管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="building.html">楼宇管理</a></li>
+							<li class="subItem"><a href="client-management.html">客户管理</a></li>
+							<li class="subItem"><a class="active" href="building-management.html" style="border: 0;">房屋管理</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg3"></i>报事报修<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="repairsPage.html" style="border: 0;">报事清单</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg4"></i>收费管理<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="waitPushPage.html">待推送账单</a></li>
+							<li class="subItem"><a href="waitPaymentPage.html">待收费账单</a></li>
+							<li class="subItem"><a href="chargeClassPage.html">收费科目</a></li>
+							<li class="subItem"><a href="PaymentEcordsPage.html" style="border: 0;">历史缴费</a></li>
+						</ol>
+					</li>
+					<li class="item">
+						<a  class="item-title" href="###">
+							<i class="beforeImg beforeImg5"></i>财务结算<img class="arrow" src="../../images/ico/arrow-down.png"/>
+						</a>
+						<ol class="subItems">
+							<li class="subItem"><a href="financialSettlement.html" style="border: 0;">财务结算</a></li>
+						</ol>
+					</li>
+					
+				</ul>
+			</div>
+			<!--左边导航结束-->
+			<!--右侧内部信息↓↓↓↓↓-->
+			<div class="main-info">
+				<p class="info-title">检索</p>
+				<!--搜索盒子-->
+				<div class="search-box row">
+					<form action="###" method="post">
+						<table class="table">
+							<tr>
+								<td class="td1"><span>房屋</span></td>
+								<td class="td2"><input type="text" id="building-title" name="houseNumber" placeholder="" /></td>
+								<td class="td1"><span>状态</span></td>
+								<td class="td2">
+									<select name="buildingType" class="buildingType">
+										<option value="0">全部</option>
+										<option value="1">业主已迁入</option>
+										<option value="2">空置</option>
+									</select>
+								</td>
+								<td class="td3">
+									<button class="searchBtn">搜索</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<!--搜索盒子结束-->
+				<!--目录树开始-->
+				<div class="treeBox">
+					<p class="treename">力宝大厦</p>
+					<ul id="treeDemo" class="ztree"></ul>
+					<div id="rMenu">
+						<ul>
+							<li id="m_add" onclick="addTreeNode();">增加节点</li>
+							<li id="m_del" onclick="removeTreeNode();">删除节点</li>
+							<li id="m_check" onclick="checkTreeNode(true);">Check节点</li>
+							<li id="m_unCheck" onclick="checkTreeNode(false);">unCheck节点</li>
+							<li id="m_reset" onclick="resetTree();">恢复zTree</li>
+						</ul>
+					</div>
+				</div>
+				<!--目录树结束-->
+				<!--信息列表开始-->
+				<div class="message-list">
+					<div class="issueAnddelete">
+						<ul>
+							<li><button class="btn btn-default" data-toggle="modal" data-target="#Alldel-phone-Modal">房屋批量导入</button></li>
+							<li><button class="btn btn-default" data-toggle="modal" data-target="#house-notice-modal">新增房屋</button></li>
+							<li><button class="btn btn-danger">批量删除</button></li>
+						</ul>
+					</div>
+					<table class="table" id="msgTabel-list">
+						<form action="###" method="post">
+							<thead>
+								<tr>
+						 			<td><a href="###" class="mycheckbox"></a></td>
+						 			<td>房屋</td>
+						 			<td>房屋编号</td>
+						 			<td>建筑面积</td>
+						 			<td>计算面积</td>
+						 			<td>状态</td>
+						 			<td>操作</td>
+						 		</tr>
+							</thead>
+							<tbody class="msg-tbody">
+								<tr>
+						 			<td><a href="###" class="mycheckbox"></a></td>
+						 			<td>1栋2单元201号</td>
+						 			<td>A201</td>
+						 			<td>123.58m²</td>
+						 			<td>123.58m²</td>
+						 			<td>客户已经迁入</td>
+						 			<td>
+						 				<a class="client-manage" href="###">客户管理</a>
+						 				&emsp;
+						 				<a class="create-bill" href="###">生成账单</a>
+						 			</td>
+						 		</tr>
+						 		<tr>
+						 			<td><a href="###" class="mycheckbox"></a></td>
+						 			<td>1栋2单元201号</td>
+						 			<td>A201</td>
+						 			<td>123.58m²</td>
+						 			<td>123.58m²</td>
+						 			<td>空置</td>
+						 			<td>
+						 				<a class="check-in" href="###">客户迁入</a>
+						 				&emsp;
+						 				<a class="del" href="###">&emsp;删除&emsp;</a>
+						 			</td>
+						 		</tr>
+						 	</tbody>
+						</form>	
+					</table>
+					<!--分页开始-->
+					<div id="SeparatePage" class="clearfix">
+						<ul>
+							<li class="fist"><a href="###">上一页</a></li>
+							<li class="active"><a href="###">1</a></li>
+							<li><a href="###">2</a></li>
+							<li><a href="###">3</a></li>
+							<li><a href="###">4</a></li>
+							<li><a href="###">5</a></li>
+							<li class="next"><a href="###">下一页</a></li>
+							<li class="li-text"><span>跳转到</span></li>
+							<li class="li-number"><input type="text" maxlength="3"/></li>
+							<li class="skip"><a href="###">跳转</a></li>
+						</ul>
+						<br />
+						<ul>
+							<li class="li-text"><span>每页</span></li>
+							<li class="showSelect">
+								<select name="showMsg">
+									<option value="0">10条</option>
+									<option value="1">20条</option>
+									<option value="2">30条</option>
+									<option value="3">40条</option>
+								</select>
+							</li>
+							<li class="amount"><span>共501页</span></li>
+						</ul>
+					</div>
+					<!--分页结束-->
+				</div>
+			
+				<!--信息列表结束-->
+			</div>
+			<!--内容部分结束-->
+			<!--新增房屋模态框开始-->
+			<div class="modal fade bs-example-modal-lg" id="house-notice-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+							<h4 class="modal-title">
+								新增房屋
+							</h4>
+						</div>
+						<form action="###" method="post" id="publishFrom">
+							<div class="modal-body">
+									<div class="row content-top">
+									  <div class="col-md-6">
+									  		<table class="table">
+									  			<tr>
+									  				<td><span>小区</span></td>
+									  				<td><input name="houseName" class="house" type="text" value="力宝大厦" readonly="readonly" style="background-color:#ebebeb;"/></td>
+									  				<td><span class="impt importance">房屋:</span></td>
+									  				<td>
+									  					<input type="text" name="elementNumber" class="house-num" value="10"  readonly="readonly" style="background-color:#ebebeb;"/>
+									  					<span>栋</span>
+									  					<input type="text" name="elementNumber" class="house-num" value="10"   readonly="readonly"style="background-color:#ebebeb;"/>
+									  					<span>单元</span>
+									  					<input type="text" name="elementNumber" class="house-num" style="text-align: center;"/>
+									  					<span>号</span>
+									  				</td>
+									  			</tr>
+									  			<tr>
+									  				<td><span>房屋编号</span></td>
+									  				<td><input name="houseNumber" class="house" type="text" value=""/></td>
+									  			</tr>
+									  			<tr>
+									  				<td><span class="importance">建筑面积</span></td>
+									  				<td><input name="houseArea" class="house-area" type="text" value=""/><span>平米</span></td>
+									  				<td><span class="impt importance">计费面积:</span></td>
+									  				<td>
+									  					<input type="text" name="houseChargArea" class="house" value=""  />
+									  					<span>平米</span>
+									  				</td>
+									  			</tr>
+									  		</table>
+									  </div>
+									</div>
+									<p>备注</p>
+									<textarea name="mark" rows="10" cols="121" style="resize:none;"></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary">
+									发布
+								</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							</div>
+						</form>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal -->
+			</div><!-- /.modal -->
+			<!--新增房屋模态框结束-->
+			<!--批量导入模态框开始-->
+			<div class="modal fade bs-example-modal-sm" id="Alldel-phone-Modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			   <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">是否全部删除全部信息</h4>
+			      </div>
+			      <div class="modal-body">
+			      		<table class="table">
+			      			<tr>
+			      				<td>小区</td>
+			      				<td><input type="text" value="力宝大厦" readonly="readonly" class="readonlyTD"/></td>
+			      			</tr>
+			      			<tr>
+			      				<td>房屋</td>
+			      				<td><a href="###">上传附件</a></td>
+			      			</tr>
+			      			<tr>
+			      				<td>下载模板</td>
+			      				<td><a href="###">房屋批量导入模板.xls</a></td>
+			      			</tr>
+			      		</table>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+			        <button type="button" class="btn btn-default">取消</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--批量导入模态框结束-->
+			<!--单删模态框开始-->
+			<div class="modal fade bs-example-modal-sm" id="del-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			   <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">是否确认删除本条信息</h4>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-danger" data-dismiss="modal">狠心删除</button>
+			        <button type="button" class="btn btn-default">再考虑一下</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--单删模态框结束-->
+	</body>
+	<!--引入jquery-->
+	<script src="../../js/lib/jquery-2.1.0.js"></script>
+	<!--引入左侧导航栏与顶部导航栏js-->
+	<script src="../../js/lib/common.js" type="text/javascript" charset="utf-8"></script>
+	<!--引入bootstrap.js-->
+	<script src="../../js/lib/bootstrap.min.js" charset="utf-8"></script>
+	<!--分页插件-->
+	<script src="../../js/jquery.twbsPagination.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--引入building页面的js来复用-->
+	<script src="../../js/building.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--引入ztree-->
+	<script src="../../zTree_v3/js/jquery.ztree.core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../zTree_v3/js/jquery.ztree.excheck.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../zTree_v3/js/jquery.ztree.exedit.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/my-ztree.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--引入验证js-->
+	<script src="../../js/lib/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/customValidate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/lib/from-verify.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	<script type="text/javascript">
+		wy.validateForm('#publishFrom');
+		
+	</script>
+</html>
