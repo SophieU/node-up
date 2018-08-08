@@ -1,7 +1,7 @@
 var menuTop='<div id="header">' +
                 '<div class="logo"></div>' +
                 '<ul class="head-nav">' +
-                    '<li class="active" data-menu="contents"><span>内容管理</span></li>' +
+                    '<li  data-menu="contents"><span>内容管理</span></li>' +
                     '<li data-menu="app"><span>物业app管理</span></li>' +
                     '<li data-menu="sources"><span>资源管理</span></li>' +
                     '<li data-menu="repair"><span>报事报修</span></li>' +

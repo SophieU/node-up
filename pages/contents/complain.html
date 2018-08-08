@@ -1,10 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <title>一生约-投诉表扬</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/base/base.css" />
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
+
 <body>
-$END$
+<!--顶部菜单-->
+<script src="../menu-top.js"></script>
+<!--顶部菜单-->
+<!--内容部分开始-->
+<div id="main">
+    <!--左边导航开始-->
+    <div class="main-nav">
+        <script src="../menu-left.js"></script>
+    </div>
+    <!--左边导航结束-->
+    <!--右侧内部信息↓↓↓↓↓-->
+    <div class="main-info">
+        <div class="message-list">
+            <div class="layui-tab layui-tab-card">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">投诉</li>
+                    <li>表扬</li>
+                </ul>
+                <div class="layui-tab-content" style="min-height: 100px;">
+                    <div class="layui-tab-item layui-show">
+                        <div class="changeinfo">
+                            <div class="search layui-form search-complain">
+                                <div class="layui-form-item">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">选择小区</label>
+                                        <div class="layui-input-inline">
+                                            <select  >
+                                                <option>青秀城</option>
+                                                <option>南城都汇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">业主姓名</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="number"  class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">业主电话</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="number"  class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">状态</label>
+                                        <div class="layui-input-inline"  style="width: 100px;">
+                                            <select class="form-control">
+                                                <option>全部</option>
+                                                <option>全部</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <button type="button" class="sub1 layui-btn layui-btn-normal">搜索</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="layui-table pkTab">
+                                <thead>
+                                <tr>
+                                    <th>标题</th>
+                                    <th>发布人</th>
+                                    <th>发布时间</th>
+                                    <th>正方</th>
+                                    <th>反方</th>
+                                    <th>参与人数</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>关于本次小区停车费涨价事宜</td>
+                                    <td>物业公司</td>
+                                    <td>2016-02-12  16:20</td>
+                                    <td>支持涨价（32%）</td>
+                                    <td>支持涨价（68%）</td>
+                                    <td>108人</td>
+                                    <td>
+                                        <button class="btn-text btn-text-danger">删除</button>
+                                        <button class="btn-text btn-text-primary">编辑</button>
+                                        <button class="btn-text btn-text-primary">关闭PK</button>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="layui-tab-item">
+                        <div class="changeinfo ">
+                            <div class="search layui-form">
+                                <div class="layui-form-item">
+                                    <div class="layui-input-inline">
+                                        <select  >
+                                            <option>状态</option>
+                                            <option>已发布</option>
+                                            <option>已关闭</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <select  >
+                                            <option>一周内</option>
+                                            <option>一个月内</option>
+                                            <option>三个月内</option>
+                                            <option>三个月以上</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <button type="button" class="sub1 layui-btn layui-btn-normal">提交</button>
+                                        <a href="issuePk.html" class="sub2 layui-btn layui-btn-primary">发布PK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="layui-table pkTab">
+                                <thead>
+                                <tr>
+                                    <th>标题</th>
+                                    <th>发布人</th>
+                                    <th>发布时间</th>
+                                    <th>投票类型</th>
+                                    <th>参与</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>小区物业竞聘公司决议</td>
+                                    <td>物业公司</td>
+                                    <td>2017-08-21  23:09</td>
+                                    <td>单选</td>
+                                    <td>809人</td>
+                                    <td><button class="btn-text btn-text-danger">删除</button> </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    <!--内容部分结束-->
 </body>
+<script src="../../libs/jquery/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../../libs/layui/layui.all.js"></script>
+<script src="../../js/global.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

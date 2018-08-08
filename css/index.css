@@ -1,1 +1,212 @@
-input.error{border:1px solid #f00}label.error{padding-left:10px;padding-bottom:2px;color:#ea5200;display:block}.overview{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.overview .layui-card{-webkit-transition:all .5s ease;transition:all .5s ease;min-height:133px}.overview .layui-card:hover{-webkit-box-shadow:0 0 15px rgba(0,0,0,0.1);box-shadow:0 0 15px rgba(0,0,0,0.1)}.overview .cardItem{height:100%}.overview .cardItem:first-child .card-nums,.overview .cardItem:first-child strong{color:#009688}.overview .cardItem:nth-child(2) .card-nums,.overview .cardItem:nth-child(2) strong{color:#1e9fff}.overview .cardItem:nth-child(3) .card-nums,.overview .cardItem:nth-child(3) strong{color:#ffb800}.overview .cardItem:nth-child(4) .card-nums,.overview .cardItem:nth-child(4) strong{color:#1e9fff}.overview .cardItem:nth-child(5) .card-nums,.overview .cardItem:nth-child(5) strong{color:#ff5722}.overview .card-nums{font-size:36px;color:#666;line-height:36px;padding:5px 0 10px;overflow:hidden;text-overflow:ellipsis;word-break:break-all;white-space:nowrap;text-align:center}.overview .card-foot{color:#666}.newReport{height:500px}.newReport .newReport-top{height:40px;line-height:40px}.newReport .newReport-top .Report-Span-left{font-size:14px;color:#858fa1;float:left}.newReport .newReport-top .Report-Span-right{float:right;font-size:14px;color:#858fa1}.newReport .newReport-top .Report-Span-right:hover{color:#29a0fc}.newReport .ReportList{overflow:auto;background-color:#fff;padding:10px}.newReport .ReportList .layui-table thead tr,.newReport .ReportList table thead tr{border-bottom:1px solid #ededed}.newReport .ReportList .layui-table thead tr th.Report-table-title,.newReport .ReportList table thead tr th.Report-table-title{color:#939393;font-size:12px;text-align:center;white-space:nowrap}.newReport .ReportList .layui-table tbody tr,.newReport .ReportList table tbody tr{border-bottom:1px solid #ededed}.newReport .ReportList .layui-table tbody tr td,.newReport .ReportList table tbody tr td{padding:10px;text-align:center;font-size:12px;color:#333;white-space:nowrap}.newReport .ReportList .layui-table tbody tr td .handle-left,.newReport .ReportList table tbody tr td .handle-left{color:#55acee;text-decoration:none}.newReport .ReportList .layui-table tbody tr td .handle-right,.newReport .ReportList table tbody tr td .handle-right{color:#0eb49b;text-decoration:none}.operationAndnotice .control-panel{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.operationAndnotice .control-panel .control-item{-webkit-box-flex:50%;-ms-flex:50%;flex:50%;padding:10px;-webkit-box-sizing:border-box;box-sizing:border-box}.operationAndnotice .control-panel .control-item:hover .btn span{color:#1383f7}.operationAndnotice .control-panel .control-item .btn{cursor:pointer;display:block;width:100%;background:transparent;border:none;text-align:center}.operationAndnotice .control-panel .control-item .btn img{display:block;width:25px;margin:0 auto;margin-bottom:10px}.operationAndnotice .control-panel .control-item .btn span{color:#56adef;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.broadcast-list{height:200px;overflow-y:auto;font-size:12px}.broadcast-list li{cursor:pointer;overflow:hidden}.broadcast-list li:hover{color:#1383f7}.broadcast-list .title{width:70%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:inherit;float:left}.broadcast-list .time{float:right}#publishNotice .layui-card-header{padding:5px 10px}#publishNotice .layui-form-select dl{z-index:1000}#publishNotice .edui-container{width:700px !important;margin:0 auto}#publishNotice .edui-container .edui-editor-body{height:350px}#publishNotice .edui-container #noticeEditor{min-height:100% !important;width:100% !important}.layui-table{width:auto;min-width:100%}.layui-table th,.layui-table td{white-space:nowrap}
+input.error {
+  border: 1px solid red;
+}
+label.error {
+  padding-left: 10px;
+  padding-bottom: 2px;
+  color: #EA5200;
+  display: block;
+}
+.overview {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.overview .layui-card {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  min-height: 133px;
+}
+.overview .layui-card:hover {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.overview .cardItem {
+  height: 100%;
+}
+.overview .cardItem:first-child .card-nums,
+.overview .cardItem:first-child strong {
+  color: #009688;
+}
+.overview .cardItem:nth-child(2) .card-nums,
+.overview .cardItem:nth-child(2) strong {
+  color: #1E9FFF;
+}
+.overview .cardItem:nth-child(3) .card-nums,
+.overview .cardItem:nth-child(3) strong {
+  color: #FFB800;
+}
+.overview .cardItem:nth-child(4) .card-nums,
+.overview .cardItem:nth-child(4) strong {
+  color: #1E9FFF;
+}
+.overview .cardItem:nth-child(5) .card-nums,
+.overview .cardItem:nth-child(5) strong {
+  color: #FF5722;
+}
+.overview .card-nums {
+  font-size: 36px;
+  color: #666;
+  line-height: 36px;
+  padding: 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+  text-align: center;
+}
+.overview .card-foot {
+  color: #666;
+}
+.newReport {
+  height: 500px;
+}
+.newReport .newReport-top {
+  height: 40px;
+  line-height: 40px;
+}
+.newReport .newReport-top .Report-Span-left {
+  font-size: 14px;
+  color: #858fa1;
+  float: left;
+}
+.newReport .newReport-top .Report-Span-right {
+  float: right;
+  font-size: 14px;
+  color: #858fa1;
+}
+.newReport .newReport-top .Report-Span-right:hover {
+  color: #29A0FC;
+}
+.newReport .ReportList {
+  overflow: auto;
+  background-color: #fff;
+  padding: 10px;
+}
+.newReport .ReportList .layui-table thead tr,
+.newReport .ReportList table thead tr {
+  border-bottom: 1px solid #ededed;
+}
+.newReport .ReportList .layui-table thead tr th.Report-table-title,
+.newReport .ReportList table thead tr th.Report-table-title {
+  color: #939393;
+  font-size: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+.newReport .ReportList .layui-table tbody tr,
+.newReport .ReportList table tbody tr {
+  border-bottom: 1px solid #ededed;
+}
+.newReport .ReportList .layui-table tbody tr td,
+.newReport .ReportList table tbody tr td {
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+  white-space: nowrap;
+}
+.newReport .ReportList .layui-table tbody tr td .handle-left,
+.newReport .ReportList table tbody tr td .handle-left {
+  color: #55acee;
+  text-decoration: none;
+}
+.newReport .ReportList .layui-table tbody tr td .handle-right,
+.newReport .ReportList table tbody tr td .handle-right {
+  color: #0eb49b;
+  text-decoration: none;
+}
+.operationAndnotice .control-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.operationAndnotice .control-panel .control-item {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.operationAndnotice .control-panel .control-item:hover .btn span {
+  color: #1383F7;
+}
+.operationAndnotice .control-panel .control-item .btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+.operationAndnotice .control-panel .control-item .btn img {
+  display: block;
+  width: 25px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.operationAndnotice .control-panel .control-item .btn span {
+  color: #56ADEF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.broadcast-list {
+  height: 200px;
+  overflow-y: auto;
+  font-size: 12px;
+}
+.broadcast-list li {
+  cursor: pointer;
+  overflow: hidden;
+}
+.broadcast-list li:hover {
+  color: #1383F7;
+}
+.broadcast-list .title {
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: inherit;
+  float: left;
+}
+.broadcast-list .time {
+  float: right;
+}
+#publishNotice .layui-card-header {
+  padding: 5px 10px;
+}
+#publishNotice .layui-form-select dl {
+  z-index: 1000;
+}
+#publishNotice .edui-container {
+  width: 700px!important;
+  margin: 0 auto;
+}
+#publishNotice .edui-container .edui-editor-body {
+  height: 350px;
+}
+#publishNotice .edui-container #noticeEditor {
+  min-height: 100%!important;
+  width: 100%!important;
+}
+.layui-table {
+  width: auto;
+  min-width: 100%;
+}
+.layui-table th,
+.layui-table td {
+  white-space: nowrap;
+}
+.search-complain {
+  margin: 10px 0;
+}
+.search-complain .layui-form-label {
+  width: auto;
+}

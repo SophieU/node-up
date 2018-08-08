@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fa2c375-7982-4950-a995-3b6701e72212" name="Default" comment="" />
+    <list default="true" id="9fa2c375-7982-4950-a995-3b6701e72212" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/contents/complain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/moneyManage/charge-offline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/moneyManage/paid-up-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base/mediaQuery.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/mediaQuery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/moneyManage/moneyMange.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/moneyManage/moneyMange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-log.md" beforeDir="false" afterPath="$PROJECT_DIR$/dev-log.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less/common.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/common.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less/moneyManage/moneyMange.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/moneyManage/moneyMange.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less/report/report.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/report/report.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/appManage/exame-manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/appManage/exame-manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/appManage/holiday-manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/appManage/holiday-manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/Chamber.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/Chamber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/sos-manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/sos-manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/financial/fianan-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/financial/fianan-account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/financial/order-count.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/financial/order-count.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/financial/table-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/financial/table-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/menu-left.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/menu-left.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/menu-top.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/menu-top.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/bill-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/bill-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/bill-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/bill-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/due-recive.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/due-recive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/edit-standard.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/edit-standard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/estate-fee.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/estate-fee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/flaw-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/flaw-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/paid-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/paid-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/pay-setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/pay-setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/relate-source.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/relate-source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/return-fee.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/return-fee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/return-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/return-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/standard-setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/standard-setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/moneyManage/urge-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/urge-charge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/resourceManagement/BuildUpDate.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resourceManagement/BuildUpDate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/resourceManagement/ProUpDate.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resourceManagement/ProUpDate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/resourceManagement/building.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resourceManagement/building.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/resourceManagement/proprietor.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resourceManagement/proprietor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/systemManagement/createCharacter.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/systemManagement/createCharacter.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,72 +68,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.63219225">
+    <splitter split-orientation="horizontal" split-proportion="0.44167188">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/base/base.css">
+          <file leaf-file-name="fianan-account.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/financial/fianan-account.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+                <state relative-caret-position="1188">
+                  <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="sos-manage.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pages/contents/sos-manage.html">
+          <file leaf-file-name="order-count.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/financial/order-count.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="335" column="4" lean-forward="true" selection-start-line="335" selection-start-column="4" selection-end-line="347" selection-end-column="7" />
-                  <folding>
-                    <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#2;n#div#2;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                <state relative-caret-position="3492">
+                  <caret line="194" selection-start-line="194" selection-end-line="200" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="houseNotice.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pages/contents/houseNotice.html">
+          <file leaf-file-name="table-search.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pages/financial/table-search.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1908">
-                  <caret line="174" column="11" lean-forward="true" selection-start-line="174" selection-start-column="11" selection-end-line="174" selection-end-column="11" />
-                  <folding>
-                    <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#style#0;n#button#0;n#div#0;n#td#6;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Chamber.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pages/contents/Chamber.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="522">
-                  <caret line="133" column="91" selection-start-line="133" selection-start-column="91" selection-end-line="133" selection-end-column="91" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="menu-left.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pages/menu-left.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="3" column="68" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="68" />
+                <state relative-caret-position="18">
+                  <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
@@ -87,20 +102,63 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="global.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/global.js">
+          <file leaf-file-name="moneyMange.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/less/moneyManage/moneyMange.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+                <state relative-caret-position="6912">
+                  <caret line="384" column="13" selection-start-line="384" selection-start-column="13" selection-end-line="384" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/less/index.less">
+          <file leaf-file-name="dev-log.md" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/dev-log.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="277">
-                  <caret line="179" column="22" lean-forward="true" selection-start-line="179" selection-start-column="22" selection-end-line="179" selection-end-column="22" />
+                <state relative-caret-position="1044">
+                  <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="menu-left.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/menu-left.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="18">
+                  <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="global.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/global.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+                  <folding>
+                    <element signature="n#!!block;n#renderZTree#0" />
+                    <element signature="n#!!block;n#renderPage#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/less/common.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="7362">
+                  <caret line="409" column="20" selection-start-line="409" selection-start-column="20" selection-end-line="409" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="paid-up.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pages/moneyManage/paid-up.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2466">
+                  <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+                  <folding>
+                    <element signature="n#select#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -108,29 +166,8 @@
           <file leaf-file-name="mediaQuery.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/base/mediaQuery.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/less/common.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="572">
-                  <caret line="521" column="9" lean-forward="true" selection-start-line="521" selection-start-column="9" selection-end-line="521" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#5540#7849#0" />
-                    <element signature="e#7859#7884#0" />
-                    <element signature="e#7933#8000#0" />
-                    <element signature="e#8637#8664#0" />
-                    <element signature="e#8783#8838#0" />
-                    <element signature="e#8848#8868#0" />
-                    <element signature="e#9204#9677#0" />
-                    <element signature="e#10467#11313#0" />
-                    <element signature="e#11325#11363#0" />
-                    <element signature="e#11375#11747#0" />
-                  </folding>
+                <state>
+                  <caret column="39" selection-start-column="39" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -143,44 +180,44 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Less File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>control-label</find>
+      <find>class=&quot;modal</find>
+      <find>long-la</find>
+      <find>receivModal</find>
       <find>table-form</find>
-      <find>checkbox</find>
-      <find>lable</find>
-      <find>&amp;nbsp;</find>
-      <find>grey</find>
-      <find>messa</find>
+      <find>grey-</find>
+      <find>edit-</find>
+      <find>main-info</find>
+      <find>modal</find>
       <find>table</find>
-      <find>text-input</find>
-      <find>value=&quot;</find>
-      <find>readonly</find>
-      <find>check</find>
-      <find>body</find>
-      <find>info-title</find>
-      <find>mess</find>
-      <find>operationAndnotice</find>
-      <find>houseCondition</find>
-      <find>box-sizing:</find>
-      <find>\n</find>
-      <find>layui-col-md3</find>
-      <find>right</find>
-      <find>td</find>
-      <find>clearfix</find>
-      <find>payState-info</find>
+      <find>w50</find>
+      <find>ol{</find>
+      <find>rotate</find>
+      <find>线下收费</find>
+      <find>btn</find>
+      <find>filter-bo</find>
+      <find>class=&quot;layui-form</find>
+      <find>&lt;select</find>
+      <find>&lt;select &gt;</find>
+      <find>form-date-date</find>
       <find>filter-</find>
-      <find>filter</find>
-      <find>newR</find>
-      <find>timeline</find>
-      <find>.layui-table</find>
-      <find>&lt;a class=&quot;del&quot; href=&quot;###&quot;&gt;删除&lt;/a&gt;</find>
-      <find>pagination</find>
+      <find>ret</find>
+      <find>&lt;select&gt;</find>
+      <find>user</find>
+      <find>select</find>
+      <find>class=&quot;breadcrumb&quot;</find>
+      <find>breadcrumb</find>
+      <find>状态</find>
+      <find>layui</find>
+      <find>filter-b</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;a href=&quot;./exame-flow.html&quot;&gt;审批流程&lt;/a&gt;</replace>
@@ -190,62 +227,74 @@
       <replace>layui-col-md4</replace>
       <replace>th</replace>
       <replace>&lt;button class=&quot;btn-text btn-text-danger&quot;&gt;删除&lt;/button&gt;</replace>
+      <replace>layui-form-inline</replace>
+      <replace>layui-form-label</replace>
+      <replace>layui-form-item</replace>
+      <replace>layui-input-block</replace>
+      <replace>class=&quot;</replace>
+      <replace>dateTimeInput</replace>
+      <replace>&lt;select class=&quot;form-control&quot;&gt;</replace>
+      <replace>class=&quot;breadcrumb-nav&quot;</replace>
+      <replace>layui-btn</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/report/report-mange.html" />
-        <option value="$PROJECT_DIR$/pages/report/report-manage.html" />
-        <option value="$PROJECT_DIR$/pages/appManage/data-export.html" />
-        <option value="$PROJECT_DIR$/pages/appManage/holiday-manage.html" />
-        <option value="$PROJECT_DIR$/less/statistics/complain.less" />
-        <option value="$PROJECT_DIR$/less/report/report.less" />
         <option value="$PROJECT_DIR$/pages/report/urgent-report.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/pay-setting.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/edit-standard.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/standard-setting.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/relate-source.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/bill-admin.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/bill-search.html" />
         <option value="$PROJECT_DIR$/js/lib/date.js" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/estate-fee.html" />
         <option value="$PROJECT_DIR$/pages/moneyManage/receivalbles-filter.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/due-recive.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/paid-up.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/return-fee.html" />
         <option value="$PROJECT_DIR$/pages/moneyManage/estate-charge.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/urge-charge.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/return-search.html" />
-        <option value="$PROJECT_DIR$/pages/financial/fianan-account.html" />
-        <option value="$PROJECT_DIR$/pages/financial/table-search.html" />
-        <option value="$PROJECT_DIR$/pages/financial/order-count.html" />
-        <option value="$PROJECT_DIR$/less/moneyManage/moneyMange.less" />
         <option value="$PROJECT_DIR$/pages/index.html" />
-        <option value="$PROJECT_DIR$/pages/moneyManage/calculator.html" />
         <option value="$PROJECT_DIR$/js/calculator.js" />
         <option value="$PROJECT_DIR$/pages/appManage/balance-manage.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/pages/index/waitPushPage.html" />
         <option value="$PROJECT_DIR$/pages/menu.js" />
-        <option value="$PROJECT_DIR$/dev-log.md" />
         <option value="$PROJECT_DIR$/css/commoncss/base.css" />
         <option value="$PROJECT_DIR$/pages/plotManage/sos-manage.html" />
         <option value="$PROJECT_DIR$/css/base/reset.css" />
         <option value="$PROJECT_DIR$/js/lib/common.js" />
-        <option value="$PROJECT_DIR$/pages/menu-top.js" />
         <option value="$PROJECT_DIR$/pages/index/index.html" />
         <option value="$PROJECT_DIR$/pages/contents/publis-survey.html" />
-        <option value="$PROJECT_DIR$/css/base/base.css" />
-        <option value="$PROJECT_DIR$/css/base/mediaQuery.css" />
         <option value="$PROJECT_DIR$/pages/contents/index.html" />
         <option value="$PROJECT_DIR$/pages/contents/sos-manage.html" />
-        <option value="$PROJECT_DIR$/pages/menu-left.js" />
-        <option value="$PROJECT_DIR$/js/global.js" />
-        <option value="$PROJECT_DIR$/less/index.less" />
-        <option value="$PROJECT_DIR$/less/common.less" />
         <option value="$PROJECT_DIR$/pages/contents/houseNotice.html" />
         <option value="$PROJECT_DIR$/pages/contents/Chamber.html" />
+        <option value="$PROJECT_DIR$/less/index.less" />
+        <option value="$PROJECT_DIR$/pages/contents/complain.html" />
+        <option value="$PROJECT_DIR$/pages/appManage/exame-manage.html" />
+        <option value="$PROJECT_DIR$/pages/menu-top.js" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/pay-setting.html" />
+        <option value="$PROJECT_DIR$/less/report/report.less" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/calculator.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/flaw-search.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/estate-fee.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/standard-setting.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/return-search.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/urge-charge.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/relate-source.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/edit-standard.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/paid-up-detail.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/return-fee.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/charge-offline.html" />
+        <option value="$PROJECT_DIR$/pages/menu-left.js" />
+        <option value="$PROJECT_DIR$/js/global.js" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/bill-admin.html" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/bill-search.html" />
+        <option value="$PROJECT_DIR$/dev-log.md" />
+        <option value="$PROJECT_DIR$/css/base/base.css" />
+        <option value="$PROJECT_DIR$/css/base/mediaQuery.css" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/due-recive.html" />
+        <option value="$PROJECT_DIR$/less/moneyManage/moneyMange.less" />
+        <option value="$PROJECT_DIR$/pages/moneyManage/paid-up.html" />
+        <option value="$PROJECT_DIR$/less/common.less" />
+        <option value="$PROJECT_DIR$/pages/financial/fianan-account.html" />
+        <option value="$PROJECT_DIR$/pages/financial/order-count.html" />
+        <option value="$PROJECT_DIR$/pages/financial/table-search.html" />
       </list>
     </option>
   </component>
@@ -258,12 +307,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="294" />
-    <option name="y" value="59" />
-    <option name="width" value="1705" />
-    <option name="height" value="1053" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="415" />
+    <option name="y" value="68" />
+    <option name="width" value="1646" />
+    <option name="height" value="990" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -284,12 +334,21 @@
             <path>
               <item name="Property" type="b2602c69:ProjectViewProjectNode" />
               <item name="Property" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Property" type="b2602c69:ProjectViewProjectNode" />
               <item name="Property" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Property" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Property" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Property" type="b2602c69:ProjectViewProjectNode" />
@@ -300,7 +359,14 @@
               <item name="Property" type="b2602c69:ProjectViewProjectNode" />
               <item name="Property" type="462c0819:PsiDirectoryNode" />
               <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
+              <item name="zTree_v3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Property" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Property" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="zTree_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Property" type="b2602c69:ProjectViewProjectNode" />
@@ -311,25 +377,13 @@
               <item name="Property" type="b2602c69:ProjectViewProjectNode" />
               <item name="Property" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="contents" type="462c0819:PsiDirectoryNode" />
+              <item name="financial" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Property" type="b2602c69:ProjectViewProjectNode" />
               <item name="Property" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="shiftManage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Property" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Property" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="staffManagement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Property" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Property" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
+              <item name="moneyManage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,17 +396,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../平台管理后台/operation" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\0-WORK\ysy\HTML\物业管理后台\Property\css" />
       <recent name="D:\0-WORK\ysy\HTML\物业管理后台\Property\pages\contents" />
       <recent name="D:\0-WORK\ysy\HTML\物业管理后台\Property\js\lib" />
       <recent name="D:\0-WORK\ysy\HTML\物业管理后台\Property\js\lib\ueditor" />
       <recent name="D:\0-WORK\ysy\HTML\物业管理后台\Property\js" />
-      <recent name="D:\0-WORK\ysy\HTML\物业管理后台\Property\pages\moneyManage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\0-WORK\ysy\HTML\物业管理后台\Property\pages\contents" />
@@ -421,22 +475,24 @@
       <workItem from="1531728415175" duration="275000" />
       <workItem from="1533173626614" duration="3084000" />
       <workItem from="1533176802943" duration="18416000" />
-      <workItem from="1533259386428" duration="9411000" />
+      <workItem from="1533259386428" duration="10098000" />
+      <workItem from="1533517130424" duration="24214000" />
+      <workItem from="1533604045006" duration="7025000" />
+      <workItem from="1533691342739" duration="602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193981000" />
+    <option name="totallyTimeSpent" value="226509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="407" y="56" width="1705" height="1053" extended-state="0" />
-    <editor active="true" />
+    <frame x="415" y="68" width="1646" height="990" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17338952" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15453586" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32900432" />
@@ -448,25 +504,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32889965" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19007093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -482,154 +538,17 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/moneyManage/due-recive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="214" column="32" selection-start-line="214" selection-start-column="32" selection-end-line="214" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/moneyManage/paid-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="172" column="39" lean-forward="true" selection-end-line="342" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Print.js" />
-    <entry file="file://$PROJECT_DIR$/js/lib/jQuery.print.min.js" />
-    <entry file="file://$PROJECT_DIR$/pages/moneyManage/estate-charge.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="342" column="21" lean-forward="true" selection-start-line="342" selection-start-column="21" selection-end-line="342" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/moneyManage/return-fee.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/ueditor/jsp/imageUp.jsp" />
-    <entry file="file://$PROJECT_DIR$/js/lib/ueditor/umeditor.config.js" />
-    <entry file="file://$PROJECT_DIR$/pages/moneyManage/urge-charge.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/moneyManage/return-search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/financial/fianan-account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/financial/table-search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="297" column="49" selection-start-line="297" selection-start-column="49" selection-end-line="297" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.html" />
-    <entry file="file://$PROJECT_DIR$/less/moneyManage/moneyMange.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="276" column="22" lean-forward="true" selection-start-line="276" selection-start-column="22" selection-end-line="276" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/financial/order-count.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="146" column="39" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/appManage/holiday-manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/appManage/data-export.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/appManage/balance-manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/appManage/exame-manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/moneyManage/calculator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/moneyManage/edit-standard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/commonPhone.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/building.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/test.js" />
-    <entry file="file://$PROJECT_DIR$/css/commoncss/bootstrap-switch.min.css" />
-    <entry file="file://$PROJECT_DIR$/css/u.css" />
     <entry file="file://$PROJECT_DIR$/css/commonPhone.css" />
     <entry file="file://$PROJECT_DIR$/js/calculator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <marker date="1531206789419" expanded="true" signature="2729:2733" ph="&lt;" />
-            <marker date="1531206789419" expanded="true" signature="2737:2741" ph="&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/pages/index/waitPushPage.html" />
     <entry file="file://$PROJECT_DIR$/less/waitPushPage.less" />
-    <entry file="file://$PROJECT_DIR$/dev-log.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/change.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -648,13 +567,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lib/common.js" />
-    <entry file="file://$PROJECT_DIR$/pages/menu-top.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/contents/publis-survey.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -662,24 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/mediaQuery.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/ueditor/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="47" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -693,99 +591,266 @@
         <state relative-caret-position="-2862" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/menu-left.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="179" column="22" lean-forward="true" selection-start-line="179" selection-start-column="22" selection-end-line="179" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/contents/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="292" column="85" lean-forward="true" selection-start-line="290" selection-start-column="4" selection-end-line="292" selection-end-column="85" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#table#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/contents/sos-manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="335" column="4" lean-forward="true" selection-start-line="335" selection-start-column="4" selection-end-line="347" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#2;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="4338">
+          <caret line="335" column="4" selection-start-line="335" selection-start-column="4" selection-end-line="347" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/contents/houseNotice.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1908">
-          <caret line="174" column="11" lean-forward="true" selection-start-line="174" selection-start-column="11" selection-end-line="174" selection-end-column="11" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#td#6;n#tr#0;n#table#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/common.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="521" column="9" lean-forward="true" selection-start-line="521" selection-start-column="9" selection-end-line="521" selection-end-column="9" />
-          <folding>
-            <element signature="e#5540#7849#0" />
-            <element signature="e#7859#7884#0" />
-            <element signature="e#7933#8000#0" />
-            <element signature="e#8637#8664#0" />
-            <element signature="e#8783#8838#0" />
-            <element signature="e#8848#8868#0" />
-            <element signature="e#9204#9677#0" />
-            <element signature="e#10467#11313#0" />
-            <element signature="e#11325#11363#0" />
-            <element signature="e#11375#11747#0" />
-          </folding>
+        <state relative-caret-position="2538">
+          <caret line="174" column="11" selection-start-line="174" selection-start-column="11" selection-end-line="174" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/contents/Chamber.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="133" column="91" selection-start-line="133" selection-start-column="91" selection-end-line="133" selection-end-column="91" />
+        <state relative-caret-position="260">
+          <caret line="127" column="44" lean-forward="true" selection-end-line="153" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1422">
+          <caret line="175" column="1" lean-forward="true" selection-start-line="175" selection-start-column="1" selection-end-line="175" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/appManage/exame-manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1212">
+          <caret line="425" column="7" lean-forward="true" selection-start-line="425" selection-start-column="7" selection-end-line="425" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contents/complain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contents/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/menu-top.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/flaw-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/estate-fee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="268" lean-forward="true" selection-start-line="268" selection-end-line="268" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/report/report.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/pay-setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/standard-setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/urge-charge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="87" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/return-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="46" column="68" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/edit-standard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/relate-source.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/paid-up-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/return-fee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="60" column="52" lean-forward="true" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/charge-offline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4086">
+          <caret line="273" column="41" selection-start-line="273" selection-start-column="41" selection-end-line="273" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap/js/npm.js" />
+    <entry file="file://$PROJECT_DIR$/css/bootstrap/css/bootstrap-theme.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/bill-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base/mediaQuery.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/moneyManage/moneyMange.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6912">
+          <caret line="384" column="13" selection-start-line="384" selection-start-column="13" selection-end-line="384" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/paid-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2466">
+          <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+          <folding>
+            <element signature="n#select#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/due-recive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="95" column="59" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/moneyManage/bill-admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="45" column="54" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/financial/fianan-account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/common.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7362">
+          <caret line="409" column="20" selection-start-line="409" selection-start-column="20" selection-end-line="409" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/menu-left.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev-log.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/financial/order-count.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3492">
+          <caret line="194" selection-start-line="194" selection-end-line="200" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+          <folding>
+            <element signature="n#!!block;n#renderZTree#0" />
+            <element signature="n#!!block;n#renderPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/financial/table-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
         </state>
       </provider>
     </entry>

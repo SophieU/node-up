@@ -26,7 +26,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1000;
     background-image: url("../../images/img/header-bg.png");
     .logo{
         display: block;
@@ -37,14 +37,19 @@
         background-size: 86% auto;
     }
     .head-nav{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         li{
             padding: 0 15px;
-            float: left;
+            white-space:nowrap;
+            //float: left;
             font-size: 15px;
             color: #D3EAFB;
             line-height: 70px;
             cursor: pointer;
             position: relative;
+            transition:all .5s ease;
             a{
                 text-decoration: none;
                 color: #fff;
@@ -88,12 +93,13 @@
         }
     }
     .user{
-        position: relative;
+        position: absolute;
+        right: 0;
+        top: 0;
         background-color:transparent;
         //width: 150px;
         //height: 30px;
         //margin: 20px 50px;
-        float: right;
         line-height: 70px;
         .layui-nav-bar{
             opacity: 0!important;
@@ -122,6 +128,14 @@
                 font-size: 14px;
                 position: relative;
                 cursor: pointer;
+                .layui-icon{
+                    color: #fff;
+                    position: absolute;
+                    right: 10px;
+                    top: 2px;
+                    transform:rotate(90deg);
+                    transition:all .3s ease;
+                }
                 a{
                     display: block;
                     width: 100%;
@@ -163,12 +177,47 @@
                         }
                     }
                 }
+                &.open{
+                    ol{
+                        height: auto;
+                        display: block;
+                    }
+                    .layui-icon{
+                        transform:rotate(0deg);
+                    }
+                }
+                ol{
+                    background: #283149;
+                    display: none;
+                    li{
+                        text-indent: 2em;
+                    }
+                }
             }
+            
         }
     }
     //公用部分结束
     .main-info{
         padding: 15px;
+        .info-title{
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            .breadcrumb-bav{
+                user-select: none;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    vertical-align: middle;
+                    user-select: none;
+                }
+            }
+        }
         .message-list{
             background-color: #fff;
             box-sizing: border-box;
@@ -344,13 +393,14 @@ input[type="text"]:read-only,textarea:read-only{
 textarea{
     resize:none;
 }
+
 .btn{
     outline:none!important;
 }
 .btn-lng{
     padding:5px 20px;
 }
-.grey-text{
+.grey-text,.text-grey{
     color: #999;
 }
 .text-red{
@@ -359,6 +409,17 @@ textarea{
 .filter-box{
     background:#fff;
     padding:15px;
+    .form-group{
+        margin-bottom: 10px;
+        .form-control{
+            width:190px ;
+        }
+    }
+    .control-label{
+        width: 110px;
+        padding:0 9px ;
+        font-weight: normal;
+    }
     h4{
         border-left: 6px solid #008efa;
         padding-left: 15px;
@@ -366,6 +427,38 @@ textarea{
     .layui-form-inline{
         margin-bottom: 10px;
     }
+    .layui-form-item:last-child{
+        margin-bottom: 0;
+    }
+    .layui-form-label{
+        width: 100px;
+    }
+    div.layui-form-label{
+        padding: 9px 0;
+        width: auto;
+    }
+    select{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        min-width: 190px;
+    }
+
+}
+.long-label{
+    .layui-form-label{
+        width: 120px;
+        padding:9px ;
+    }
+    .layui-input-block{
+        margin-left: 130px;
+    }
+}
+.layui-input, .layui-select{
+    height: 34px;
+}
+.layui-btn{
+    height: 34px;
+    line-height: 34px;
 }
 .sort-box{
     display: inline-block;
@@ -393,21 +486,22 @@ textarea{
         }
     }
 }
-//input[type="checkbox"]{
-//    -webkit-appearance: none;
-//    display: inline-block;
-//    width:15px;
-//    height:15px;
-//    background-image: url('../../images/img/checkbox2.png') ;
-//    background-repeat:no-repeat;
-//    background-position: 0 -25px;
-//    outline:none!important;
-//    background-size: 14px auto;
-//    margin:0;
-//    &:checked{
-//        background-position: 0 2px;
-//    }
-//}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display: inline-block;
+    vertical-align:middle;
+    width:15px;
+    height:15px;
+    background-image: url('../../images/img/checkbox2.png') ;
+    background-repeat:no-repeat;
+    background-position: 0 -25px;
+    outline:none!important;
+    background-size: 14px auto;
+    margin:0;
+    &:checked{
+        background-position: 0 0;
+    }
+}
 input[type="radio"]{
     -webkit-appearance: none;
     display: inline-block;
@@ -506,6 +600,7 @@ input[type="radio"]{
     background: transparent;
     border: none;
     color: #333;
+    padding: 0 6px;
     &:hover{
         color: #999;
     }
@@ -540,11 +635,52 @@ input[type="radio"]{
         td{white-space: nowrap;}
     }
 }
+.mini-table{
+    th,td{
+        padding: 4px 8px;
+    }
+}
+.table-form{
+    border:none;
+    td{
+        border:none;
+    }
+    .table-input{
+        border:1px solid #ddd;
+        border-collapse: collapse;
+        td{
+            padding:8px;
+            border:none;
+        }
+        th{
+            padding:8px;
+            border: none;
+            background: #efefef;
+            font-size: 13px;
+            text-align: center;
+        }
+        .check-col{
+            width:30px;
+            text-align: center;
+        }
+        .input-item{
+            width:100px;
+            height:30px;
+            border:1px solid #ddd;
+            border-radius: 4px;
+            padding:0 8px;
+            line-height: 30px;
+        }
+    }
+}
 .w100{
     width:100px;
 }
 .w50{
     width:50px;
+}
+.w70{
+    width: 70px;
 }
 .badge-coin{
   display: inline-block;
@@ -558,7 +694,7 @@ input[type="radio"]{
 .modal{
     background: #fff;
     .modal-header{
-        .modal-title{
+        .modal-title,h4{
             height: 42px;
             line-height: 42px;
             font-size: 14px;
@@ -573,4 +709,9 @@ input[type="radio"]{
         text-align: center;
         padding: 6px;
     }
+}
+
+/*菜单全隐藏*/
+.menuLeft>li{
+    display: none;
 }

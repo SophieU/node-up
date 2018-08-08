@@ -5,157 +5,99 @@
 
 <head>
     <meta charset="utf-8">
-    <title>一生约-后台管理界面</title>
+    <title>一生约-票据分配</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/commoncss/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/commoncss/reset.css" />
-    <link rel="stylesheet" href="../../js/lib/layui/layui/css/layui.css">
-    <link rel="stylesheet" href="../../zTree_v3/css/zTreeStyle/zTreeStyle.css">
-    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/base/base.css" />
+    <link rel="stylesheet" href="../../libs/ueditor/themes/default/css/umeditor.css">
+    <link rel="stylesheet" href="../../libs/zTree_v3/css/metroStyle/metroStyle.css">
     <link rel="stylesheet" type="text/css" href="../../css/moneyManage/moneyMange.css" />
 </head>
 
 <body>
-<!--头部信息开始-->
-<div id="header">
-    <img class="logo" src="../../images/img/logo03.png"/>
-    <ul class="head-nav">
-        <li><a href="../statistics/pay.html">统计查看</a></li>
-        <li>小区管理</li>
-        <li><a href="../staffManagement/personManagement.html">员工管理</a></li>
-        <li><a href="../resourceManagement/proprietor.html">资源管理</a></li>
-        <li>报事报修</li>
-        <li class="active"><a href="../moneyManage/pay-setting.html">物业费管理</a> </li>
-        <li>财务结算</li>
-        <li>系统管理</li>
-    </ul>
-    <div class="user">
-        <img class="changeUserIco" onclick="showStting()" src="../../images/ico/icon-down.png"/>
-        <p>Hello，Tom</p>
-        <div class="setting">
-            <ul>
-                <li>
-                    <a href="###"><i class="setImg"></i><span>设置</span></a>
-                </li>
-                <li>
-                    <a href="###"><i class="setImg"></i><span>消息</span></a>
-                </li>
-                <li>
-                    <a href="###"><i class="setImg"></i><span>退出</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!--头部信息结束-->
+<!--顶部菜单-->
+<script src="../menu-top.js"></script>
+<!--顶部菜单-->
 <!--内容部分开始-->
 <div id="main">
-    <!-- 左侧导航开始 -->
+    <!--左边导航开始-->
     <div class="main-nav">
-        <ul>
-            <li>
-                <div class="flag"></div>
-                <a href="##">支付配置 </a>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">计费标准设置</a>
-            </li>
-            <li  class="active">
-                <div class="flag"></div>
-                <a href="##">票据管理</a>
-                <ol class="sub-nav">
-                    <li class="active-sub"><a href="./bill-search.html">票据查询</a></li>
-                </ol>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">物业计费</a>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">应收查询</a>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">实收查询</a>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">物业收费</a>
-            </li>
-            <li  >
-                <div class="flag"></div>
-                <a href="##">退费管理</a>
-            </li>
-        </ul>
-
+        <script src="../menu-left.js"></script>
     </div>
+    <!--左边导航结束-->
     <div class="main-info">
         <!-- 目录导航开始 -->
         <div class="info-title">
-            <ul>
-                <li>物业费管理</li>
-                <li>></li>
-                <li>票据管理</li>
-            </ul>
+            <div class="breadcrumb-nav">
+                <span>物业费管理</span>
+                <span><i class="layui-icon layui-icon-right"></i></span>
+                <span>票据管理</span>
+            </div>
             <p>帮助</p>
         </div>
         <!-- 目录导航结束-->
         <!-- 主要内容开始 -->
         <div class="filter-box">
-            <form action="" class="form-inline filter-form">
-                <div class="form-group">
-                    <label  class="control-label">选择小区：</label>
-                    <select class="form-control" >
-                        <option value="">力宝大厦</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label  class="control-label">票据状态</label>
-                    <select class="form-control" >
-                        <option value="">已分配</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label  class="control-label">票据各类</label>
-                    <select class="form-control" >
-                        <option value="">普通发票</option>
-                        <option value="">增值发票</option>
-                        <option value="">收据</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label  class="control-label">票据编号</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
+            <form action="" class="filter-form">
+                <div class="layui-form-item">
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">选择小区：</label>
+                        <div class="layui-input-inline">
+                            <select class="form-control" >
+                                <option value="">力宝大厦</option>
+                            </select>
+                        </div>
                     </div>
-                    <span>至</span>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">票据状态</label>
+                        <div class="layui-input-inline">
+                            <select class="form-control" >
+                                <option value="">已分配</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">票据各类</label>
+                        <div class="layui-input-inline">
+                            <select class="form-control" >
+                                <option value="">普通发票</option>
+                                <option value="">增值发票</option>
+                                <option value="">收据</option>
+                            </select>
+                        </div>
+
                     </div>
                 </div>
-                <div class="form-group">
-                    <button class="btn btn-success">搜索</button>
-                    <button type="reset" class="btn btn-default" >重置</button>
+                <div class="layui-form-item">
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">票据编号</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input dateTimeInput">
+                        </div>
+                    </div>
+                    <div class="layui-form-inline">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal">搜索</button>
+                            <button type="reset" class="layui-btn layui-btn-primary" >重置</button>
+                        </div>
+
+                    </div>
                 </div>
+
             </form>
         </div>
         <div class="message-list main-content ">
             <div class="table-wrapper">
                 <div class="table-header clearfix">
                     <div class="btn-groups pull-right">
-                        <button class="btn btn-danger " >批量回收</button>
-                        <button class="btn btn-default " data-toggle="modal" data-target="#billModal">批量分配</button>
+                        <button class="layui-btn layui-btn-normal " data-toggle="modal" data-target="#billModal">批量分配</button>
+                        <button class="layui-btn layui-btn-primary " data-toggle="modal" data-target="#treeModal">批量回收</button>
                     </div>
 
                 </div>
-                <table class="table">
+                <table class="layui-table">
                     <thead>
                     <tr>
                         <th><input type="checkbox"></th>
@@ -178,7 +120,7 @@
                         <td>普通发票</td>
                         <td>已分配</td>
                         <td>
-                            <button data-toggle="modal" data-target="#treeModal" class="btn btn-link btn-link-danger">回收</button>
+                            <button data-toggle="modal" data-target="#treeModal" class="btn-text btn-text-danger">回收</button>
                             <!--<button class="btn btn-link danger" onclick="alertTip()">删除</button>-->
                         </td>
                     </tr>
@@ -192,100 +134,83 @@
                         <td>未分配</td>
                         <td>
                             <!--<button data-toggle="modal" data-target="#treeModal" class="btn btn-link btn-link-danger">回收</button>-->
-                            <button class="btn btn-link " data-toggle="modal" data-target="#billModal">分配</button>
+                            <button class="btn-text btn-text-primary " data-toggle="modal" data-target="#billModal">分配</button>
                         </td>
                     </tr>
                     </tbody>
                 </table>
             </div>
             <!--分页开始-->
-            <div id="SeparatePage" class="clearfix">
-                <ul>
-                    <li class="fist"><a href="###">上一页</a></li>
-                    <li class="active"><a href="###">1</a></li>
-                    <li><a href="###">2</a></li>
-                    <li><a href="###">3</a></li>
-                    <li><a href="###">4</a></li>
-                    <li><a href="###">5</a></li>
-                    <li class="next"><a href="###">下一页</a></li>
-                    <li class="li-text"><span>跳转到</span></li>
-                    <li class="li-number"><input type="text" maxlength="3"/></li>
-                    <li class="skip"><a href="###">跳转</a></li>
-                </ul>
-                <br />
-                <ul>
-                    <li class="li-text"><span>每页</span></li>
-                    <li class="showSelect">
-                        <select name="showMsg">
-                            <option value="0">10条</option>
-                            <option value="1">20条</option>
-                            <option value="2">30条</option>
-                            <option value="3">40条</option>
-                        </select>
-                    </li>
-                    <li class="amount"><span>共501页</span></li>
-                </ul>
+            <div class="pagination-wrapper">
+                <div id="pagination" class="clearfix">
+
+                </div>
             </div>
+
             <!--分布结束-->
         </div>
-        <div class="modal fade" id="billModal">
+        <!--分配弹窗-->
+        <div class="modal fade hide" id="billModal" data-width="700px">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
                         <h4>分配票据</h4>
                     </div>
                     <div class="modal-body">
-                        <form action="" class="form form-horizontal">
-                            <div class="form-group ">
-                                <label  class="control-label must col-md-2">票据编号</label>
-                                <div class=" col-md-2">
-                                    <input type="text" class="form-control">
+                        <form action="" class="form-horizontal">
+                            <div class="layui-form-item ">
+                                <label  class="layui-form-label must">票据编号</label>
+                                <div class=" layui-input-inline">
+                                    <input type="text" class="layui-input">
                                 </div>
-                                <span class="input-connect">至</span>
-                                <div class="  col-md-2">
-                                    <input type="text" class="form-control">
+                                <span style="width:auto;" class="layui-form-label">至</span>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input">
                                 </div>
-                                <div class="col-md-3">
-                                    (以 <input value="1000" type="text" class="inline-input" >为单位)
+                                <div class="layui-input-inline" style="margin:10px 0 0 110px;">
+                                    <div class="col-md-3">
+                                        (以 <input value="1000" type="text" class="inline-input" >为单位)
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label  class="control-label col-md-2 must">小区名称</label>
-                                <div class="input-group col-md-3">
+                            <div class="layui-form-item">
+                                <label  class="layui-form-label  must">小区名称</label>
+                                <div class="layui-input-block "  style="width:200px;">
                                     <select  class="form-control">
                                         <option value="">--请选择--</option>
                                     </select>
                                 </div>
 
                             </div>
-                            <div class="form-group">
-                                <label  class="control-label col-md-2 must">收费科目</label>
-                                <div class=" input-group col-md-3">
+                            <div class="layui-form-item">
+                                <label  class="layui-form-label  must">收费科目</label>
+                                <div class=" layui-input-block "  style="width:200px;">
                                     <select  class="form-control">
                                         <option value="">--请选择--</option>
                                     </select>
                                 </div>
 
                             </div>
-                            <div class="form-group">
-                                <label  class="control-label col-md-2 must">票据种类</label>
-                                <div class="input-group col-md-3">
+                            <div class="layui-form-item">
+                                <label  class="layui-form-label  must">票据种类</label>
+                                <div class="layui-input-block " style="width:200px;">
                                     <select  class="form-control">
                                         <option value="">--请选择--</option>
                                     </select>
                                 </div>
 
                             </div>
-                            <div class="form-group">
-                                <label  class="control-label col-md-2 must">关联资源</label>
-                                <button data-toggle="modal" data-target="#treeModal" type="button" class="btn btn-success">关联资源</button>
+                            <div class="layui-form-item">
+                                <label  class="layui-form-label must">关联资源</label>
+                                <div class="layui-form-label">
+                                    <button data-toggle="modal" data-target="#treeModal" type="button" class="btn-text btn-text-primary">关联资源</button>
+                                </div>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-default" data-dismiss="modal">取消</button>
-                        <button class="btn btn-success">分配</button>
+                        <button class="layui-btn layui-btn-primary" data-dismiss="modal">取消</button>
+                        <button class="layui-btn layui-btn-normal">分配</button>
                     </div>
                 </div>
             </div>
@@ -295,30 +220,31 @@
     <!-- 左侧导航结束 -->
 </div>
 <!--内容部分结束-->
-<div class="modal fade" id="treeModal">
+<!--回收弹窗-->
+<div class="modal fade hide" id="treeModal" data-height="500px">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <button class="close"  data-dismiss="modal"><span>&times;</span></button>
                 <h4>添加关联资源</h4>
             </div>
             <div class="modal-body">
                 <div class="ztree" id="treeSource"></div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-danger">清空</button>
-                <button class="btn btn-default" data-dismiss="modal">取消</button>
-                <button class="btn btn-success">确定</button>
+                <button class="layui-btn layui-btn-danger">清空</button>
+                <button class="layui-btn layui-btn-normal" data-dismiss="modal">取消</button>
+                <button class="layui-btn layui-btn-normal">确定</button>
             </div>
         </div>
     </div>
 </div>
 </body>
 <!-- jq -->
-<script src="../../js/lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
-<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="../../zTree_v3/js/jquery.ztree.all.min.js"></script>
-<script src="../../js/lib/layui/layui/layui.all.js"></script>
+<script src="../../libs/jquery/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../../libs/layui/layui.all.js"></script>
+<script src="../../libs/zTree_v3/js/jquery.ztree.all.min.js"></script>
+<script src="../../js/global.js" type="text/javascript" charset="utf-8"></script>
+
 <!-- 操作 -->
 <script type="text/javascript " charset="utf-8 ">
     function checkLateFee(target){
@@ -348,53 +274,8 @@
     }
 
     //tree
-    var zTreeObj;
-    var setting={
-        treeId:'treeSource',
-        check:{
-            chkboxType:{"Y":"ps","N":"ps"},
-            enable:true
-        },
-
-    };
-    var zNodes=[
-        {name:'青秀城',children:[
-            {name:'1栋',children:[
-                {name:'1单元',children:[
-                    {name:'101',checked:true},
-                    {name:'102'},
-                    {name:'103'},
-                    {name:'104'},
-                ]}
-            ]},
-            {name:'2栋',children:[
-                {name:'1单元',children:[
-                    {name:'101'},
-                    {name:'102'},
-                    {name:'103'},
-                    {name:'104'},
-                ]}
-            ]},
-
-        ]},{
-            name:'力宝大厦',children:[
-                {name:'二层',children:[
-                    {name:'201'},
-                    {name:'202'},
-                    {name:'203'},
-                ]},
-                {name:'三层',children:[
-                    {name:'301'},
-                    {name:'302'},
-                    {name:'303'},
-                ]}
-            ]
-        }
-    ]
-    $(function(){
-        zTreeObj=$.fn.zTree.init($("#treeSource"),setting,zNodes);
-
-    })
+   renderZTree($("#treeSource"));
+    renderPage('pagination');
 
 </script>
 

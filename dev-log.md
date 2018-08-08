@@ -66,7 +66,21 @@
 - 物业计费：修改周期性计费，新增预缴计费 estate-fee.html
 - 退费查询 return-search.html
 
+<link rel="stylesheet" type="text/css" href="../../css/base/base.css" />
 
+<!--顶部菜单-->
+<script src="../menu-top.js"></script>
+<!--顶部菜单-->
+
+ <!--左边导航开始-->
+    <div class="main-nav">
+        <script src="../menu-left.js"></script>
+    </div>
+    <!--左边导航结束-->
+
+<script src="../../libs/jquery/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../../libs/layui/layui.all.js"></script>
+<script src="../../js/global.js" type="text/javascript" charset="utf-8"></script>
 
 
 

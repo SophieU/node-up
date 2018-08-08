@@ -258,6 +258,11 @@
     font-weight: normal;
     font-size: 15px;
   }
+  .modal-body{
+    li{
+      padding: 4px 0;
+    }
+  }
 }
 .table-header{
   margin-bottom: 15px;
@@ -345,9 +350,8 @@
 .due-recive{
   position: relative;
   .miss-search{
-
     position: absolute;
-    top: 70px;
+    top: 0;
     left:110%;
     right: 11px;
     bottom: 0;
@@ -363,5 +367,45 @@
     .table-content{
       padding: 10px;
     }
+  }
+}
+//实收详情
+.payUp-detail{
+  .table-form{
+    border: none;
+    width: 100%;
+    margin: 0;
+    td{
+      border: none;
+    }
+  }
+}
+//退费详情
+.return-fee{
+  .layui-row{
+    .left{
+      padding-right: 15px;
+    .layui-card-body{
+      padding: 0;
+    }
+    }
+  }
+  #userTree{
+    background: #fff;
+  }
+  .layui-table{
+    font-size: 12px;
+  }
+  .table-form{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+#printModal{
+  .layui-form-label{
+    width: 150px;
+  }
+  .layui-input-block{
+    margin-left: 190px;
   }
 }

@@ -5,170 +5,120 @@
 
 <head>
     <meta charset="utf-8">
-    <title>一生约-后台管理界面</title>
+    <title>一生约-实收查询</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="../../css/commoncss/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/commoncss/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/commoncss/common.css" />
-    <link rel="stylesheet" href="../../zTree_v3/css/zTreeStyle/zTreeStyle.css">
-    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" href="../../css/commoncss/bootstrap-datetimepicker.min.css" />
-    <link rel="stylesheet" href="../../js/lib/layui/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base/base.css" />
     <link rel="stylesheet" type="text/css" href="../../css/moneyManage/moneyMange.css" />
 </head>
 
 <body>
-<!--头部信息开始-->
-<div id="header">
-    <img class="logo" src="../../images/img/logo03.png"/>
-    <ul class="head-nav">
-        <li class="active">统计查看</li>
-        <li><a href="../staffManagement/personManagement.html">小区管理</a></li>
-        <li><a href="../staffManagement/personManagement.html">物业app管理</a></li>
-        <li><a href="../staffManagement/personManagement.html">员工管理</a></li>
-        <li><a href="../resourceManagement/proprietor.html">资源管理</a></li>
-        <li><a href="../report/oneLv.html">报事报修</a></li>
-        <li>收费管理</li>
-        <li>财务结算</li>
-        <li>系统管理</li>
-    </ul>
-    <div class="user">
-        <img src="../../images/ico/icon-down.png"/>
-        <p>Hello，Tom</p>
-    </div>
-</div>
-<!--头部信息结束-->
+
+<!--顶部菜单-->
+<script src="../menu-top.js"></script>
+<!--顶部菜单-->
 <!--内容部分开始-->
 <div id="main">
-    <!-- 左侧导航开始 -->
+    <!--左边导航开始-->
     <div class="main-nav">
-        <ul>
-            <li>
-                <div class="flag"></div>
-                <a href="##">支付配置 </a>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">计费标准设置</a>
-            </li>
-            <li  >
-                <div class="flag"></div>
-                <a href="##">票据管理</a>
-                <ol class="sub-nav">
-                    <li ><a href="./bill-search.html">票据查询</a></li>
-                </ol>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">物业计费</a>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">应收查询</a>
-            </li>
-            <li  class="active">
-                <div class="flag"></div>
-                <a href="##">实收查询</a>
-            </li>
-            <li >
-                <div class="flag"></div>
-                <a href="##">物业收费</a>
-            </li>
-            <li  >
-                <div class="flag"></div>
-                <a href="##">退费管理</a>
-            </li>
-        </ul>
-
+        <script src="../menu-left.js"></script>
     </div>
+    <!--左边导航结束-->
     <div class="main-info">
-        <!-- 目录导航开始 -->
-        <div class="info-title">
-            <ul>
-                <li>物业费管理</li>
-                <li>></li>
-                <li>应收查询</li>
-            </ul>
-            <p>帮助</p>
-        </div>
-        <!-- 目录导航结束-->
+
         <!-- 主要内容开始 -->
         <div class="filter-box">
-            <form action="" class="form-inline filter-form">
-                <div>
-                    <div class="form-group">
-                        <label  class="control-label">选择小区：</label>
-                        <select class="form-control" >
-                            <option value="">力宝大厦</option>
-                        </select>
-                    </div>
-    
-                    <div class="form-group">
-                        <label  class="control-label">资源名称：</label>
-                        <input type="text" class="form-control w100">
-                        <button type="button" data-toggle="modal" data-target="#treeModal" class="btn btn-link">选择资源</button>
-                    </div>
-    
-                    <div class="form-group">
-                        <label  class="control-label">计费科目：</label>
-                        <select class="form-control">
-                            <option value="电梯住宅物管费">电梯住宅物管费</option>
-                            <option value="车位费（1.8L（含）以下）">车位费（1.8L（含）以下）</option>
-                            <option value="车位费（1.8L-2.5L（含））">车位费（1.8L-2.5L（含））</option>
-                            <option value="车位费（2.5L以上）">车位费（2.5L以上）</option>
-                            <option value="生活垃圾处理费（住宅用房周期性）">生活垃圾处理费（住宅用房周期性）</option>
-                            <option value="临停车费">临停车费</option>
-                            <option value="门禁卡服务费">门禁卡服务费</option>
-                            <option value="装修管理费（住宅）">装修管理费（住宅）</option>
-                            <option value="维修服务费">维修服务费</option>
-                            <option value="其他服务费">其他服务费</option>
-                            <option value="生活垃圾处理费（住宅用房一次性）">生活垃圾处理费（住宅用房一次性）</option>
-                            <option value="装修垃圾清运费（住宅）">装修垃圾清运费（住宅）</option>
-                            <option value="装修许可证押金">装修许可证押金</option>
-                        </select>
-                    </div>
-                </div>
-                <div>
-                    <div class="form-group">
-                        <label  class="control-label">业主手机号：</label>
-                        <input type="text" class="form-control">
-                    </div>
-                        <div class="form-group">
-                        <label  class="control-label">业主姓名：</label>
-                        <input type="text" class="form-control w100">
-                    </div>
-                        <div class="form-group">
-                        <label  class="control-label">计费员：</label>
-                        <input type="text" class="form-control  w100">
-                    </div>
-                </div>
-                <div>
-                    <div class="form-group">
-                        <label  class="control-label">支付方式：</label>
-                        <select class="form-control">
-                            <option value="全部">全部</option>
-                            <option value="支付宝">支付宝</option>
-                            <option value="微信">微信</option>
-                            <option value="pos机">pos机</option>
-                            <option value="现金">现金</option>
-                        </select>
-                    </div>
-    
-                    <div class="form-group">
-                        <label  class="control-label">收费时间：</label>
-                        <div class="input-group">
-                            <input type="text" readonly class="form-control  w100 form-date-date">
+            <form action="" class="filter-form long-label">
+                <div class="layui-form-item">
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">选择小区：</label>
+                        <div class="layui-input-inline">
+                            <select class="form-control" >
+                                <option value="">力宝大厦</option>
+                            </select>
                         </div>
-                        <span>至</span>
-                        <div class="input-group">
-                            <input type="text" readonly class="form-control w100 form-date-date">
+
+                    </div>
+    
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">资源名称：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input ">
+                        </div>
+                        <div class="layui-form-label">
+                            <button type="button" data-toggle="modal" data-target="#treeModal" class="btn-text btn-text-primary">选择资源</button>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <button class="btn btn-success">搜索</button>
-                        <button type="reset" class="btn btn-default" >重置</button>
+    
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">计费科目：</label>
+                        <div class="layui-input-inline">
+                            <select class="form-control">
+                                <option value="电梯住宅物管费">电梯住宅物管费</option>
+                                <option value="车位费（1.8L（含）以下）">车位费（1.8L（含）以下）</option>
+                                <option value="车位费（1.8L-2.5L（含））">车位费（1.8L-2.5L（含））</option>
+                                <option value="车位费（2.5L以上）">车位费（2.5L以上）</option>
+                                <option value="生活垃圾处理费（住宅用房周期性）">生活垃圾处理费（住宅用房周期性）</option>
+                                <option value="临停车费">临停车费</option>
+                                <option value="门禁卡服务费">门禁卡服务费</option>
+                                <option value="装修管理费（住宅）">装修管理费（住宅）</option>
+                                <option value="维修服务费">维修服务费</option>
+                                <option value="其他服务费">其他服务费</option>
+                                <option value="生活垃圾处理费（住宅用房一次性）">生活垃圾处理费（住宅用房一次性）</option>
+                                <option value="装修垃圾清运费（住宅）">装修垃圾清运费（住宅）</option>
+                                <option value="装修许可证押金">装修许可证押金</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">业主手机号：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input">
+                        </div>
+
+                    </div>
+                        <div class="layui-form-inline">
+                        <label  class="layui-form-label">业主姓名：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input ">
+                            </div>
+
+                    </div>
+                        <div class="layui-form-inline">
+                        <label  class="layui-form-label">计费员：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input ">
+                            </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">支付方式：</label>
+                        <div class="layui-input-inline">
+                            <select class="form-control">
+                                <option value="全部">全部</option>
+                                <option value="支付宝">支付宝</option>
+                                <option value="微信">微信</option>
+                                <option value="pos机">pos机</option>
+                                <option value="现金">现金</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="layui-form-inline">
+                        <label  class="layui-form-label">收费时间：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input dateTimeInput">
+                        </div>
+                    </div>
+                    <div class="layui-form-inline">
+                        <div class="layui-input-inline">
+                            <button class="layui-btn layui-btn-normal">搜索</button>
+                            <button type="reset" class="layui-btn layui-btn-primary" >重置</button>
+                        </div>
                     </div>
                 </div>
                 
@@ -180,11 +130,11 @@
             <div class="table-content">
                 <div class="table-header clearfix">
                     <div class="btn-groups pull-right">
-                        <button class="btn btn-default " > 导出</button>
+                        <button class="layui-btn layui-btn-normal " > 导出</button>
                     </div>
                 </div>
                 <div class="table-wrapper">
-                    <table class="table">
+                    <table class="layui-table">
                         <thead class="bg-head">
                         <tr>
                             <th><input type="checkbox"></th>
@@ -206,129 +156,112 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td>力宝大厦</td>
-                            <td>1栋1单元101</td>
-                            <td>电梯住宅物业费</td>
-                            <td>18602870966</td>
-                            <td>李世民</td>
-                            <td>202.12</td>
-                            <td><span class="text-danger">-1</span></td>
-                            <td><span class="text-danger">-1</span></td>
-                            <td>200.12</td>
-                            <td>王大力</td>
-                            <td>2018-03 至 2018-04</td>
-                            <td></td>
-                            <td>2018-03-26 11:59:59</td>
-                            <td>支付宝</td>
-                            <td>
-                                <button class="btn btn-link btn-sm" onclick="openUser()">退费</button>
-                            </td>
-                        </tr>
-
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>力宝大厦</td>
+                                <td>1栋1单元101</td>
+                                <td>电梯住宅物业费</td>
+                                <td>18602870966</td>
+                                <td>李世民</td>
+                                <td>202.12</td>
+                                <td><span class="text-danger">-1</span></td>
+                                <td><span class="text-danger">-1</span></td>
+                                <td>200.12</td>
+                                <td>王大力</td>
+                                <td>2018-03 至 2018-04</td>
+                                <td></td>
+                                <td>2018-03-26 11:59:59</td>
+                                <td>支付宝</td>
+                                <td>
+                                    <button class="btn-text btn-text-primary" data-toggle="modal" data-target="#print">打印票据</button>
+                                    <a href="./paid-up-detail.html" class="btn-text btn-text-primary" >查看详情</a>
+                                    <a href="./return-fee.html" class="btn-text btn-text-primary" >退费</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>力宝大厦</td>
+                                <td>1栋1单元101</td>
+                                <td>电梯住宅物业费</td>
+                                <td>18602870966</td>
+                                <td>李世民</td>
+                                <td>202.12</td>
+                                <td><span class="text-danger">-1</span></td>
+                                <td><span class="text-danger">-1</span></td>
+                                <td>200.12</td>
+                                <td>王大力</td>
+                                <td>2018-03 至 2018-04</td>
+                                <td></td>
+                                <td>2018-03-26 11:59:59</td>
+                                <td>支付宝</td>
+                                <td>
+                                    <button class="btn-text btn-text-primary" onclick="openUser()">退费</button>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!--分页开始-->
-                <div id="SeparatePage" class="clearfix">
-                    <ul>
-                        <li class="fist"><a href="###">上一页</a></li>
-                        <li class="active"><a href="###">1</a></li>
-                        <li><a href="###">2</a></li>
-                        <li><a href="###">3</a></li>
-                        <li><a href="###">4</a></li>
-                        <li><a href="###">5</a></li>
-                        <li class="next"><a href="###">下一页</a></li>
-                        <li class="li-text"><span>跳转到</span></li>
-                        <li class="li-number"><input type="text" maxlength="3"/></li>
-                        <li class="skip"><a href="###">跳转</a></li>
-                    </ul>
-                    <br />
-                    <ul>
-                        <li class="li-text"><span>每页</span></li>
-                        <li class="showSelect">
-                            <select name="showMsg">
-                                <option value="0">10条</option>
-                                <option value="1">20条</option>
-                                <option value="2">30条</option>
-                                <option value="3">40条</option>
-                            </select>
-                        </li>
-                        <li class="amount"><span>共501页</span></li>
-                    </ul>
+                <div class="pagination-wrapper">
+                    <div id="pagination" class="clearfix"></div>
                 </div>
                 <!--分布结束-->
             </div>
 
         </div>
-
-
     <!-- 主要内容结束 -->
     </div>
 </div>
 <!--内容部分结束-->
+<!--票据-->
+
 </body>
+<div class="modal fade hide" id="print">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>打印票据</h4>
+            </div>
+            <div class="modal-body">
+                <div class="long-label">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选择票据种类 <i class="must"></i></label>
+                        <div class="layui-input-block" style="width: 200px;">
+                            <select class="form-control">
+                                <option value="">请选择</option>
+                                <option value="">票据一</option>
+                                <option value="">票据二</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选择票据编辑 <i class="must"></i></label>
+                        <div class="layui-input-block" style="width: 200px;">
+                            <select name="" id="">
+                                <option value="">请选择</option>
+                                <option value="">票据一</option>
+                                <option value="">票据二</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="layui-btn layui-btn-primary" data-dismiss="modal">取消</button>
+                <button class="layui-btn layui-btn-normal">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jq -->
-<script src="../../js/lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
-<script src="../../js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="../../js/lib/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="../../js/lib/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
-<script src="../../zTree_v3/js/jquery.ztree.all.min.js"></script>
-<script src="../../js/lib/layui/layui/layui.all.js"></script>
-<script src="../../js/lib/date.js" type="text/javascript" charset="utf-8"></script>
-<script src=""></script>
+<script src="../../libs/jquery/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../../libs/layui/layui.all.js"></script>
+<script src="../../js/global.js" type="text/javascript" charset="utf-8"></script>
 <!-- 操作 -->
 <script type="text/javascript " charset="utf-8 ">
-    //tree
-    var zTreeObj;
-    var setting={
-        treeId:'treeSource',
-        check:{
-            chkboxType:{"Y":"ps","N":"ps"},
-            enable:true
-        },
-
-    };
-    var zNodes=[
-        {name:'青秀城',children:[
-            {name:'1栋',children:[
-                {name:'1单元',children:[
-                    {name:'101',checked:true},
-                    {name:'102'},
-                    {name:'103'},
-                    {name:'104'},
-                ]}
-            ]},
-            {name:'2栋',children:[
-                {name:'1单元',children:[
-                    {name:'101'},
-                    {name:'102'},
-                    {name:'103'},
-                    {name:'104'},
-                ]}
-            ]},
-
-        ]},{
-            name:'力宝大厦',children:[
-                {name:'二层',children:[
-                    {name:'201'},
-                    {name:'202'},
-                    {name:'203'},
-                ]},
-                {name:'三层',children:[
-                    {name:'301'},
-                    {name:'302'},
-                    {name:'303'},
-                ]}
-            ]
-        }
-    ]
-    $(function(){
-        zTreeObj=$.fn.zTree.init($("#treeSource"),setting,zNodes);
-    })
-
+  // renderZTree($("treeSource"))
+    renderPage("pagination");
     //退费弹层
     function openUser(){
         var layer = layui.layer;
@@ -345,7 +278,22 @@
         });
 
     }
+//打印票据
+    function print(){
+        layui.use('layer', function(){
+            var layer = layui.layer;
+            layer.open({
+                type:2,
+                title:'打印票据',
+                content:$("#print"),
+                btn:['确定','取消'],
+                shade: 0,
+                anim: 2,
 
+            })
+            layer.msg('hello');
+        });
+    }
 </script>
 
 </html>

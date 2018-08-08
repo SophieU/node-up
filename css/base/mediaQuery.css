@@ -11,5 +11,11 @@
     #main .main-nav{
         width: 180px;
     }
+    .filter-box{
+        font-size: 12px;
+    }
+    .layui-form-item .layui-input-inline{
+        width: 150px;
+    }
 
 }
