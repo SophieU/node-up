@@ -12,7 +12,21 @@
     <link rel="stylesheet" type="text/css" href="../../css/base/base.css" />
     <link rel="stylesheet" href="../../libs/ueditor/themes/default/css/umeditor.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/moneyManage/moneyMange.css" />
-
+    <style>
+        .remarks{
+            padding: 15px 0;
+        }
+        .remarks h4{
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .remarks p{
+           color: #666;
+           text-indent: 2em;
+           line-height: 1.5em;
+           display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,13 +59,15 @@
                         </script>
                     </div>
                     <div class="layui-tab-item ">
-
-
-
+                        <div class="remarks">
+                            <h4>说明：</h4>
+                            <p>【A】：业主名称</p>
+                            <p>【B】：物业公司名称</p>
+                        </div>
                         <script id="containerOrder" name="content" type="text/plain">
                         <div class="charge-order">
                             <h4 class="charge-order-title">缴费通知单</h4>
-                            <p class="text-right">制单日期 xxxx年xxx月xxx日</p>
+                            <p class="text-right">制单日期 【A】年xxx月xxx日</p>
                             <p class="text-left">
                                 <span>小区：xxxx小区</span>
                                 <span>房号：1栋1单元1906 李世民</span>
@@ -105,11 +121,16 @@
                         </script>
                     </div>
                     <div class="layui-tab-item">
+                        <div class="remarks">
+                            <h4>说明：</h4>
+                            <p>【A】：业主名称</p>
+                            <p>【B】：物业公司名称</p>
+                        </div>
                         <script id="containerLawyer" name="content" type="text/plain">
                             <div class="lawyer-letter">
                             <h4 class="title">律师函</h4>
-                            <p class="text-left">尊敬的xxx先生/女士：</p>
-                            <p class="text-content">四川xxxxx律师事务所接受成都市xxxxx物业管理有限公司委托，指派本律师就你拖欠物业服务费事宜，致函于你。</p>
+                            <p class="text-left">尊敬的【A】先生/女士：</p>
+                            <p class="text-content">四川xxxxx律师事务所接受成都市【B】物业管理有限公司委托，指派本律师就你拖欠物业服务费事宜，致函于你。</p>
                             <p class="text-content">根据委托人提供的的《部分业主欠物业服务费名单》等相关资料显示，自_________年_______月至_______年_____月_____日止，你已拖欠委托人物业服务费合计人民币______元，委托人已多次向你催收无果，根据《xxxxx物业管理服务协议》的约定，你已违约。</p>
                             <p class="text-content">现请你___日内向委托人补交上述物业服务费，否则委托人将依法起诉追究你的违约责任，希望你收到此函后务必引起重视，本着诚信原则及时履行付款义务，避免诉讼和产生其他费用。</p>
                             <p class="text-content">特此函告</p>
@@ -118,6 +139,7 @@
                             <p class="text-right">xx年xx月xx日 </p>
                         </div>
                         </script>
+                       
                     </div>
                 </div>
             </div>

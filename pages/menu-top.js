@@ -10,7 +10,7 @@ var menuTop='<div id="header">' +
                     '<li data-menu="statistics"><span>统计查看</span></li>' +
                     '<li data-menu="system"><span>系统管理</span></li>' +
                 '</ul>' +
-                '<div class="user layui-nav ">' +
+                '<div class="user layui-nav ">' + 
                     '<div class="layui-nav-item">' +
                         '<a href="javascript:;">18112311231</a>' +
                         '<dl class="layui-nav-child">' +

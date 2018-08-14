@@ -2,60 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa2c375-7982-4950-a995-3b6701e72212" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/contents/complain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/moneyManage/charge-offline.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/moneyManage/paid-up-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base/mediaQuery.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/mediaQuery.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/moneyManage/moneyMange.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/moneyManage/moneyMange.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-log.md" beforeDir="false" afterPath="$PROJECT_DIR$/dev-log.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/common.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/common.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/moneyManage/moneyMange.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/moneyManage/moneyMange.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/report/report.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/report/report.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/appManage/exame-manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/appManage/exame-manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/appManage/holiday-manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/appManage/holiday-manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/Chamber.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/Chamber.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/sos-manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/sos-manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/financial/fianan-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/financial/fianan-account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/financial/order-count.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/financial/order-count.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/financial/table-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/financial/table-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/menu-left.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/menu-left.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/menu-top.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/menu-top.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/bill-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/bill-admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/bill-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/bill-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/due-recive.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/due-recive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/edit-standard.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/edit-standard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/estate-fee.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/estate-fee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/flaw-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/flaw-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/paid-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/paid-up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/pay-setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/pay-setting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/relate-source.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/relate-source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/return-fee.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/return-fee.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/return-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/return-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/moneyManage/standard-setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/standard-setting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/moneyManage/urge-charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/moneyManage/urge-charge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resourceManagement/BuildUpDate.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resourceManagement/BuildUpDate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resourceManagement/ProUpDate.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resourceManagement/ProUpDate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resourceManagement/building.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resourceManagement/building.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resourceManagement/proprietor.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resourceManagement/proprietor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/systemManagement/createCharacter.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/systemManagement/createCharacter.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -71,29 +18,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.44167188">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="fianan-account.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="fianan-account.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/financial/fianan-account.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1188">
-                  <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="order-count.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pages/financial/order-count.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3492">
-                  <caret line="194" selection-start-line="194" selection-end-line="200" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="table-search.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pages/financial/table-search.html">
-              <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="18">
-                  <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
+                  <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -307,7 +236,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="415" />
     <option name="y" value="68" />
     <option name="width" value="1646" />
@@ -479,16 +408,17 @@
       <workItem from="1533517130424" duration="24214000" />
       <workItem from="1533604045006" duration="7025000" />
       <workItem from="1533691342739" duration="602000" />
+      <workItem from="1533890809412" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226509000" />
+    <option name="totallyTimeSpent" value="226540000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="415" y="68" width="1646" height="990" extended-state="1" />
+    <frame x="415" y="68" width="1646" height="990" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15453586" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15418227" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -510,19 +440,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19007093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -801,13 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/financial/fianan-account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/less/common.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7362">
@@ -829,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/financial/order-count.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3492">
-          <caret line="194" selection-start-line="194" selection-end-line="200" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/global.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -851,6 +767,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/financial/order-count.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="194" selection-start-line="194" selection-end-line="200" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/financial/fianan-account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
         </state>
       </provider>
     </entry>
