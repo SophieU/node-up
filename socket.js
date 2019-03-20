@@ -15,7 +15,7 @@ function getDate() {
     return moment().format("YYYY-MM-DD HH:mm:ss")
 }
 
-var server = ws.createServer(function (conn) { 
+var server = WS.createServer(function (conn) { 
     conn.on('text', function (data) {
         data = JSON.parse(data);
         if (data.type === 1) {
