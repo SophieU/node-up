@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拖拽</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+    #box{
+        width:100px;
+        height:100px;
+        background: #f00;
+        cursor: pointer;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    </style>
+</head>
+<body>
+   <div id="box"></div> 
+   <script>
+       var box = document.getElementById('box');
+       var body = document.body;
+      
+       function bindEvent(){
+           var X,Y,L,T,sideL,sideT;
+           var dragging = false;  
+            box.onmousedown=function(e){
+                var e = e || window.event;
+                X = e.clientX;
+                Y = e.clientY;
+                T = box.offsetTop;
+                L = box.offsetLeft;
+                sideL = X - L;
+                sideT = Y - T;
+                dragging = true;
+            }
+            body.onmousemove=function(e){
+                e = e || window.event;
+                X = e.clientX;
+                Y = e.clientY;
+                T = box.offsetTop;
+                L = box.offsetLeft;
+                if(dragging){
+                    if(X<L||Y<T||X>(L+100)||Y>(T+100)){
+                        console.log(1)
+                        dragging=false;
+                        return;
+                    }
+                    box.style.left = X - sideL +'px';
+                    box.style.top = Y - sideT +'px';
+                }
+                
+            }
+            box.onmouseup=function(e){
+                dragging = false;
+            }
+       }
+       bindEvent();
+   </script>
+</body>
+</html>
