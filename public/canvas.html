@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #canvas{
+            height: 500px;
+            width: 500px;
+            border: 1px solid #ddd;
+        }
+        #loadingText{
+            text-align: center;
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="loadingText">加载中：0%</div>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var loadingText = document.getElementById('#loadingText');
+        var ctx = canvas.getContext('2d');
+        CanvasRenderingContext2D.prototype.sector=function(x,y,r,startDeg,endDeg){
+            this.save();
+            this.beginPath();
+            this.moveTo(x,y);
+            // this.arc(x,y,r,startDeg*Math.PI/180,endDeg*Math.PI/180,false);
+            this.arc(100,75,50,0,2*Math.PI);
+            this.closePath();
+            this.restore();
+            return this;
+        }
+        ctx.fillStyle='#f00';
+        ctx.sector(70,70,50,0,90).fill();
+
+    </script>
+</body>
+</html>

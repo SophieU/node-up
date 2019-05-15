@@ -10,6 +10,13 @@
             margin:0;
             padding:0;
         }
+        body{
+            position: absolute;
+            top:0;
+            left: 0;
+            bottom: 0;
+            right:0;
+        }
     #box{
         width:100px;
         height:100px;
@@ -46,16 +53,15 @@
                 Y = e.clientY;
                 T = box.offsetTop;
                 L = box.offsetLeft;
+                var width=height=100;
+                var maxW = width + L, minW = L,maxH = T+height,minH= T;
+                if(X<minW||X>maxW||Y<minH||Y>maxH){
+                    dragging = false;
+                }
                 if(dragging){
-                    if(X<L||Y<T||X>(L+100)||Y>(T+100)){
-                        console.log(1)
-                        dragging=false;
-                        return;
-                    }
                     box.style.left = X - sideL +'px';
                     box.style.top = Y - sideT +'px';
                 }
-                
             }
             box.onmouseup=function(e){
                 dragging = false;
