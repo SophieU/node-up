@@ -1,6 +1,5 @@
 var fs = require('fs');
-console.log(global.process===process)
-
+console.log(process.env)
 // fs.readdir(__dirname,function(err,files){
 //     console.log(files)
 //     if(!files.length){
