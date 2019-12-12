@@ -1,5 +1,23 @@
 {
-    "name": "node-file",
-    "version": "0.0.1",
-    "description": "a command-file scripts file expoler"
+  "name": "up",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SophieU/node-up.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SophieU/node-up/issues"
+  },
+  "homepage": "https://github.com/SophieU/node-up#readme",
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
 }
