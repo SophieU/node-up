@@ -7,4 +7,7 @@ app.on('ready',function(){
         height:300
     })
     win.loadURL(path.join(__dirname, './index.html')) // mac file://, __dirname, './index.html'
+    win.on('close',function(){
+        win = null
+    })
 })
