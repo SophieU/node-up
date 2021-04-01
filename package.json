@@ -1,6 +1,6 @@
 {
   "name": "node-up",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "author":"SophieU",
   "description": "A electron app",
   "main": "main.js",
