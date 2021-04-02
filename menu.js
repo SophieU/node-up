@@ -6,7 +6,6 @@ const template = [
         submenu: [
             {
                 label: '新建文件',
-              
                 click:function(){
                     console.log('new files')
                 }
@@ -15,7 +14,6 @@ const template = [
             },{
                 label: '新建窗口',
                 accelerator: (function(){
-                    console.log(process.platform)
                     if(process.platform === 'darwin'){
                         return 'alt+Command+M'
                     }else{
