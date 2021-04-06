@@ -17,12 +17,9 @@ app.on('ready',function(){
     win.on('close',function(){
         win = null
     })
-    ipcMain.on('openWindow',(event, arg)=>{
-        let child = new BrowserWindow({
-            width: 300,
-            height: 300
-        })
-        child.loadURL(path.join(__dirname, './index.html'))
+    ipcMain.on('test',function(event,msg){
+        console.log('Main:', msg)
+        event.sender.send('test2','from main')
     })
     require('./menu')
 })
