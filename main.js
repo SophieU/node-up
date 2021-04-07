@@ -1,4 +1,4 @@
-const {app, BrowserWindow, ipcMain, webContents } = require('electron')
+const {app, BrowserWindow, ipcMain, dialog } = require('electron')
 const path = require('path')
 
 let win = null
@@ -25,4 +25,16 @@ app.on('ready',function(){
         win.webContents.send('toRender1',args)
     })
 
+    ipcMain.on('openDialog',function(event,args){
+        dialog.showMessageBox({
+            title: '提示',
+            message: '这是提示信息',
+            buttons: ['确定', '取消']
+        }).then(result=>{
+            let index = result.response
+            if(index===0){
+                console.log('确定')
+            }
+        })
+    })
 })
