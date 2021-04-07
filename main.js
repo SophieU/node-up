@@ -1,25 +1,28 @@
-const {app, BrowserWindow, ipcMain} = require('electron')
+const {app, BrowserWindow, ipcMain, webContents } = require('electron')
 const path = require('path')
 
+let win = null
 app.on('ready',function(){
-    let win = new BrowserWindow({
-        width: 1280,
-        height:720,
-        webPreferences: {
-            nodeIntegration:true,  
-            nodeIntegrationInSubframes: true,
-            nodeIntegrationInWorker: true,
-            contextIsolation:false    
+    win = new BrowserWindow({
+        width: 800,
+        height: 800,
+        webPreferences:{
+            nodeIntegration: true,
+            contextIsolation: false
         }
     })
-    win.loadURL(path.join('file://',__dirname, './index.html')) // mac file://, __dirname, './index.html'
-    win.webContents.openDevTools()
     win.on('close',function(){
-        win = null
+        console.log('窗口关闭')
+        win= null
     })
-    ipcMain.on('test',function(event,msg){
-        console.log('Main:', msg)
-        event.sender.send('test2','from main')
+    win.webContents.openDevTools()
+    win.loadURL(path.join("file://", __dirname, "./index.html"))
+    require('./main_process/menu')
+    ipcMain.on('render1',function(event, args){
+        win.webContents.send('toRender2',args)
     })
-    require('./menu')
+    ipcMain.on('render2',function(event,args){
+        win.webContents.send('toRender1',args)
+    })
+
 })

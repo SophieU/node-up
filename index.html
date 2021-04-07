@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .block{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #f00;
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>hello world, hello electron22222</h1>
-    <button id="btn">click me!</button>
+    <div class="block">
+        <input type="text" id="value1">
+        <button id="btn">进程1</button>
+    </div>
+    <div class="block">
+        <input type="text" id="value2">
+        <button id="btn2">进程2</button>
+    </div>
     <script>
-        const ele = require('./render_process/render.js')
+        require('./render_process/render1.js')
+        require('./render_process/render2.js')
     </script>
 </body>
 </html>
