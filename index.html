@@ -6,29 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .block{
-            width: 200px;
-            height: 200px;
-            border: 1px solid #f00;
-            float: left;
-            margin-right: 20px;
+        .drag-file{
+            width: 100%;
+            height: 400px;
+            background: pink;
         }
+        .webview{
+            display: flex;
+            width: 100%;
+            height: 400px;
+           
+        }
+       
     </style>
 </head>
 <body>
-    <h1>hello world, hello electron22222</h1>
-    <div class="block">
-        <input type="text" id="value1">
-        <button id="btn">进程1</button>
-    </div>
-    <div class="block">
-        <input type="text" id="value2">
-        <button id="btn2">进程2</button>
-    </div>
-    <button id="btn3">打开弹窗</button>
-    <script>
-        require('./render_process/render1.js')
-        require('./render_process/render2.js')
-    </script>
+  <div class="webview-wrapper">
+      <h2>webview</h2>
+      <span class="loading">等待中</span>
+      <webview class="webview"
+            width="100%"
+            height="400" 
+            src="https://www.baidu.com" 
+            preload="./render_process/preload.js"
+            autosize="on" minwidth="800px" minheight="1200px"
+            />
+  </div>
+  <button class="open">打开新窗口</button>
+  <script src="./render_process//render3.js"></script>
 </body>
 </html>
