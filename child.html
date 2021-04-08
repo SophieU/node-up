@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>这是子窗口</h1>
+        <button id="go">向父窗口传递消息</button>
+    </div>
+    <script>
+        var btn = document.querySelector('#go')
+        btn.addEventListener('click',function(){
+            window.opener.postMessage('这是消息主体')
+        },false)
+    </script>
+</body>
+</html>

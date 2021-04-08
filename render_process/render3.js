@@ -1,18 +1,9 @@
-const wb = document.querySelector('webview')
-const loading = document.querySelector('.loading')
+// 打开新窗口
+function openNewWindow(){
+    window.open('child.html', "子窗口")
+}
 
-wb.addEventListener('did-start-loading',()=>{
-    loading.innerHTML = 'loading...............'
-})
-wb.addEventListener('did-stop-loading',()=>{
-    loading.innerHTML='OK.'
-    wb.insertCSS(`
-    iframe{
-        width: 100%;
-        height: 400px;
-    }
-    #su{
-        background: red!important;
-    }
-    `)
-})
+window.addEventListener('message',function(event){
+    console.log(event)
+    let message = event.data
+},false)

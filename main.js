@@ -20,7 +20,6 @@ app.on('ready',function(){
     })
     win.webContents.openDevTools()
     win.loadFile( "./index.html")
-    require('./main_process/menu')
     ipcMain.on('render1',function(event, args){
         win.webContents.send('toRender2',args)
     })
