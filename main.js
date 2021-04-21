@@ -1,18 +1,46 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, ipcMain, dialog} = require('electron')
 const path = require('path')
 
-app.on('ready',function(){
-    const window = new BrowserWindow({
-        width: 500,
-        height:500,
-        webPreferences:{
-            nodeIntegration: true,
-            contextIsolation: false,
+class AppWindow extends BrowserWindow{
+    constructor(config, fileLocation){
+        const baseConfig = {
+            width: 800,
+            height:500,
+            webPreferences:{
+                nodeIntegration: true,
+                contextIsolation: false,
+            }
         }
-    })
-    window.loadURL(path.join(__dirname,'./index.html'))
+        const finalConfig = {...baseConfig, ...config}
+        super(finalConfig)
+        this.loadFile(fileLocation)
+        this.once('ready-to-show', ()=>{
+            this.show()
+        })
+    }
+}
+app.on('ready',function(){
+    const window = new AppWindow({},path.join(__dirname,'./render_process/index.html'))
     window.webContents.openDevTools()
-    window.on('close',function(){
-        window = null
+
+    ipcMain.on('addMusicWindow',function(event){
+        const addWindow =  new AppWindow({
+            parent: window
+        },path.join(__dirname,'./render_process/add.html'))
+        addWindow.webContents.openDevTools()
+        
     })
+    ipcMain.on('open-music-file', (event) =>{
+        dialog.showOpenDialog({
+            properties:['openFile','multiSelections'],
+            filters:[
+                {name: 'music', extensions:['mp3']}
+            ]
+        }).then(res=>{
+            if(res.filePaths){
+                event.sender.send('selected-file',res.filePaths)
+            }
+        })
+    })
+
 })
