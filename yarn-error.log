@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe F:\Program Files (x86)\Yarn\bin\yarn.js add electron -D
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;F:\Program Files (x86)\Office\Lib\xuggler\bin;F:\Program Files (x86)\Yarn\bin\;F:\Program Files (x86)\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_211\bin;F:\JavaEnviroment\apache-maven-3.5.2\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_211\bin;F:\Program Files\Android\Sdk\platform-tools;C:\Program Files (x86)\PuTTY\;C:\Program Files\nodejs\;F:\Program Files\Git\cmd;C:\Users\Administrator.WIN-9M659CUL90U\.windows-build-tools\python27\;C:\Users\Administrator.WIN-9M659CUL90U\.windows-build-tools\python27\;C:\Users\Administrator.WIN-9M659CUL90U\AppData\Local\Microsoft\WindowsApps;F:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Administrator.WIN-9M659CUL90U\AppData\Local\Yarn\bin;F:\Program Files\JetBrains\WebStorm 2019.3.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;F:\Program Files (x86)\IntelliJ IDEA 2018.3.3\bin;F:\Program Files\Android\Sdk\platform-tools;F:\Program Files (x86)\Fiddler;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Users\Administrator.WIN-9M659CUL90U\AppData\Roaming\npm;F:\flutter-2.0.4\bin;
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  14.16.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "node-up",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com.cnpmjs.org/SophieU/node-up.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: E:\MyGitHub\node-up\node_modules\electron: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c node install.js
+  Directory: E:\MyGitHub\node-up\node_modules\electron
+  Output:
+  RequestError: connect ETIMEDOUT 192.30.255.113:443
+      at ClientRequest.<anonymous> (E:\MyGitHub\node-up\node_modules\got\source\request-as-event-emitter.js:178:14)
+      at Object.onceWrapper (events.js:422:26)
+      at ClientRequest.emit (events.js:327:22)
+      at ClientRequest.origin.emit (E:\MyGitHub\node-up\node_modules\@szmarczak\http-timer\source\index.js:37:11)
+      at TLSSocket.socketErrorListener (_http_client.js:469:9)
+      at TLSSocket.emit (events.js:315:20)
+      at emitErrorNT (internal/streams/destroy.js:106:8)
+      at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+      at ProcessTermError.MessageError (F:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (F:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (F:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at ChildProcess.emit (events.js:315:20)
+      at maybeClose (internal/child_process.js:1048:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
