@@ -22,7 +22,9 @@ class AppWindow extends BrowserWindow{
 app.on('ready',function(){
     const window = new AppWindow({},path.join(__dirname,'./render_process/index.html'))
     window.webContents.openDevTools()
-
+    window.webContents.on('did-finish-load', ()=>{
+        // window.send('getTracks', myStore.getTracks)
+    })
     ipcMain.on('addMusicWindow',function(event){
         const addWindow =  new AppWindow({
             parent: window
@@ -41,6 +43,12 @@ app.on('ready',function(){
                 event.sender.send('selected-file',res.filePaths)
             }
         })
+    })
+
+    ipcMain.on('add-tracks', (event) => {
+        // const updatedTracks = myStore.addTracks(tracks).getTracks()
+        // window.send('getTracks', updatedTracks)
+        console.log(app.getPath('userData'))
     })
 
 })

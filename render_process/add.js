@@ -1,10 +1,8 @@
 const {ipcRenderer} = require('electron')
 const {$} = require('./helper')
 const path = require("path")
-const Store = require('store')
-const storeInstance = new Store()
-console.log(app.getPath('userData'))
-
+const Store = require('./MusicDataStore')
+let store = new Store()
 let musicFilesPath = []
 
 $('selectMusicBtn').addEventListener('click',function(){
@@ -28,5 +26,6 @@ const renderHtml = pathes => {
 }
 
 $('importBtn').addEventListener('click',function(){
-    ipcRenderer.send()
+    store.addTracks(musicFilesPath)
+    ipcRenderer.send('add-tracks')
 })

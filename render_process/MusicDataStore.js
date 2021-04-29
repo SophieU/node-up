@@ -1,5 +1,5 @@
-const Store = require('store')
-const uuidv4 = require('uuid/v4')
+const Store = require('electron-store')
+const {v4: uuidv4} = require('uuid')
 const path = require('path')
 
 class DataStore extends Store{
