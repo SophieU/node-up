@@ -7,11 +7,22 @@
     <title>本地播放器</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/851d817575.js" crossorigin="anonymous"></script>
+    <style>
+        #tracksList .fas:hover{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-4">
         <h1>我的播放器</h1>
         <button id="addMusicBtn" class="btn btn-primary btn-lg btn-block mt-4">添加歌曲到曲库</button>
+    </div>
+    <div id="tracksList" class="mt-4"></div>
+    <div class="container fixed-bottom">
+        <hr />
+        <div class="row mt-2" id="player-status"></div>
+        <div class="progress-bar bg-success" style="width:0%">0%</div>
     </div>
     <script>
         require('./index.js')

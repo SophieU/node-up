@@ -1,5 +1,10 @@
 const {app, BrowserWindow, ipcMain, dialog} = require('electron')
 const path = require('path')
+const DataStore = require('./render_process/MusicDataStore')
+
+const myStore = new DataStore({
+    'name':'MusicData'
+})
 
 class AppWindow extends BrowserWindow{
     constructor(config, fileLocation){
@@ -23,7 +28,11 @@ app.on('ready',function(){
     const window = new AppWindow({},path.join(__dirname,'./render_process/index.html'))
     window.webContents.openDevTools()
     window.webContents.on('did-finish-load', ()=>{
-        // window.send('getTracks', myStore.getTracks)
+        window.send('getTracks', myStore.getTracks())
+    })
+    ipcMain.on('add-tracks', (event, tracks) => {
+        const updateTracks = myStore.addTracks(tracks).getTracks()
+        window.send('getTracks', updateTracks)
     })
     ipcMain.on('addMusicWindow',function(event){
         const addWindow =  new AppWindow({
@@ -44,11 +53,10 @@ app.on('ready',function(){
             }
         })
     })
-
-    ipcMain.on('add-tracks', (event) => {
-        // const updatedTracks = myStore.addTracks(tracks).getTracks()
-        // window.send('getTracks', updatedTracks)
-        console.log(app.getPath('userData'))
+    ipcMain.on('delete-track', (event,id)=>{
+        const updateTracks = myStore.deleteTracks(id).getTracks()
+        window.send('getTracks', updateTracks)
     })
+    
 
 })

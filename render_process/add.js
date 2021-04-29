@@ -26,6 +26,5 @@ const renderHtml = pathes => {
 }
 
 $('importBtn').addEventListener('click',function(){
-    store.addTracks(musicFilesPath)
-    ipcRenderer.send('add-tracks')
+    ipcRenderer.send('add-tracks', musicFilesPath)
 })
